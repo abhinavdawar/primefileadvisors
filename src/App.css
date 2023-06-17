@@ -198,9 +198,9 @@ nav {
 }
 .homepage-content .left-content,
 .right-content {
-	flex: 0 0 50%;
+	/* flex: 0 0 50%; */
 	max-width: 50%;
-	height: 300px;
+	height: auto;
 	padding: 30px;
 	color: var(--white-color);
 	display: flex;
@@ -208,16 +208,47 @@ nav {
 	align-items: flex-start;
 	justify-content: flex-start;
 }
-.homepage-content .left-content {
-	padding-left: 60px;
-}
+
 .homepage-content .left-content h1 {
-	font-size: 40px;
+	font-size: 56px;
 }
 .homepage-content .left-content h2 {
+	font-size: 40px;
+	color: #343a40;
+	max-width: 80%;
+}
+.homepage-content .left-content button {
+	font-size: 20px;
+	margin-top: 10px;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 30px;
+	background-color: var(--white-color);
+	color: #292929;
+}
+.homepage-content .right-content {
+	margin-top: 20px;
+}
+.homepage-content .right-content h3 {
+	font-size: 28px;
+}
+.homepage-content .right-content h4 {
+	font-size: 24px;
+	font-weight: 100;
+}
+.homepage-content .right-content .features-container {
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	padding: 10px 20px 10px 30px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
 	color: #343a40;
 }
-
+.features-container .feature {
+	margin: 10px 0;
+}
 @media screen and (max-width: 900px) {
 	nav {
 		justify-content: center;
@@ -330,6 +361,10 @@ nav {
 			background-color: var(--primary-color);
 		}
 	}
+	.homepage-container video {
+		min-width: 100%;
+		transform: translate(40vw, 40%) scale(2);
+	}
 	.homepage-container .homepage-content {
 		flex-direction: column;
 		align-items: center;
@@ -338,9 +373,16 @@ nav {
 	}
 	.homepage-content .left-content,
 	.right-content {
-		max-width: 80%;
+		max-width: 100%;
+		height: auto;
 		align-items: center;
 		justify-content: center;
+	}
+	.homepage-content .left-content h2 {
+		max-width: 100%;
+	}
+	.homepage-content .right-content .features-container {
+		text-align: left;
 	}
 }
 
@@ -351,5 +393,10 @@ nav {
 	}
 	.phone-call {
 		margin-left: 0;
+	}
+}
+@media screen and (max-width: 550px) {
+	.homepage-container video {
+		transform: translate(50vw, 40%) scale(2);
 	}
 }
