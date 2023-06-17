@@ -33,6 +33,9 @@ li {
 	line-height: 1;
 	overflow: hidden;
 }
+p {
+	line-height: 1.2;
+}
 /* ---------------- Navbar and burger menu ------------------ */
 nav {
 	position: sticky;
@@ -366,6 +369,41 @@ textarea:focus {
 	z-index: 1;
 }
 
+.about-container {
+	height: 100%;
+	width: 100%;
+}
+.about-container .about-landing {
+	height: 100%;
+	width: 100vw;
+	color: var(--black-color);
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 40px 20px;
+}
+.about-landing .about-text {
+	text-align: left;
+}
+.about-text h1 {
+	font-size: 36px;
+	font-weight: 400;
+}
+.about-text p {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.about-text span {
+	font-size: 20px;
+	line-height: 1.3;
+}
+.intro-image img {
+	height: 400px;
+	width: 400px;
+}
+
 @media screen and (max-width: 900px) {
 	nav {
 		justify-content: center;
@@ -520,6 +558,23 @@ textarea:focus {
 	.submit-button {
 		margin-top: 20px;
 	}
+	.about-text h1 {
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.about-text p {
+		font-size: 35px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	.about-text span {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	.intro-image img {
+		height: 300px;
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -529,5 +584,22 @@ textarea:focus {
 	}
 	.phone-call {
 		margin-left: 0;
+	}
+	.about-container .about-landing {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.about-landing .about-text {
+		text-align: center;
+		margin-top: 20px;
+		max-width: 90vw;
+	}
+	.about-text p {
+		letter-spacing: 1px;
+	}
+
+	.intro-image img {
+		height: 350px;
+		width: 350px;
 	}
 }
