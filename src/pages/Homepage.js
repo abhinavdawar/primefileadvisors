@@ -1,6 +1,5 @@
 import React from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
-import Image1 from '../assets/2.jpg';
 import TaglineImage from '../assets/servicesImage.png';
 import { Link } from 'react-router-dom';
 
