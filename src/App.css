@@ -603,8 +603,8 @@ textarea:focus {
 }
 
 .services-container {
-	height: 100%;
-	width: 100%;
+	/* height: 100%;
+	width: 100%; */
 }
 .services-container .services-landing {
 	height: 100vh;
@@ -638,6 +638,47 @@ textarea:focus {
 	font-weight: 400;
 	letter-spacing: 1px;
 	max-width: 100%;
+}
+#pricing {
+	background-color: #f7f7f7;
+	padding: 4vw 0 6vw;
+}
+.package {
+	padding-bottom: 50px;
+}
+.shadow-2 {
+	position: relative;
+	box-shadow: 0 0 25px rgba(97, 97, 97, 0.22);
+}
+.bg-white {
+	background-color: white !important;
+}
+.bg-fancy {
+	/* background by SVGBackgrounds.com */
+	background-color: #2e38f2;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='71' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='52' height='52' fill-opacity='0.6' fill='%232650ff'/%3E%3C/svg%3E");
+	background-attachment: fixed;
+}
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+@media (min-width: 992px) {
+	#pricing .card {
+		transition: all 0.3s;
+	}
+	#pricing .col-lg-4:nth-child(2) {
+		transform: scale(1.1);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+		z-index: 1;
+	}
+	#pricing .card:hover {
+		transform: scale(1.05) translateY(14px);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+		z-index: 10;
+	}
 }
 
 .accordion {
