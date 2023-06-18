@@ -541,6 +541,141 @@ textarea:focus {
 	background-color: #184a6a;
 }
 
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.footer-container .heading {
+	font-size: 50px;
+	padding: 30px 0 0px 0;
+}
+.footer-container hr {
+	width: 150px;
+	border-top: 2px dashed #000;
+	background: rgb(255, 255, 255);
+	margin-top: -5px;
+}
+.footer-container .social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+.footer-container .social-icons img {
+	height: 30px;
+	width: 30px;
+	margin: 0 30px;
+}
+.footer-container .footer-content {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 0 50px;
+	margin: 20px 0;
+}
+
+.footer-container .footer-content .quick-links,
+.know-us,
+.get-notification {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0;
+}
+.footer-container .footer-content .quick-links {
+	padding: 0 40px;
+}
+.footer-container .footer-content .quick-links p,
+.know-us p {
+	font-size: 18px;
+}
+.footer-container .footer-content .quick-links .title2,
+.know-us .title2 {
+	font-size: 35px;
+}
+.footer-container .footer-content .quick-links span,
+.know-us span {
+	width: 120px;
+	height: 2px;
+	background: #000;
+	margin: 0 0 20px 0;
+}
+.footer-container .footer-content .left-content {
+	width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer-container .footer-content .know-us .line {
+	width: 70px;
+}
+.footer-container .footer-content .get-notification {
+	width: 30%;
+}
+.footer-container .footer-content .get-notification input {
+	width: 280px;
+	font-size: 20px;
+	padding: 10px;
+	margin: 20px 0;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid rgb(161, 161, 161);
+	font-family: poppins, sans-serif;
+}
+.footer-container .footer-content .get-notification input::placeholder {
+	color: rgb(179, 178, 178);
+}
+.footer-container .footer-content .get-notification button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #01b8b0;
+}
+.other-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.other-content .team-line {
+	width: 60%;
+	text-align: center;
+	font-size: 20px;
+}
+.other-content .team-line p span {
+	color: rgb(255, 0, 0);
+	font-size: 24px;
+}
+.other-content .terms {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
+}
+.other-content .terms p {
+	margin: 0 60px 0 0;
+}
+.footer-line {
+	background: #01b8b0;
+	width: 100%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.footer-line p {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font-size: 20px;
+}
+.footer-line p span {
+	font-size: 30px;
+}
+
 @media screen and (max-width: 900px) {
 	nav {
 		justify-content: center;
@@ -725,6 +860,39 @@ textarea:focus {
 	#testimonials::after {
 		width: 100%;
 	}
+	.footer-container .footer-content {
+		flex-direction: column;
+		padding: 0;
+	}
+	.footer-container .footer-content .left-content {
+		width: 90%;
+	}
+	.footer-container .footer-content .get-notification {
+		width: 90%;
+		align-items: center;
+		justify-content: center;
+	}
+	.footer-container .social-icons img {
+		margin: 0 20px;
+	}
+	.footer-container .footer-content .quick-links {
+		padding: 0;
+	}
+	.other-content {
+		flex-direction: column;
+	}
+	.other-content .team-line {
+		width: 100%;
+	}
+	.other-content .team-line p {
+		font-size: 26px;
+	}
+	.other-content .terms {
+		width: 70%;
+	}
+	.other-content .terms p {
+		margin: 0 20px;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -769,5 +937,43 @@ textarea:focus {
 	.about-info p {
 		max-width: 100%;
 		letter-spacing: 1;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.footer-container .heading {
+		font-size: 30px;
+	}
+	.footer-container hr {
+		display: none;
+	}
+	.footer-container .footer-content {
+		width: 100%;
+	}
+	.footer-container .footer-content .quick-links .title2,
+	.know-us .title2 {
+		font-size: 20px;
+	}
+	.footer-container .footer-content .quick-links p,
+	.know-us p {
+		font-size: 15px;
+	}
+	.footer-container .footer-content .quick-links {
+		padding: 0;
+	}
+	.footer-container .footer-content .quick-links span,
+	.know-us span {
+		width: 70px;
+		height: 1px;
+	}
+	.footer-container .footer-content .know-us .line {
+		width: 50px;
+	}
+	.other-content .terms {
+		width: 100%;
+		padding: 5px 5%;
+	}
+	.other-content .terms p {
+		font-size: 15px;
 	}
 }

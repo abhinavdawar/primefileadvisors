@@ -46,7 +46,7 @@ const Navbar = () => {
 						<Link to='/' style={{ textDecoration: 'none' }}>
 							<li className='link'>Our Services</li>
 						</Link>
-						<Link to='/' style={{ textDecoration: 'none' }}>
+						<Link to='/faq' style={{ textDecoration: 'none' }}>
 							<li className='link'>FAQ</li>
 						</Link>
 						<Link to='/contact' style={{ textDecoration: 'none' }}>
