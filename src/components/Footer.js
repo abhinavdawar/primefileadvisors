@@ -59,7 +59,7 @@ const Footer = () => {
 			</div>
 			<div className='footer-line'>
 				<p>
-					<span>© </span> 2020 RH+ All rights reserved
+					<span>© </span> 2023 Prime File Advisors All rights reserved
 				</p>
 			</div>
 		</div>
