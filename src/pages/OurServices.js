@@ -20,7 +20,7 @@ const OurServices = () => {
 						<h2 className='h1'>Our Pricing Options</h2>
 						<p className='lead w-75 mx-auto'>
 							If you have any questions regarding our packages, please refer to
-							the F.A.Q or contact our <a href='#'>customer support</a>
+							the F.A.Q or contact our <a href='/'>customer support</a>
 						</p>
 					</div>
 					<div className='row no-gutters package'>
