@@ -3,6 +3,7 @@ import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
+import OurServices from './pages/OurServices';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ function App() {
 					<Route exact path='/about' element={<About />}></Route>
 					<Route exact path='/contact' element={<Contact />}></Route>
 					<Route exact path='/faq' element={<FAQ />}></Route>
+					<Route exact path='/services' element={<OurServices />}></Route>
 				</Routes>
 				<Footer />
 			</div>

@@ -43,7 +43,7 @@ const Navbar = () => {
 						<Link to='/about' style={{ textDecoration: 'none' }}>
 							<li className='link'>About</li>
 						</Link>
-						<Link to='/' style={{ textDecoration: 'none' }}>
+						<Link to='/services' style={{ textDecoration: 'none' }}>
 							<li className='link'>Our Services</li>
 						</Link>
 						<Link to='/faq' style={{ textDecoration: 'none' }}>
