@@ -1,16 +1,12 @@
 import React from 'react';
-
-import Facebook from '../assets/facebook.svg';
-
-import Instagram from '../assets/instagram.svg';
-
-import Twitter from '../assets/twitter.svg';
-
-import Linkedin from '../assets/linkedin.svg';
-
-import Youtube from '../assets/youtube.svg';
-
-import { BsHeartFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+import {
+	FaFacebookF,
+	FaInstagram,
+	FaTwitter,
+	FaLinkedin,
+	FaYoutube,
+} from 'react-icons/fa';
 
 const Footer = () => {
 	return (
@@ -18,11 +14,31 @@ const Footer = () => {
 			<p className='heading'>Connect with us</p>
 			<hr />
 			<div className='social-icons'>
-				<img src={Facebook} alt='' />
-				<img src={Instagram} alt='' />
-				<img src={Twitter} alt='' />
-				<img src={Linkedin} alt='' />
-				<img src={Youtube} alt='' />
+				<div className='social-link'>
+					<Link>
+						<FaFacebookF className='social-icon' />
+					</Link>
+				</div>
+				<div className='social-link'>
+					<Link>
+						<FaInstagram className='social-icon' />
+					</Link>
+				</div>
+				<div className='social-link'>
+					<Link>
+						<FaTwitter className='social-icon' />
+					</Link>
+				</div>
+				<div className='social-link'>
+					<Link>
+						<FaLinkedin className='social-icon' />
+					</Link>
+				</div>
+				<div className='social-link'>
+					<Link>
+						<FaYoutube className='social-icon' />
+					</Link>
+				</div>
 			</div>
 			<div className='footer-content'>
 				<div className='left-content'>

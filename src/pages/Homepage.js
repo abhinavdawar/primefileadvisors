@@ -1,7 +1,7 @@
 import React from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
 import Image1 from '../assets/2.jpg';
-import HomeComponent1 from '../components/HomeComponent1';
+import TaglineImage from '../assets/servicesImage.png';
 import { Link } from 'react-router-dom';
 
 const Homepage = () => {
@@ -14,7 +14,7 @@ const Homepage = () => {
 				loop
 				className='position-fixed'
 			/>
-			<div className='container'>
+			<div className='container landing-container'>
 				<div className='row align-items-center' id='content'>
 					<div className='col-lg-6'>
 						<h1
@@ -88,10 +88,25 @@ const Homepage = () => {
 			</div>
 
 			<div className='tagline-container'>
-				<HomeComponent1 />
+				<div className='tagline-text'>
+					<h1>Your Goal Our Ambition</h1>
+					<p>
+						PrimeFile Advisors offers comprehensive business support services,
+						streamlining the acquisition of all necessary financial documents
+						within a remarkably short timeframe of 12 hours. We have established
+						partnerships with experienced CAs and architects, enabling us to
+						provide a one-stop solution for immigration agencies. By
+						consolidating these services under one umbrella, we ensure prompt
+						delivery and eliminate the need for agencies to engage multiple
+						professionals.
+					</p>
+				</div>
+				<div className='tagline-image'>
+					<img src={TaglineImage} alt='' />
+				</div>
 			</div>
 			<div className=''>
-				<img src={Image1} alt='' />
+				<img src='' alt='' />
 				<p>
 					We aim to revolutionize the business support services provided to
 					immigration agencies. Our company is uniquely positioned to address
