@@ -302,6 +302,7 @@ nav {
 }
 .homepage-section p {
 	width: 90%;
+	text-align: center;
 }
 .homepage-section-image {
 	width: 45%;
@@ -1084,16 +1085,24 @@ textarea:focus {
 	.tagline-text {
 		width: 100%;
 	}
-	/* .tagline-text h1 {
-		font-size: 40px;
-		letter-spacing: 2px;
-		margin-bottom: 15px;
+	.homepage-section-content {
+		flex-direction: column-reverse;
+		width: 100vw;
 	}
-	.tagline-text p {
-		font-size: 20px;
-		letter-spacing: 1px;
-		line-height: 1.2;
-	} */
+	.homepage-section-text {
+		width: 90%;
+	}
+	.homepage-section p {
+		max-width: 100%;
+	}
+	.homepage-section-image {
+		width: 90%;
+	}
+	.homepage-section-image img {
+		width: 80%;
+		height: 400px;
+	}
+
 	.contact-container {
 		justify-content: center;
 	}
@@ -1297,6 +1306,10 @@ textarea:focus {
 }
 
 @media screen and (max-width: 540px) {
+	.homepage-section-image img {
+		width: 80%;
+		height: 300px;
+	}
 	.footer-container .heading {
 		font-size: 30px;
 	}
