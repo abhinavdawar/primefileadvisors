@@ -2,6 +2,7 @@ import React from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
 import Image1 from '../assets/2.jpg';
 import HomeComponent1 from '../components/HomeComponent1';
+import { Link } from 'react-router-dom';
 
 const Homepage = () => {
 	return (
@@ -28,9 +29,11 @@ const Homepage = () => {
 						>
 							a one-stop solution for immigration agencies.
 						</h2>
-						<button className='btn btn-lg rounded-pill my-4 d-block mx-auto ml-lg-0'>
-							About
-						</button>
+						<Link to='/about' style={{ textDecoration: 'none' }}>
+							<button className='btn btn-lg rounded-pill my-4 d-block mx-auto ml-lg-0'>
+								About
+							</button>
+						</Link>
 					</div>
 					<div className='right-content col-lg-6 mt-5 mt-lg-0'>
 						<h3

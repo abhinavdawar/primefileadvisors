@@ -421,10 +421,20 @@ textarea:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
+	background-color: #fff;
+	color: #000;
+	margin-top: -3px;
 }
-.about-info p {
-	max-width: 70%;
+.about-info .info-image,
+.about-info .info-text {
+	width: 50%;
+	text-align: center;
+}
+.info-image img {
+	height: 50%;
+	width: 50%;
+}
+.info-text p {
 	margin: 10px 0;
 	letter-spacing: 1px;
 }
@@ -741,5 +751,23 @@ textarea:focus {
 	.intro-image img {
 		height: 350px;
 		width: 350px;
+	}
+	.about-info {
+		flex-direction: column;
+	}
+	.about-info .info-image,
+	.about-info .info-text {
+		width: 100%;
+	}
+	.about-info .info-text {
+		margin-top: 30px;
+	}
+	.info-text h1 {
+		font-size: 35px;
+		letter-spacing: 2px;
+	}
+	.about-info p {
+		max-width: 100%;
+		letter-spacing: 1;
 	}
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import AboutImage from '../assets/aboutImage.png';
 import Typewriter from 'typewriter-effect';
+import Wave from 'react-wavify';
+import AboutUs from '../assets/AboutUs.svg';
 
 const About = () => {
 	return (
@@ -31,13 +33,29 @@ const About = () => {
 					<img src={AboutImage} alt='' />
 				</div>
 			</div>
+			<Wave
+				fill='#ffffff'
+				paused={false}
+				options={{
+					height: 80,
+					amplitude: 40,
+					speed: 0.2,
+					points: 4,
+				}}
+			/>
 			<div className='about-info'>
-				<h1>Who we are</h1>
-				<p>
-					We are a group of experienced charted accountants having experience of
-					more than 4 years. We are bringing our experties in this industry to
-					streamline and revolutionarise all the steps involved under one roof
-				</p>
+				<div className='info-image'>
+					<img src={AboutUs} alt='' />
+				</div>
+				<div className='info-text'>
+					<h1>Who we are</h1>
+					<p>
+						We are a group of experienced charted accountants having experience
+						of more than 4 years. We are bringing our experties in this industry
+						to streamline and revolutionarise all the steps involved under one
+						roof
+					</p>
+				</div>
 			</div>
 			<section
 				id='info'
