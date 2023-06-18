@@ -234,17 +234,21 @@ nav {
 	height: 100%;
 	width: 100vw;
 	color: var(--black-color);
-	background-color: var(--primary-color);
+	/* background-color: var(--primary-color); */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 39.5px 20px;
+	background-image: url('./assets/contactBackground.png');
+	background-attachment: fixed;
+	background-position: cover;
 }
 .contact-container .contact-header {
 	max-width: 60vw;
 	text-align: center;
 	margin: 20px;
+	color: #fff;
 }
 .contact-container .contact-header h1 {
 	font-size: 30px;
@@ -363,7 +367,7 @@ textarea:focus {
 	color: var(--white-color);
 	border-radius: 5px;
 }
-.back-color {
+/* .back-color {
 	height: 50vh;
 	width: 100vw;
 	background-color: var(--white-color);
@@ -371,7 +375,7 @@ textarea:focus {
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-}
+} */
 
 .about-container {
 	height: 100%;
