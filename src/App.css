@@ -602,6 +602,44 @@ textarea:focus {
 	letter-spacing: 1px;
 }
 
+.services-container {
+	height: 100%;
+	width: 100%;
+}
+.services-container .services-landing {
+	height: 100vh;
+	width: 100vw;
+	background-image: url('./assets/servicesBackground.jpg');
+	background-attachment: fixed;
+	background-position: cover;
+	background-size: center;
+}
+.services-text {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	width: 45%;
+	height: 100%;
+	color: var(--white-color);
+	padding: 40px 20px;
+}
+
+.services-landing h1 {
+	font-size: 36px;
+	font-weight: 700;
+	text-align: left;
+	margin: 20px 0;
+	letter-spacing: 2px;
+}
+.services-landing p {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	max-width: 100%;
+}
+
 .accordion {
 	width: 100%;
 	display: flex;
@@ -649,6 +687,7 @@ textarea:focus {
 	);
 	padding: 15px;
 	border-top: 1px solid #d3d3d3;
+	transition: all 0.5s ease-in-out;
 }
 .footer-container {
 	display: flex;
@@ -969,6 +1008,10 @@ textarea:focus {
 	#testimonials::after {
 		width: 100%;
 	}
+	.accordion-title,
+	.accordion-content {
+		width: 90%;
+	}
 	.footer-container .footer-content {
 		flex-direction: column;
 		padding: 0;
@@ -1001,10 +1044,6 @@ textarea:focus {
 	}
 	.other-content .terms p {
 		margin: 0 20px;
-	}
-	.accordion-title,
-	.accordion-content {
-		width: 90%;
 	}
 }
 
@@ -1090,6 +1129,12 @@ textarea:focus {
 	.faq-text p {
 		margin: 10px 0;
 		letter-spacing: 1px;
+	}
+	.services-text {
+		width: 100%;
+		color: #000;
+		text-align: center;
+		align-items: center;
 	}
 }
 
