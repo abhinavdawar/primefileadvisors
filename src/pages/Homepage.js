@@ -1,6 +1,7 @@
 import React from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
 import TaglineImage from '../assets/servicesImage.png';
+import HomeImage from '../assets/homeimage.jpg';
 import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
 
@@ -93,14 +94,22 @@ const Homepage = () => {
 				</div>
 				<div className='div-wave2'></div>
 			</div>
-			<div className=''>
-				<img src='' alt='' />
-				<p>
-					We aim to revolutionize the business support services provided to
-					immigration agencies. Our company is uniquely positioned to address
-					the challenges faced by immigration agencies in acquiring financial
-					documents for visa applications promptly and efficiently.
-				</p>
+			<div className='homepage-section'>
+				<div className='homepage-section-content'>
+					<div className='homepage-section-text'>
+						<p>
+							We aim to revolutionize the business support services provided to
+							immigration agencies. Our company is uniquely positioned to
+							address the challenges faced by immigration agencies in acquiring
+							financial documents for visa applications promptly and
+							efficiently.
+						</p>
+					</div>
+					<div className='homepage-section-image'>
+						<img src={HomeImage} alt='' />
+					</div>
+				</div>
+				<div className='div-wave3'></div>
 			</div>
 		</div>
 	);

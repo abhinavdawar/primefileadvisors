@@ -250,11 +250,8 @@ nav {
 	justify-content: center;
 	flex-direction: column;
 	width: 100vw;
-	padding: 30px;
+	padding: 0 30px;
 	text-align: center;
-	/* background-image: url('./assets/homeBack.png');
-	background-attachment: fixed;
-	background-position: cover; */
 	background-color: #01b8b0;
 }
 .tagline-content {
@@ -282,6 +279,36 @@ nav {
 	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 1.2;
+}
+.homepage-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	padding: 0 30px;
+	text-align: center;
+	margin-top: -5px;
+	background-color: #fff;
+	color: #000;
+}
+.homepage-section-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.homepage-section-text {
+	width: 45%;
+}
+.homepage-section p {
+	width: 90%;
+}
+.homepage-section-image {
+	width: 45%;
+}
+.homepage-section-image img {
+	width: 100%;
+	height: 400px;
 }
 .contact-container {
 	height: 100%;
@@ -1045,10 +1072,7 @@ textarea:focus {
 			background-color: var(--primary-color);
 		}
 	}
-	.tagline-container {
-		/* flex-direction: column-reverse; */
-		backdrop-filter: blur(5px);
-	}
+
 	.tagline-image {
 		width: 100%;
 		display: none;
@@ -1390,7 +1414,7 @@ textarea:focus {
 	position: relative;
 
 	width: 100vw;
-	top: -30px;
+	top: -0px;
 	height: 117px;
 	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1536 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 12 L 779 110 L 779 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 778 110 L 1536 9 L 1536 0 L 778 0 Z" stroke-width="0"></path> </svg>');
 	background-size: cover;
@@ -1402,9 +1426,20 @@ textarea:focus {
 	position: relative;
 
 	width: 100vw;
-	top: 30px;
+	top: 0px;
 	height: 117px;
 	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1536 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 12 L 779 110 L 779 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 778 110 L 1536 9 L 1536 0 L 778 0 Z" stroke-width="0"></path> </svg>');
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+}
+.div-wave3 {
+	display: block;
+	position: relative;
+	width: 100vw;
+	top: -2px;
+	height: 117px;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1536 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(1, 184, 176, 1)" d="M 0 12 L 779 110 L 779 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(1, 184, 176, 1)" d="M 778 110 L 1536 9 L 1536 0 L 778 0 Z" stroke-width="0"></path> </svg>');
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform: rotate(180deg);
@@ -1412,7 +1447,8 @@ textarea:focus {
 
 @media (max-width: 1535px) {
 	.div-wave1,
-	.div-wave2 {
+	.div-wave2,
+	.div-wave3 {
 		background-size: contain;
 	}
 }

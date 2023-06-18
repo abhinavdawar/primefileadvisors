@@ -28,20 +28,24 @@ const Contact = () => {
 						Gurugram, India
 					</span>
 				</div>
-				<form>
+				<form id='form'>
 					<div className='contact-details'>
 						<div className='input-container'>
 							<label>Your Name</label>
-							<input type='text' placeholder='enter name here' />
+							<input type='text' name='name' placeholder='enter name here' />
 						</div>
 						<div className='input-container email-input'>
 							<label>Your Email</label>
-							<input type='email' placeholder='enter email here' />
+							<input type='email' name='email' placeholder='enter email here' />
 						</div>
 					</div>
 					<div className='input-container subject-input'>
 						<label>Your Subject</label>
-						<input type='text' placeholder='enter subject here' />
+						<input
+							type='text'
+							name='subject'
+							placeholder='enter subject here'
+						/>
 					</div>
 					<div className='input-container textarea-input'>
 						<label>Message</label>
