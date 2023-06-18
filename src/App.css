@@ -222,8 +222,7 @@ nav {
 	filter: blur(10px);
 }
 #landing #content {
-	margin-top: 16vh;
-	padding-bottom: 20vh;
+	margin-top: 20%;
 	overflow-x: hidden;
 }
 #landing button {
@@ -235,30 +234,55 @@ nav {
 	background-color: transparent;
 	color: white;
 }
+.featuresContainer {
+	background-color: #000;
+}
+.featureContainer {
+	margin: 10px;
+}
+.featureContainer p {
+	line-height: 1.3;
+}
 
 .tagline-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	width: 100vw;
 	padding: 30px;
 	text-align: center;
-	background-image: url('./assets/homeBack.png');
+	/* background-image: url('./assets/homeBack.png');
 	background-attachment: fixed;
-	background-position: cover;
+	background-position: cover; */
+	background-color: #01b8b0;
+}
+.tagline-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .tagline-image {
-	width: 50%;
+	width: 45%;
 }
 .tagline-image img {
 	height: 100%;
 	width: 100%;
 }
 .tagline-text {
-	width: 50%;
+	width: 45%;
 	padding: 20px;
 }
-
+.tagline-text h1 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+.tagline-text p {
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
 .contact-container {
 	height: 100%;
 	width: 100vw;
@@ -1021,6 +1045,31 @@ textarea:focus {
 			background-color: var(--primary-color);
 		}
 	}
+	.tagline-container {
+		/* flex-direction: column-reverse; */
+		backdrop-filter: blur(5px);
+	}
+	.tagline-image {
+		width: 100%;
+		display: none;
+	}
+	.tagline-image img {
+		height: 100%;
+		width: 100%;
+	}
+	.tagline-text {
+		width: 100%;
+	}
+	/* .tagline-text h1 {
+		font-size: 40px;
+		letter-spacing: 2px;
+		margin-bottom: 15px;
+	}
+	.tagline-text p {
+		font-size: 20px;
+		letter-spacing: 1px;
+		line-height: 1.2;
+	} */
 	.contact-container {
 		justify-content: center;
 	}
@@ -1333,5 +1382,37 @@ textarea:focus {
 
 	100% {
 		transform: translateX(1);
+	}
+}
+
+.div-wave1 {
+	display: block;
+	position: relative;
+
+	width: 100vw;
+	top: -30px;
+	height: 117px;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1536 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 12 L 779 110 L 779 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 778 110 L 1536 9 L 1536 0 L 778 0 Z" stroke-width="0"></path> </svg>');
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.div-wave2 {
+	display: block;
+	position: relative;
+
+	width: 100vw;
+	top: 30px;
+	height: 117px;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1536 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 12 L 779 110 L 779 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 778 110 L 1536 9 L 1536 0 L 778 0 Z" stroke-width="0"></path> </svg>');
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+}
+
+@media (max-width: 1535px) {
+	.div-wave1,
+	.div-wave2 {
+		background-size: contain;
 	}
 }

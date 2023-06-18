@@ -2,6 +2,7 @@ import React from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
 import TaglineImage from '../assets/servicesImage.png';
 import { Link } from 'react-router-dom';
+import { BiCheckCircle } from 'react-icons/bi';
 
 const Homepage = () => {
 	return (
@@ -16,15 +17,12 @@ const Homepage = () => {
 			<div className='container landing-container'>
 				<div className='row align-items-center' id='content'>
 					<div className='col-lg-6'>
-						<h1
-							className='display-4 font-weight-bold text-center text-lg-left'
-							style={{ overflow: 'hidden' }}
-						>
+						<h1 className='display-4 font-weight-bold text-center text-lg-left'>
 							Prime File Advisors
 						</h1>
 						<h2
 							className='h1 font-weight-bold text-dark text-center text-lg-left'
-							style={{ overflow: 'hidden' }}
+							style={{ lineHeight: '1.3' }}
 						>
 							a one-stop solution for immigration agencies.
 						</h2>
@@ -35,74 +33,65 @@ const Homepage = () => {
 						</Link>
 					</div>
 					<div className='right-content col-lg-6 mt-5 mt-lg-0'>
-						<h3
-							className='font-weight-bold text-center text-lg-left'
-							style={{ overflow: 'hidden' }}
-						>
+						<h3 className='font-weight-bold text-center text-lg-left'>
 							Special Features
 						</h3>
-						<h4
-							className='font-weight-light text-center text-lg-left'
-							style={{ overflow: 'hidden' }}
-						>
+						<h4 className='font-weight-light text-center text-lg-left'>
 							Check out what we can do for you
 						</h4>
-						<div className='features-container dimmed rounded text-dark mt-4 d-flex flex-column align-items-center align-items-lg-start'>
-							<div className='feature d-flex align-items-center'>
-								<i className='fas h4 fa-check-circle mx-3 text-success'></i>
-								<div className='my-3'>
-									<h6
-										className='font-weight-bold mb-0'
-										style={{ overflow: 'hidden' }}
-									>
-										A highly competitive price per file.
-									</h6>
-								</div>
+						<div className='features-container  rounded  mt-4 d-flex flex-column align-items-center align-items-lg-start featuresContainer'>
+							<div className='feature d-flex align-items-center featureContainer'>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<h6 className='font-weight-bold mb-0'>
+									A highly competitive price per file.
+								</h6>
 							</div>
-							<div className='feature d-flex align-items-center'>
-								<i className='fas h4 fa-check-circle mx-3 text-success'></i>
-								<div className='my-3'>
-									<h6
-										className='font-weight-bold mb-0'
-										style={{ overflow: 'hidden' }}
-									>
-										A reliable and cost-effective partner.
-									</h6>
-								</div>
+							<div className='feature d-flex align-items-center featureContainer'>
+								<i>
+									<BiCheckCircle />
+								</i>
+
+								<h6 className='font-weight-bold mb-0'>
+									A reliable and cost-effective partner.
+								</h6>
 							</div>
-							<div className='feature d-flex align-items-center'>
-								<i className='fas h4 fa-check-circle mx-3 text-success'></i>
-								<div className='my-3'>
-									<h6
-										className='font-weight-bold mb-0'
-										style={{ overflow: 'hidden' }}
-									>
-										speed and affordability Guaranteed
-									</h6>
-								</div>
+							<div className='feature d-flex align-items-center featureContainer'>
+								<i>
+									<BiCheckCircle />
+								</i>
+
+								<h6 className='font-weight-bold mb-0'>
+									speed and affordability Guaranteed
+								</h6>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 			<div className='tagline-container'>
-				<div className='tagline-text'>
-					<h1>Your Goal Our Ambition</h1>
-					<p>
-						PrimeFile Advisors offers comprehensive business support services,
-						streamlining the acquisition of all necessary financial documents
-						within a remarkably short timeframe of 12 hours. We have established
-						partnerships with experienced CAs and architects, enabling us to
-						provide a one-stop solution for immigration agencies. By
-						consolidating these services under one umbrella, we ensure prompt
-						delivery and eliminate the need for agencies to engage multiple
-						professionals.
-					</p>
+				<div className='div-wave1'></div>
+				<div className='tagline-content'>
+					<div className='tagline-text'>
+						<h1>Your Goal Our Ambition</h1>
+						<p>
+							PrimeFile Advisors offers comprehensive business support services,
+							streamlining the acquisition of all necessary financial documents
+							within a remarkably short timeframe of 12 hours. We have
+							established partnerships with experienced CAs and architects,
+							enabling us to provide a one-stop solution for immigration
+							agencies. By consolidating these services under one umbrella, we
+							ensure prompt delivery and eliminate the need for agencies to
+							engage multiple professionals.
+						</p>
+					</div>
+
+					<div className='tagline-image'>
+						<img src={TaglineImage} alt='' />
+					</div>
 				</div>
-				<div className='tagline-image'>
-					<img src={TaglineImage} alt='' />
-				</div>
+				<div className='div-wave2'></div>
 			</div>
 			<div className=''>
 				<img src='' alt='' />
