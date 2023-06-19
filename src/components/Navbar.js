@@ -59,9 +59,11 @@ const Navbar = () => {
 				</div>
 
 				<div className='phone-call'>
-					<i className='call_icon' title='Call now'>
-						<FiPhoneCall />
-					</i>
+					<a href='tel:+919560252346'>
+						<i className='call_icon' title='Call now'>
+							<FiPhoneCall />
+						</i>
+					</a>
 					<span className='call_text'>Call Now</span>
 				</div>
 			</nav>

@@ -731,7 +731,7 @@ textarea:focus {
 .bg-fancy {
 	/* background by SVGBackgrounds.com */
 	background-color: #2e38f2;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='71' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='52' height='52' fill-opacity='0.6' fill='%232650ff'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='71' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='52' height='52' fill-opacity='0.6' fill='%01b8b0'/%3E%3C/svg%3E");
 	background-attachment: fixed;
 }
 .no-gutters {
