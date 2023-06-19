@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
 import TaglineImage from '../assets/servicesImage.png';
 import HomeImage from '../assets/homeimage.jpg';
@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
 
 const Homepage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='homepage-container text-white' id='landing'>
 			<video

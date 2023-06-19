@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FAQImage from '../assets/faqImage.svg';
 import Accordion from '../components/Accordion';
 
@@ -41,6 +41,9 @@ const items = [
 	},
 ];
 const FAQ = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='faq-container'>
 			<div className='faq-landing'>

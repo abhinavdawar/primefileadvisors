@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { IoMdCall } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 import { TiLocation } from 'react-icons/ti';
 
 const Contact = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='contact-container'>
 			<div className='contact-header'>

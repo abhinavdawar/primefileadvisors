@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutImage from '../assets/aboutImage.png';
 import Typewriter from 'typewriter-effect';
 import Wave from 'react-wavify';
 import AboutUs from '../assets/AboutUs.svg';
 
 const About = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='about-container'>
 			<div className='about-landing'>
