@@ -3,6 +3,14 @@ import { Zoom, Bounce } from 'react-awesome-reveal';
 import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+const linksArray = [
+	{ name: 'Home', to: '' },
+	{ name: 'About', to: 'about' },
+	{ name: 'Our Services', to: 'services' },
+	{ name: 'FAQ', to: 'faq' },
+	{ name: 'Contact Us', to: 'contact' },
+];
+
 const Navbar = () => {
 	// to change burger classes
 	const [burger_class, setBurgerClass] = useState('burger-bar unclicked');
@@ -37,21 +45,16 @@ const Navbar = () => {
 				</div>
 				<div className={menu_class}>
 					<ul className='links'>
-						<Link to='/' style={{ textDecoration: 'none' }}>
-							<li className='link'>Home</li>
-						</Link>
-						<Link to='/about' style={{ textDecoration: 'none' }}>
-							<li className='link'>About</li>
-						</Link>
-						<Link to='/services' style={{ textDecoration: 'none' }}>
-							<li className='link'>Our Services</li>
-						</Link>
-						<Link to='/faq' style={{ textDecoration: 'none' }}>
-							<li className='link'>FAQ</li>
-						</Link>
-						<Link to='/contact' style={{ textDecoration: 'none' }}>
-							<li className='link'>Contact Us</li>
-						</Link>
+						{linksArray.map((link) => (
+							<Link
+								to={`/${link.to}`}
+								style={{ textDecoration: 'none' }}
+								onClick={updateMenu}
+								key={link.name}
+							>
+								<li className='link'>{link.name}</li>
+							</Link>
+						))}
 					</ul>
 				</div>
 
