@@ -194,7 +194,9 @@ nav {
 }
 
 /* ---------------- hompage starts ----------------*/
-
+.homepage-container {
+	margin-top: 70px;
+}
 .dimmed {
 	background-color: rgba(255, 255, 255, 0.8);
 }
@@ -322,6 +324,7 @@ nav {
 	background-image: url('./assets/contactBackground.png');
 	background-attachment: fixed;
 	background-position: cover;
+	margin-top: 70px;
 }
 .contact-container .contact-header {
 	max-width: 60vw;
@@ -446,15 +449,6 @@ textarea:focus {
 	color: var(--white-color);
 	border-radius: 5px;
 }
-/* .back-color {
-	height: 50vh;
-	width: 100vw;
-	background-color: var(--white-color);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 1;
-} */
 
 .about-container {
 	height: 100%;
@@ -462,6 +456,7 @@ textarea:focus {
 	background-image: url('./assets/aboutbackground.png');
 	background-attachment: fixed;
 	background-position: cover;
+	margin-top: 70px;
 }
 .about-container .about-landing {
 	height: 100%;
@@ -636,6 +631,7 @@ textarea:focus {
 	background-attachment: fixed;
 	background-size: center;
 	background-position: cover;
+	margin-top: 70px;
 }
 .faq-container .faq-landing {
 	height: 100vh;
@@ -680,6 +676,9 @@ textarea:focus {
 .faq-text p {
 	margin: 10px 0;
 	letter-spacing: 1px;
+}
+.services-container {
+	margin-top: 70px;
 }
 
 .services-container .services-landing {
