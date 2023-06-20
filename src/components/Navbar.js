@@ -32,7 +32,11 @@ const Navbar = () => {
 	return (
 		<div>
 			<nav>
-				<div className='logo_container'>
+				<Link
+					to='/'
+					className='logo_container'
+					style={{ textDecoration: 'none' }}
+				>
 					<Zoom direction='in' delay='20'>
 						<h3>PRIME</h3>
 					</Zoom>
@@ -42,7 +46,7 @@ const Navbar = () => {
 							<p>File Advisors</p>
 						</Bounce>
 					</div>
-				</div>
+				</Link>
 				<div className={menu_class}>
 					<ul className='links'>
 						{linksArray.map((link) => (
@@ -58,14 +62,17 @@ const Navbar = () => {
 					</ul>
 				</div>
 
-				<div className='phone-call'>
-					<a href='tel:+919560252346'>
-						<i className='call_icon' title='Call now'>
-							<FiPhoneCall />
-						</i>
-					</a>
+				<a
+					href='tel:+919560252346'
+					className='phone-call'
+					style={{ textDecoration: 'none' }}
+				>
+					<i className='call_icon' title='Call now'>
+						<FiPhoneCall />
+					</i>
+
 					<span className='call_text'>Call Now</span>
-				</div>
+				</a>
 			</nav>
 			<div className='burger-menu' onClick={updateMenu}>
 				<div className={burger_class}></div>
