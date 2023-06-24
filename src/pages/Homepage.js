@@ -4,7 +4,6 @@ import TaglineImage from '../assets/servicesImage.png';
 import HomeImage from '../assets/pngwing.com.png';
 import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
-import HomePageCarousel from '../components/HomePageCarousel';
 
 const Homepage = () => {
 	useEffect(() => {

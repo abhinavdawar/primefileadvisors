@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Zoom, Bounce } from 'react-awesome-reveal';
 import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.jpg';
