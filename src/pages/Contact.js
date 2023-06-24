@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
-
 import { IoMdCall } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 import { TiLocation } from 'react-icons/ti';
+import CertificateForm from '../components/CertificateForm';
+const service_id = 'service_bw9y36m';
+const template_id = 'template_f6ufosr';
+const user_id = 'SYmjrAocqWVoD6DDF';
 
 const Contact = () => {
 	useEffect(() => {
@@ -31,40 +34,14 @@ const Contact = () => {
 						Gurugram, India
 					</span>
 				</div>
-				<form id='form'>
-					<div className='contact-details'>
-						<div className='input-container'>
-							<label>Your Name</label>
-							<input type='text' name='name' placeholder='enter name here' />
-						</div>
-						<div className='input-container email-input'>
-							<label>Your Email</label>
-							<input type='email' name='email' placeholder='enter email here' />
-						</div>
-					</div>
-					<div className='input-container subject-input'>
-						<label>Your Subject</label>
-						<input
-							type='text'
-							name='subject'
-							placeholder='enter subject here'
-						/>
-					</div>
-					<div className='input-container textarea-input'>
-						<label>Message</label>
-						<textarea
-							name='textarea'
-							id=''
-							cols='49'
-							rows='10'
-							fixed='true'
-							placeholder='Write your message here'
-						></textarea>
-					</div>
-					<button className='submit-button'>Send Message</button>
-				</form>
+				<div className='contact-form'>
+					<CertificateForm
+						service_id={service_id}
+						template_id={template_id}
+						user_id={user_id}
+					/>
+				</div>
 			</div>
-			<div className='back-color'></div>
 		</div>
 	);
 };

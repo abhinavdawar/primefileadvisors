@@ -4,6 +4,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import OurServices from './pages/OurServices';
+import NetWorthCertificate from './pages/NetWorthCertificate';
+import PropertyValuationCertficate from './pages/PropertyValuationCertficate';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,6 +22,16 @@ function App() {
 					<Route exact path='/contact' element={<Contact />}></Route>
 					<Route exact path='/faq' element={<FAQ />}></Route>
 					<Route exact path='/services' element={<OurServices />}></Route>
+					<Route
+						exact
+						path='/networthcertificate'
+						element={<NetWorthCertificate />}
+					></Route>
+					<Route
+						exact
+						path='/propertyvaluationcertificate'
+						element={<PropertyValuationCertficate />}
+					></Route>
 				</Routes>
 				<Footer />
 			</div>

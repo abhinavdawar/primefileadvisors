@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 import { Zoom, Bounce } from 'react-awesome-reveal';
 import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/logo.jpg';
 
 const linksArray = [
 	{ name: 'Home', to: '' },
 	{ name: 'About', to: 'about' },
 	{ name: 'Our Services', to: 'services' },
 	{ name: 'FAQ', to: 'faq' },
+	{ name: 'Net Worth Certificate', to: 'networthcertificate' },
+	{
+		name: 'Property Valuation Certificate',
+		to: 'propertyvaluationcertificate',
+	},
 	{ name: 'Contact Us', to: 'contact' },
 ];
 
@@ -37,7 +43,7 @@ const Navbar = () => {
 					className='logo_container'
 					style={{ textDecoration: 'none' }}
 				>
-					<Zoom direction='in' delay='20'>
+					{/* <Zoom direction='in' delay='20'>
 						<h3>PRIME</h3>
 					</Zoom>
 					<div className='logo_bottom'>
@@ -45,7 +51,8 @@ const Navbar = () => {
 						<Bounce delay='60'>
 							<p>File Advisors</p>
 						</Bounce>
-					</div>
+					</div> */}
+					<img src={Logo} alt='' style={{ height: '60px', width: '60px' }} />
 				</Link>
 				<div className={menu_class}>
 					<ul className='links'>

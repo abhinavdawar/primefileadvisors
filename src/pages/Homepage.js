@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
 import TaglineImage from '../assets/servicesImage.png';
-import HomeImage from '../assets/homeimage.jpg';
+import HomeImage from '../assets/pngwing.com.png';
 import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
+import HomePageCarousel from '../components/HomePageCarousel';
 
 const Homepage = () => {
 	useEffect(() => {
@@ -18,7 +19,7 @@ const Homepage = () => {
 				loop
 				className='position-fixed'
 			/>
-			<div className='container landing-container'>
+			<div className='landing-container'>
 				<div className='row align-items-center' id='content'>
 					<div className='col-lg-6'>
 						<h1 className='display-4 font-weight-bold text-center text-lg-left'>
@@ -73,9 +74,10 @@ const Homepage = () => {
 						</div>
 					</div>
 				</div>
+				{/* <HomePageCarousel style={{ height: '100%' }} /> */}
 			</div>
 			<div className='tagline-container'>
-				<div className='div-wave1'></div>
+				{/* <div className='div-wave1'></div> */}
 				<div className='tagline-content'>
 					<div className='tagline-text'>
 						<h1>Your Goal Our Ambition</h1>
