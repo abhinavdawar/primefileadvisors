@@ -19,64 +19,41 @@ const Homepage = () => {
 				className='position-fixed'
 			/>
 			<div className='landing-container'>
-				<div className='row align-items-center' id='content'>
-					<div className='col-lg-6'>
-						<h1 className='display-4 font-weight-bold text-center text-lg-left'>
-							Prime File Advisors
-						</h1>
-						<h2
-							className='h1 font-weight-bold text-dark text-center text-lg-left'
-							style={{ lineHeight: '1.3' }}
-						>
-							a one-stop solution for immigration agencies.
-						</h2>
-						<Link to='/about' style={{ textDecoration: 'none' }}>
-							<button className='btn btn-lg rounded-pill my-4 d-block mx-auto ml-lg-0'>
-								About
-							</button>
-						</Link>
-					</div>
-					<div className='right-content col-lg-6 mt-5 mt-lg-0'>
-						<h3 className='font-weight-bold text-center text-lg-left'>
-							Special Features
-						</h3>
-						<h4 className='font-weight-light text-center text-lg-left'>
-							Check out what we can do for you
-						</h4>
-						<div className='features-container  rounded  mt-4 d-flex flex-column align-items-center align-items-lg-start featuresContainer'>
-							<div className='feature d-flex align-items-center featureContainer'>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<h6 className='font-weight-bold mb-0'>
-									A highly competitive price per file.
-								</h6>
-							</div>
-							<div className='feature d-flex align-items-center featureContainer'>
-								<i>
-									<BiCheckCircle />
-								</i>
-
-								<h6 className='font-weight-bold mb-0'>
-									A reliable and cost-effective partner.
-								</h6>
-							</div>
-							<div className='feature d-flex align-items-center featureContainer'>
-								<i>
-									<BiCheckCircle />
-								</i>
-
-								<h6 className='font-weight-bold mb-0'>
-									speed and affordability Guaranteed
-								</h6>
-							</div>
+				<div className='content'>
+					<h1 className=''>Prime File Advisors</h1>
+					<h2 className=''>A one-stop solution for immigration agencies.</h2>
+					<h6>Check out what we can do for you</h6>
+					<div className='features-container'>
+						<div className='feature'>
+							<i>
+								<BiCheckCircle />
+							</i>
+							<p className=''>A highly competitive price per file.</p>
+						</div>
+						<div className='feature'>
+							<i>
+								<BiCheckCircle />
+							</i>
+							<p className=''>A reliable and cost-effective partner.</p>
+						</div>
+						<div className='feature'>
+							<i>
+								<BiCheckCircle />
+							</i>
+							<p className=''>speed and affordability Guaranteed</p>
 						</div>
 					</div>
+					<div className='btn-conatiner'>
+						<Link to='/net-worth-certificate' style={{ textDecoration: 'none' }}>
+							<button className=''>Net Worth Certificate</button>
+						</Link>
+						<Link to='/property-valuation-certificate' style={{ textDecoration: 'none' }}>
+							<button className=''>Property Valuation Certificate</button>
+						</Link>
+					</div>
 				</div>
-				{/* <HomePageCarousel style={{ height: '100%' }} /> */}
 			</div>
 			<div className='tagline-container'>
-				{/* <div className='div-wave1'></div> */}
 				<div className='tagline-content'>
 					<div className='tagline-text'>
 						<h1>Your Goal Our Ambition</h1>
@@ -96,7 +73,6 @@ const Homepage = () => {
 						<img src={TaglineImage} alt='' />
 					</div>
 				</div>
-				<div className='div-wave2'></div>
 			</div>
 			<div className='homepage-section'>
 				<div className='homepage-section-content'>
@@ -113,7 +89,6 @@ const Homepage = () => {
 						<img src={HomeImage} alt='' />
 					</div>
 				</div>
-				<div className='div-wave3'></div>
 			</div>
 		</div>
 	);

@@ -8,10 +8,10 @@ const linksArray = [
 	{ name: 'About', to: 'about' },
 	{ name: 'Our Services', to: 'services' },
 	{ name: 'FAQ', to: 'faq' },
-	{ name: 'Net Worth Certificate', to: 'networthcertificate' },
+	{ name: 'Net Worth Certificate', to: 'net-worth-certificate' },
 	{
 		name: 'Property Valuation Certificate',
-		to: 'propertyvaluationcertificate',
+		to: 'property-valuation-certificate',
 	},
 	{ name: 'Contact Us', to: 'contact' },
 ];
