@@ -34,7 +34,7 @@ const CertificateForm = ({ service_id, template_id, user_id }) => {
 					name='user_message'
 					id=''
 					cols='49'
-					rows='10'
+					rows='7'
 					fixed='true'
 					placeholder='Write your message here'
 				></textarea>

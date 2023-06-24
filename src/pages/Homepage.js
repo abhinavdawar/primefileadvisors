@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import BackgroundVideo from '../assets/BackgroundVideo.mp4';
-import TaglineImage from '../assets/servicesImage.png';
-import HomeImage from '../assets/pngwing.com.png';
+import TaglineImage from '../assets/pngD.png';
+import HomeImage from '../assets/pngE.png';
 import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
+import { MdPriceCheck, MdOutlineSpeed } from 'react-icons/md';
 
 const Homepage = () => {
 	useEffect(() => {
@@ -25,29 +26,35 @@ const Homepage = () => {
 					<h6>Check out what we can do for you</h6>
 					<div className='features-container'>
 						<div className='feature'>
-							<i>
-								<BiCheckCircle />
+							<i style={{ fontSize: '25px' }}>
+								<MdPriceCheck />
 							</i>
 							<p className=''>A highly competitive price per file.</p>
 						</div>
 						<div className='feature'>
-							<i>
+							<i style={{ fontSize: '25px' }}>
 								<BiCheckCircle />
 							</i>
 							<p className=''>A reliable and cost-effective partner.</p>
 						</div>
 						<div className='feature'>
-							<i>
-								<BiCheckCircle />
+							<i style={{ fontSize: '25px' }}>
+								<MdOutlineSpeed />
 							</i>
 							<p className=''>speed and affordability Guaranteed</p>
 						</div>
 					</div>
 					<div className='btn-conatiner'>
-						<Link to='/net-worth-certificate' style={{ textDecoration: 'none' }}>
+						<Link
+							to='/net-worth-certificate'
+							style={{ textDecoration: 'none' }}
+						>
 							<button className=''>Net Worth Certificate</button>
 						</Link>
-						<Link to='/property-valuation-certificate' style={{ textDecoration: 'none' }}>
+						<Link
+							to='/property-valuation-certificate'
+							style={{ textDecoration: 'none' }}
+						>
 							<button className=''>Property Valuation Certificate</button>
 						</Link>
 					</div>

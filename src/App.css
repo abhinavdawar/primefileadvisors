@@ -372,7 +372,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 39.5px 20px;
-	background-image: url('./assets/contactBackground.png');
+	background-image: url('./assets/back5.png');
 	background-attachment: fixed;
 	background-position: cover;
 	margin-top: 70px;
@@ -415,7 +415,12 @@ nav {
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 30px;
-	background-color: var(--secondary-color);
+	background: rgb(127, 127, 213);
+	background: linear-gradient(
+		180deg,
+		rgba(127, 127, 213, 1) 16%,
+		rgba(145, 234, 228, 1) 90%
+	);
 	border-radius: 20px;
 	color: var(--white-color);
 }
@@ -465,8 +470,8 @@ form .input-container {
 }
 
 label {
-	font-size: 12px;
-	margin-bottom: 5px;
+	font-size: 14px;
+	margin-bottom: 6px;
 	font-weight: 700;
 }
 
@@ -477,10 +482,11 @@ input {
 input::placeholder {
 	transition: all 0.3s ease-in-out;
 	font-size: 12px;
+	letter-spacing: 1px;
 }
 input:focus {
 	outline: none;
-	border-bottom: 2px solid var(--secondary-color);
+	border-bottom: 2px solid rgb(127, 127, 213);
 	transition: all 0.3s ease-in-out;
 }
 input:focus::placeholder {
@@ -491,7 +497,7 @@ input:focus::placeholder {
 textarea {
 	resize: none;
 	border: none;
-	border-bottom: 2px solid var(--secondary-color);
+	border-bottom: 2px solid rgb(127, 127, 213);
 }
 textarea:focus {
 	outline: none;
@@ -500,7 +506,7 @@ textarea:focus {
 	width: 100%;
 }
 .textarea-input label {
-	color: var(--secondary-color);
+	color: rgb(127, 127, 213);
 	font-size: 12px;
 	font-weight: 700;
 }
@@ -509,16 +515,16 @@ textarea:focus {
 }
 .submit-button {
 	border: none;
-	background-color: var(--secondary-color);
 	padding: 10px 20px;
 	color: var(--white-color);
 	border-radius: 5px;
+	background: rgb(127, 127, 213);
 }
 
 .about-container {
 	height: 100%;
 	width: 100%;
-	background-image: url('./assets/aboutbackground.png');
+	background-image: url('./assets/back8.png');
 	background-attachment: fixed;
 	background-position: cover;
 	margin-top: 70px;
@@ -557,7 +563,7 @@ textarea:focus {
 	width: 400px;
 }
 .about-info {
-	padding: 20px;
+	padding: 25px 20px 20px 20px;
 	text-align: center;
 	width: 100%;
 	display: flex;
@@ -565,7 +571,7 @@ textarea:focus {
 	justify-content: center;
 	background-color: #fff;
 	color: #000;
-	margin-top: -5px;
+	margin-top: -8px;
 }
 .about-info .info-image,
 .about-info .info-text {
@@ -691,7 +697,7 @@ textarea:focus {
 .faq-container {
 	height: 100%;
 	width: 100%;
-	background-image: url('./assets/faqBackground.png');
+	background-image: url('./assets/back6.png');
 	background-attachment: fixed;
 	background-size: center;
 	background-position: cover;
@@ -749,7 +755,6 @@ textarea:focus {
 	height: 100vh;
 	width: 100vw;
 	background-image: url('./assets/servicesBackground.jpg');
-	background-attachment: fixed;
 	background-position: cover;
 	background-size: center;
 }
@@ -827,6 +832,7 @@ textarea:focus {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+	color: #000;
 }
 .accordion h1 {
 	margin-bottom: 20px;
@@ -841,29 +847,29 @@ textarea:focus {
 	justify-content: center;
 	margin: 10px;
 	text-align: center;
-	color: var(--white-color);
+	color: #000;
 	border: none;
 	background-color: transparent;
 }
 .accordion-title {
 	width: 80%;
-	background-color: rgb(64, 74, 83);
+	background: rgb(127, 127, 213);
 	background: linear-gradient(
 		90deg,
-		rgba(64, 74, 83, 1) 0%,
-		rgba(1, 184, 176, 1) 100%
+		rgba(127, 127, 213, 1) 16%,
+		rgba(145, 234, 228, 1) 90%
 	);
 	padding: 15px;
 	border: none;
-	color: var(--white-color);
+	color: #000;
 }
 .accordion-content {
 	width: 80%;
-	background-color: rgb(64, 74, 83);
+	background: rgb(127, 127, 213);
 	background: linear-gradient(
 		90deg,
-		rgba(64, 74, 83, 1) 0%,
-		rgba(1, 184, 176, 1) 100%
+		rgba(127, 127, 213, 1) 16%,
+		rgba(145, 234, 228, 1) 90%
 	);
 	padding: 15px;
 	border-top: 1px solid #d3d3d3;
@@ -928,6 +934,13 @@ textarea:focus {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background: rgb(127, 127, 213);
+	background: linear-gradient(
+		90deg,
+		rgba(127, 127, 213, 1) 16%,
+		rgba(145, 234, 228, 1) 90%
+	);
+	color: #fff;
 }
 .networth-container1 p,
 .networth-container2 p {
@@ -941,6 +954,7 @@ textarea:focus {
 	justify-content: center;
 	padding: 20px;
 	width: 100%;
+	color: #000;
 }
 .networth-left,
 .networth-right {
@@ -985,6 +999,7 @@ textarea:focus {
 	text-align: center;
 	padding: 40px;
 }
+
 .property-container1 p {
 	margin-top: 10px;
 	letter-spacing: 1px;
@@ -1008,6 +1023,8 @@ textarea:focus {
 	padding: 20px;
 	width: 400px;
 	font-size: 15px;
+	border-left: solid 5px #004cff;
+	border-bottom: solid 5px #004cff;
 }
 .prop-cont2-left div,
 .prop-cont2-right div,

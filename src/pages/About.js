@@ -69,7 +69,7 @@ const About = () => {
 			>
 				<div className='container'>
 					<h2 className='h1 mt-0'>We Love to Work</h2>
-					<p className='lead text-uppercase text-muted'>
+					<p className='lead text-uppercase'>
 						Let us support you in every step.
 					</p>
 					<hr className='divider-sm my-3' />

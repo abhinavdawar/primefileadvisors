@@ -1,6 +1,9 @@
 import React from 'react';
 import ImageLanding from '../assets/png9.png';
 import { BiCheckCircle } from 'react-icons/bi';
+import { BsFileEarmarkCheckFill } from 'react-icons/bs';
+import { FaHandshake } from 'react-icons/fa';
+import { HiDocumentReport } from 'react-icons/hi';
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,
@@ -148,7 +151,7 @@ const PropertyValuationCertficate = () => {
 						contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
 						date='Step 1'
 						iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-						icon={<BiCheckCircle />}
+						icon={<FaHandshake />}
 					>
 						<h3 className='vertical-timeline-element-subtitle'>
 							Send us documents for Property Valuation
@@ -167,7 +170,7 @@ const PropertyValuationCertficate = () => {
 							background: 'rgb(233, 30, 99)',
 							color: '#fff',
 						}}
-						icon={<BiCheckCircle />}
+						icon={<BsFileEarmarkCheckFill />}
 					>
 						<h3 className='vertical-timeline-element-title'>
 							Document Checking and Preparation of Report
@@ -185,8 +188,8 @@ const PropertyValuationCertficate = () => {
 						className='vertical-timeline-element--education'
 						contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 						date='step 3'
-						iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-						icon={<BiCheckCircle />}
+						iconStyle={{ background: 'rgb(30, 233, 30)', color: '#fff' }}
+						icon={<HiDocumentReport />}
 					>
 						<h3 className='vertical-timeline-element-title'>
 							Get Property Valuation Report in One Hour
