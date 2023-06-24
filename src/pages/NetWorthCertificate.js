@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageLanding from '../assets/png5.png';
+import ImageLanding from '../assets/pngA.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageLanding from '../assets/png2.png';
+import ImageLanding from '../assets/png9.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import {
 	VerticalTimeline,
