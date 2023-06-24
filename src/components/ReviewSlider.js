@@ -19,7 +19,7 @@ const ReviewSlider = () => {
 	var settings = {
 		dots: true,
 		arrows: true,
-		infinite: true,
+		autoplay: true,
 		slidesToShow: slideShow,
 		slidesToScroll: 1,
 	};

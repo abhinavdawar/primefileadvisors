@@ -24,12 +24,12 @@ function App() {
 					<Route exact path='/services' element={<OurServices />}></Route>
 					<Route
 						exact
-						path='/networthcertificate'
+						path='/net-worth-certificate'
 						element={<NetWorthCertificate />}
 					></Route>
 					<Route
 						exact
-						path='/propertyvaluationcertificate'
+						path='/property-valuation-certificate'
 						element={<PropertyValuationCertficate />}
 					></Route>
 				</Routes>

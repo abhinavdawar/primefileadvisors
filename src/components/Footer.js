@@ -12,7 +12,6 @@ const Footer = () => {
 	return (
 		<div className='footer-container'>
 			<p className='heading'>Connect with us</p>
-			<hr />
 			<div className='social-icons'>
 				<div className='social-link'>
 					<Link>
