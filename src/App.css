@@ -32,11 +32,11 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
-	line-height: 1;
+	/* line-height: 1; */
 	overflow: hidden;
 }
 p {
-	line-height: 1.2;
+	/* line-height: 1.2; */
 }
 /* ---------------- Navbar and burger menu ------------------ */
 nav {
@@ -375,7 +375,8 @@ nav {
 	border-radius: 20px;
 	color: var(--white-color);
 }
-.networth-form {
+.networth-form,
+.property-form {
 	width: 100%;
 	text-align: center;
 	display: flex;
@@ -383,6 +384,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	padding: 20px 0;
+	margin-top: 30px;
 }
 
 form {
@@ -824,11 +826,13 @@ textarea:focus {
 	transition: all 0.5s ease-in-out;
 }
 
-.networth-container {
+.networth-container,
+.property-container {
 	width: 100vw;
 	margin-top: 70px;
 }
-.networth-landing {
+.networth-landing,
+.property-landing {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -836,18 +840,22 @@ textarea:focus {
 	padding: 20px;
 	width: 100%;
 }
-.networth-landing .networth-landing-text {
+.networth-landing .networth-landing-text,
+.property-landing .property-landing-text {
 	width: 50%;
 	height: 100%;
 }
-.networth-landing-text p {
+.networth-landing-text p,
+.property-landing-text p {
 	margin-top: 10px;
 	letter-spacing: 1px;
 }
-.networth-landing .networth-landing-img {
+.networth-landing .networth-landing-img,
+.property-landing .property-landing-img {
 	width: 45%;
 }
-.networth-landing-img img {
+.networth-landing-img img,
+.property-landing-img img {
 	height: 100%;
 	width: 100%;
 }
@@ -898,6 +906,68 @@ textarea:focus {
 .networth-left {
 	margin-right: 20px;
 }
+.property-container1,
+.property-container2,
+.property-container3 {
+	width: 100vw;
+	text-align: center;
+	padding: 40px;
+}
+.property-container1 p {
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+.prop-cont2-content,
+.prop-cont3-content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+.prop-cont2-left,
+.prop-cont2-right,
+.prop-cont3-left,
+.prop-cont3-right {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	border-left: 5px solid #0042f6;
+	width: 400px;
+	font-size: 15px;
+}
+.prop-cont2-left div,
+.prop-cont2-right div,
+.prop-cont3-left div,
+.prop-cont3-right div {
+	margin-bottom: 5px;
+}
+.prop-cont2-left div span,
+.prop-cont2-right div span,
+.prop-cont3-left div span,
+.prop-cont3-right div span {
+	margin-left: 4px;
+}
+.prop-cont3-content {
+	background-color: transparent;
+}
+.timeline-container {
+	background: rgb(127, 127, 213);
+	background: linear-gradient(
+		90deg,
+		rgba(127, 127, 213, 1) 16%,
+		rgba(145, 234, 228, 1) 90%
+	);
+	width: 100vw;
+}
+.timeline-container .timeline-heading {
+	min-width: 80%;
+	text-align: center;
+	margin: 30px;
+}
+
 .footer-container {
 	display: flex;
 	flex-direction: column;
@@ -1213,7 +1283,8 @@ textarea:focus {
 		margin: 10px 0;
 		width: 100%;
 	}
-	.contact-form {
+	.contact-form,
+	.property-form {
 		width: 90%;
 		margin: 30px 0;
 	}
@@ -1290,21 +1361,27 @@ textarea:focus {
 		margin: 0 20px;
 	}
 
-	.networth-landing {
+	.networth-landing,
+	.property-landing {
 		flex-direction: column-reverse;
 	}
-	.networth-landing .networth-landing-text {
+	.networth-landing .networth-landing-text,
+	.property-landing .property-landing-text {
 		width: 100%;
 		height: 100%;
 	}
-	.networth-landing-text p {
+	.networth-landing-text p,
+	.property-landing-text p {
 		margin-top: 10px;
 		letter-spacing: 1px;
 	}
-	.networth-landing .networth-landing-img {
+	.networth-landing .networth-landing-img,
+	.property-landing .property-landing-img {
 		width: 100%;
+		margin-bottom: 30px;
 	}
-	.networth-landing-img img {
+	.networth-landing-img img,
+	.property-landing-img img {
 		height: 80%;
 		width: 100%;
 	}
@@ -1334,6 +1411,27 @@ textarea:focus {
 	.networth-left {
 		margin-right: 0px;
 		margin-bottom: 10px;
+	}
+
+	.prop-cont2-content,
+	.prop-cont3-content {
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
+	}
+	.prop-cont2-left,
+	.prop-cont2-right,
+	.prop-cont3-left,
+	.prop-cont3-right {
+		padding: 10px;
+		width: 100%;
+	}
+	.prop-cont2-left,
+	.prop-cont3-left {
+		margin-bottom: 30px;
 	}
 }
 
