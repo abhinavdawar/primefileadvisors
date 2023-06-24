@@ -35,9 +35,7 @@ li {
 	/* line-height: 1; */
 	overflow: hidden;
 }
-p {
-	/* line-height: 1.2; */
-}
+
 /* ---------------- Navbar and burger menu ------------------ */
 nav {
 	position: fixed;
