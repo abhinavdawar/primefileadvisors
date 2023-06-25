@@ -48,7 +48,7 @@ const PropertyValuationCertficate = () => {
 				<h2>Property Valuation by Government Approved Valuer</h2>
 				<p>
 					Only Government Approved Valuers (Engineer) Can work as Property
-					Valuation Consultant in Ahmedabad, India. Property Means Tangible
+					Valuation Consultant in Chandigarh, India. Property Means Tangible
 					Assets Includes Apartment, Land, Flats, Buildings, Plot, Office,
 					Residential or Commercial Spaces, Bungalows, factory building etc.
 					Valuation are to be conducted basis on fair market value as per
