@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Mansalva&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 :root {
 	--primary-color: #cff9f7;
 	--secondary-color: #01b8b0;
@@ -15,6 +17,7 @@ html {
 	margin: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -218,13 +221,7 @@ nav {
 .btn {
 	padding: 0.2em 1.4em !important;
 }
-#landing {
-	/* background-image: linear-gradient(
-		to right,
-		rgba(184, 184, 184, 0.26),
-		rgba(184, 184, 184, 0.44)
-	); */
-}
+
 .landing-container {
 	width: 100vw;
 	height: 100vh;
@@ -253,6 +250,16 @@ nav {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+.content h1 {
+	color: rgba(127, 127, 213, 1);
+	font-size: 50px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+.content h1 span {
+	color: #000;
+	font-family: 'Lobster', cursive;
 }
 .content h2,
 .content h6 {

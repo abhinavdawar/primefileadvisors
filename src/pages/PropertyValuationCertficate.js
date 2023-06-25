@@ -10,13 +10,19 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import CertificateForm from '../components/CertificateForm';
+import { motion } from 'framer-motion';
 const service_id = '';
 const template_id = '';
 const user_id = '';
 
 const PropertyValuationCertficate = () => {
 	return (
-		<div className='property-container'>
+		<motion.div
+			className='property-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='property-landing'>
 				<div className='property-landing-text'>
 					<h1>Property Valuation Consultant in Chandigarh</h1>
@@ -208,7 +214,7 @@ const PropertyValuationCertficate = () => {
 					user_id={user_id}
 				/>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

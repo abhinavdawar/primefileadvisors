@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import FAQImage from '../assets/faqImage.svg';
 import Accordion from '../components/Accordion';
+import { motion } from 'framer-motion';
 
 const items = [
 	{
@@ -45,7 +46,12 @@ const FAQ = () => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<div className='faq-container'>
+		<motion.div
+			className='faq-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='faq-landing'>
 				<div className='faq-text'>
 					<h1>Got a question?</h1>
@@ -65,7 +71,7 @@ const FAQ = () => {
 					<Accordion items={items} />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -16,16 +16,18 @@ const Homepage = () => {
 		<motion.div
 			className='homepage-container text-white'
 			id='landing'
-			initial={{ scaleY: 0 }}
-			animate={{ scaleY: 1 }}
-			exit={{ scaleY: 0 }}
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
 			<div className='video-container'>
 				<video src={BackgroundVideo} autoPlay muted loop className='' />
 			</div>
 			<div className='landing-container'>
 				<div className='content'>
-					<h1 className=''>Prime File Advisors</h1>
+					<h1 className=''>
+						Prime<span> File </span>Advisors
+					</h1>
 					<h2 className=''>A one-stop solution for immigration agencies.</h2>
 					<h6>Check out what we can do for you</h6>
 					<div className='features-container'>

@@ -3,13 +3,19 @@ import { IoMdCall } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 import { TiLocation } from 'react-icons/ti';
 import CertificateForm from '../components/CertificateForm';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<div className='contact-container'>
+		<motion.div
+			className='contact-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='contact-header'>
 				<h1>Get In Touch</h1>
 				<p>We are happy to assist you with our experties and services.</p>
@@ -35,7 +41,7 @@ const Contact = () => {
 					<CertificateForm />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

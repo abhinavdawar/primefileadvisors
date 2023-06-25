@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
+import {motion} from 'framer-motion';
 
 const OurServices = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<div className='services-container'>
+		<motion.div className='services-container' initial={{ width: '0' }}
+		animate={{ width: '100%' }}
+		exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}>
 			<div className='services-landing'>
 				<div className='services-text'>
 					<h1>Dedicated Team Business Model</h1>
@@ -144,7 +147,7 @@ const OurServices = () => {
 					</div>
 				</div>
 			</section>
-		</div>
+		</motion.div>
 	);
 };
 

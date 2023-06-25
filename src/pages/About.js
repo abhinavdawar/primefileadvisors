@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import Wave from 'react-wavify';
 import AboutUs from '../assets/AboutUs.svg';
 import ReviewSlider from '../components/ReviewSlider';
+import { motion } from 'framer-motion';
 
 const About = () => {
 	useEffect(() => {
@@ -11,7 +12,12 @@ const About = () => {
 	}, []);
 
 	return (
-		<div className='about-container'>
+		<motion.div
+			className='about-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='about-landing'>
 				<div className='about-text'>
 					<h1>Hi! We are</h1>
@@ -131,7 +137,7 @@ const About = () => {
 					<ReviewSlider />
 				</article>
 			</section>
-		</div>
+		</motion.div>
 	);
 };
 

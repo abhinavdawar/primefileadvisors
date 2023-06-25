@@ -2,13 +2,19 @@ import React from 'react';
 import ImageLanding from '../assets/pngA.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
+import { motion } from 'framer-motion';
 
 const service_id = 'service_bw9y36m';
 const template_id = 'template_f6ufosr';
 const user_id = 'SYmjrAocqWVoD6DDF';
 const NetWorthCertificate = () => {
 	return (
-		<div className='networth-container'>
+		<motion.div
+			className='networth-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='networth-landing'>
 				<div className='networth-landing-text'>
 					<h1>Net Worth Certificate for VISA</h1>
@@ -143,7 +149,7 @@ const NetWorthCertificate = () => {
 					user_id={user_id}
 				/>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
