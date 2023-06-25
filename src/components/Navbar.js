@@ -3,7 +3,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.jpg';
 import { useLocation } from 'react-router-dom';
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const linksArray = [
 	{ name: 'Home', to: '/' },
