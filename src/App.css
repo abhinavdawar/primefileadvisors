@@ -127,6 +127,15 @@ nav {
 	animation: showLinks 0.5s forwards 0.3s;
 	padding: 5px 15px;
 	border-radius: 10px;
+	font-weight: 700;
+}
+.links .link:hover {
+	background: rgba(127, 127, 213, 1);
+	background: linear-gradient(
+		90deg,
+		rgba(127, 127, 213, 1) 10%,
+		rgba(145, 234, 228, 1) 90%
+	);
 }
 
 .active {
@@ -136,7 +145,7 @@ nav {
 		rgba(127, 127, 213, 1) 10%,
 		rgba(145, 234, 228, 1) 90%
 	);
-	font-weight: 700 !important;
+
 	transition: 0.1s ease-in-out !important;
 }
 
