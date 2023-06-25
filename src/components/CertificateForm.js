@@ -8,19 +8,28 @@ const CertificateForm = () => {
 			method='POST'
 		>
 			<div className='input-container'>
-				<label>Your Name</label>
+				<Fade direction='right'>
+					<label>Your Name</label>
+				</Fade>
+
 				<input type='text' name='Name' placeholder='enter name here' />
 			</div>
 			<div className='input-container email-input'>
-				<label>Your Email</label>
+				<Fade direction='right'>
+					<label>Your Email</label>
+				</Fade>
 				<input type='email' name='Email' placeholder='enter email here' />
 			</div>
 			<div className='input-container'>
-				<label>Your Phone No.</label>
+				<Fade direction='right'>
+					<label>Your Phone No.</label>
+				</Fade>
 				<input type='text' name='Phone' placeholder='enter phone no. here' />
 			</div>
 			<div className='input-container textarea-input'>
-				<label>Message</label>
+				<Fade direction='right'>
+					<label>Message</label>
+				</Fade>
 				<textarea
 					name='Message'
 					id=''
