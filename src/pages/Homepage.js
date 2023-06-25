@@ -20,13 +20,9 @@ const Homepage = () => {
 			animate={{ scaleY: 1 }}
 			exit={{ scaleY: 0 }}
 		>
-			<video
-				src={BackgroundVideo}
-				autoPlay
-				muted
-				loop
-				className='position-fixed'
-			/>
+			<div className='video-container'>
+				<video src={BackgroundVideo} autoPlay muted loop className='' />
+			</div>
 			<div className='landing-container'>
 				<div className='content'>
 					<h1 className=''>Prime File Advisors</h1>
