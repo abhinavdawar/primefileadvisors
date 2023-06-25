@@ -301,6 +301,9 @@ nav {
 .feature p {
 	max-width: 90%;
 }
+.btn-conatiner {
+	display: flex;
+}
 .btn-conatiner button {
 	padding: 15px 20px;
 	background: rgb(127, 127, 213);

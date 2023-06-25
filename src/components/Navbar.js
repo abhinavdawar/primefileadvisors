@@ -3,6 +3,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.jpg';
 import { useLocation } from 'react-router-dom';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 const linksArray = [
 	{ name: 'Home', to: '/' },
@@ -53,7 +54,9 @@ const Navbar = () => {
 							<p>File Advisors</p>
 						</Bounce>
 					</div> */}
-					<img src={Logo} alt='' style={{ height: '60px', width: '60px' }} />
+					<Fade direction='left'>
+						<img src={Logo} alt='' style={{ height: '60px', width: '60px' }} />
+					</Fade>
 				</Link>
 				<div className={menu_class}>
 					<ul className='links'>

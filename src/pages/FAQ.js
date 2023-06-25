@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import FAQImage from '../assets/faqImage.svg';
 import Accordion from '../components/Accordion';
 import { motion } from 'framer-motion';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 const items = [
 	{
@@ -56,13 +57,17 @@ const FAQ = () => {
 				<div className='faq-text'>
 					<h1>Got a question?</h1>
 					<h1>Get your answer</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, modi
-						eligendi. Sint ab optio enim?
-					</p>
+					<Zoom>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+							modi eligendi. Sint ab optio enim?
+						</p>
+					</Zoom>
 				</div>
 				<div className='faq-image'>
-					<img src={FAQImage} alt='' />
+					<Fade direction='down'>
+						<img src={FAQImage} alt='' />
+					</Fade>
 				</div>
 			</div>
 			<div className='' id='faq'>

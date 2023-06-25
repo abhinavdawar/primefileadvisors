@@ -11,6 +11,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import CertificateForm from '../components/CertificateForm';
 import { motion } from 'framer-motion';
+import { Zoom, Fade } from 'react-awesome-reveal';
 const service_id = '';
 const template_id = '';
 const user_id = '';
@@ -38,7 +39,9 @@ const PropertyValuationCertficate = () => {
 					</p>
 				</div>
 				<div className='property-landing-img'>
-					<img src={ImageLanding} alt='' />
+					<Fade direction='right'>
+						<img src={ImageLanding} alt='' />
+					</Fade>
 				</div>
 			</div>
 			<div className='property-container1'>
@@ -56,92 +59,100 @@ const PropertyValuationCertficate = () => {
 			<div className='property-container2'>
 				<h2>Purpose of Property Valuation Certificate</h2>
 				<div className='prop-cont2-content'>
-					<div className='prop-cont2-left'>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Immigration/VISA Purpsoe</span>
+					<Zoom direction='bottom'>
+						<div className='prop-cont2-left'>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Immigration/VISA Purpsoe</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Internal Transfer or Selling Purpose</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Capital Gain - Income Tax Purpose</span>
+							</div>
 						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Internal Transfer or Selling Purpose</span>
+					</Zoom>
+					<Zoom direction='bottom'>
+						<div className='prop-cont2-right'>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Wealth Tax purpsoe</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Valuation for IPO/REIT etc</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Assessment of Property/ Other Purpose</span>
+							</div>
 						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Capital Gain - Income Tax Purpose</span>
-						</div>
-					</div>
-					<div className='prop-cont2-right'>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Wealth Tax purpsoe</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Valuation for IPO/REIT etc</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Assessment of Property/ Other Purpose</span>
-						</div>
-					</div>
+					</Zoom>
 				</div>
 			</div>
 
 			<div className='property-container3'>
 				<h2>What are the Documents required for Property Valuation Report?</h2>
 				<div className='prop-cont3-content'>
-					<div className='prop-cont3-left'>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Adhar Card of Applicant</span>
+					<Fade direction='left'>
+						<div className='prop-cont3-left'>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Adhar Card of Applicant</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>PAN Card of Applicant</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Ownership Proof (Tax Bill or Electricity Bill)</span>
+							</div>
 						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>PAN Card of Applicant</span>
+					</Fade>
+					<Fade direction='right'>
+						<div className='prop-cont3-right'>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Index Copy/ Purchase Agreement</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>List of Furniture and Attached assets</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Email and Mobile Number</span>
+							</div>
 						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Ownership Proof (Tax Bill or Electricity Bill)</span>
-						</div>
-					</div>
-					<div className='prop-cont3-right'>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Index Copy/ Purchase Agreement</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>List of Furniture and Attached assets</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Email and Mobile Number</span>
-						</div>
-					</div>
+					</Fade>
 				</div>
 			</div>
 

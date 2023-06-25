@@ -3,6 +3,7 @@ import ImageLanding from '../assets/pngA.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
 import { motion } from 'framer-motion';
+import { Fade, Zoom } from 'react-awesome-reveal';
 
 const service_id = 'service_bw9y36m';
 const template_id = 'template_f6ufosr';
@@ -34,7 +35,9 @@ const NetWorthCertificate = () => {
 					</p>
 				</div>
 				<div className='networth-landing-img'>
-					<img src={ImageLanding} alt='' />
+					<Zoom direction='up'>
+						<img src={ImageLanding} alt='' />
+					</Zoom>
 				</div>
 			</div>
 			<div className='networth-container1'>
@@ -62,84 +65,90 @@ const NetWorthCertificate = () => {
 			<div className='networth-container3'>
 				<h1>What can be considered as Networth for VISA Purpose?</h1>
 				<div className='networth-content'>
-					<div className='networth-left'>
-						<h6>Value of Immovable Property</h6>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Bunglow / Plot</span>
+					<Fade direction='left'>
+						<div className='networth-left'>
+							<h6>Value of Immovable Property</h6>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Bunglow / Plot</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Appartment / Flats for Residence</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Agriculture Land/ other Land</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Office/ Commercial Spaces etc</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Attached Furniture etc.</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Other Immovable Property/Assets</span>
+							</div>
 						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Appartment / Flats for Residence</span>
+					</Fade>
+					<Fade direction='right'>
+						<div className='networth-right'>
+							<h6>Value of Movable Assets</h6>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Bank Balance / FD's / Mutual Fund / Shares etc</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Vehicle (Car, Bike, Bus, Plane, etc)</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Gold Ornaments, Diamonds, Metal Etc</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Book Value of Sundry Debtors, Stock, Assets etc.</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>
+									Realization Value of Life Insurance, Investments etc
+								</span>
+							</div>
+							<div className=''>
+								<i>
+									<BiCheckCircle />
+								</i>
+								<span>Other Monetory Assets</span>
+							</div>
 						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Agriculture Land/ other Land</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Office/ Commercial Spaces etc</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Attached Furniture etc.</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Other Immovable Property/Assets</span>
-						</div>
-					</div>
-					<div className='networth-right'>
-						<h6>Value of Movable Assets</h6>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Bank Balance / FD's / Mutual Fund / Shares etc</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Vehicle (Car, Bike, Bus, Plane, etc)</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Gold Ornaments, Diamonds, Metal Etc</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Book Value of Sundry Debtors, Stock, Assets etc.</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Realization Value of Life Insurance, Investments etc</span>
-						</div>
-						<div className=''>
-							<i>
-								<BiCheckCircle />
-							</i>
-							<span>Other Monetory Assets</span>
-						</div>
-					</div>
+					</Fade>
 				</div>
 			</div>
 			<div className='networth-form'>
