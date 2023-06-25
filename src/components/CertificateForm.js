@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const CertificateForm = () => {
 	return (
