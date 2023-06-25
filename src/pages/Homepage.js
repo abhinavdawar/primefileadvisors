@@ -6,12 +6,20 @@ import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
 import { MdPriceCheck, MdOutlineSpeed } from 'react-icons/md';
 
+import { motion } from 'framer-motion';
+
 const Homepage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<div className='homepage-container text-white' id='landing'>
+		<motion.div
+			className='homepage-container text-white'
+			id='landing'
+			initial={{ scaleY: 0 }}
+			animate={{ scaleY: 1 }}
+			exit={{ scaleY: 0 }}
+		>
 			<video
 				src={BackgroundVideo}
 				autoPlay
@@ -25,24 +33,24 @@ const Homepage = () => {
 					<h2 className=''>A one-stop solution for immigration agencies.</h2>
 					<h6>Check out what we can do for you</h6>
 					<div className='features-container'>
-						<div className='feature'>
+						<motion.div className='feature' whileHover={{ scale: 0.8 }}>
 							<i style={{ fontSize: '25px' }}>
 								<MdPriceCheck />
 							</i>
 							<p className=''>A highly competitive price per file.</p>
-						</div>
-						<div className='feature'>
+						</motion.div>
+						<motion.div className='feature' whileHover={{ scale: 0.8 }}>
 							<i style={{ fontSize: '25px' }}>
 								<BiCheckCircle />
 							</i>
 							<p className=''>A reliable and cost-effective partner.</p>
-						</div>
-						<div className='feature'>
+						</motion.div>
+						<motion.div className='feature' whileHover={{ scale: 0.8 }}>
 							<i style={{ fontSize: '25px' }}>
 								<MdOutlineSpeed />
 							</i>
 							<p className=''>speed and affordability Guaranteed</p>
-						</div>
+						</motion.div>
 					</div>
 					<div className='btn-conatiner'>
 						<Link
@@ -97,7 +105,7 @@ const Homepage = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

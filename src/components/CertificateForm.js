@@ -1,9 +1,11 @@
 import React from 'react';
 
 const CertificateForm = () => {
-
 	return (
-		<form action="https://formsubmit.co/primefileadvisors@gmail.com" method="POST">
+		<form
+			action='https://formsubmit.co/primefileadvisors@gmail.com'
+			method='POST'
+		>
 			<div className='input-container'>
 				<label>Your Name</label>
 				<input type='text' name='Name' placeholder='enter name here' />
@@ -11,6 +13,10 @@ const CertificateForm = () => {
 			<div className='input-container email-input'>
 				<label>Your Email</label>
 				<input type='email' name='Email' placeholder='enter email here' />
+			</div>
+			<div className='input-container'>
+				<label>Your Phone No.</label>
+				<input type='text' name='Phone' placeholder='enter phone no. here' />
 			</div>
 			<div className='input-container textarea-input'>
 				<label>Message</label>
