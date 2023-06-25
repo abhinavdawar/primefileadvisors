@@ -3,9 +3,6 @@ import { IoMdCall } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 import { TiLocation } from 'react-icons/ti';
 import CertificateForm from '../components/CertificateForm';
-const service_id = 'service_bw9y36m';
-const template_id = 'template_f6ufosr';
-const user_id = 'SYmjrAocqWVoD6DDF';
 
 const Contact = () => {
 	useEffect(() => {
@@ -35,11 +32,7 @@ const Contact = () => {
 					</span>
 				</div>
 				<div className='contact-form'>
-					<CertificateForm
-						service_id={service_id}
-						template_id={template_id}
-						user_id={user_id}
-					/>
+					<CertificateForm />
 				</div>
 			</div>
 		</div>
