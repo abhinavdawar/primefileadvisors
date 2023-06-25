@@ -32,7 +32,6 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
-	/* line-height: 1; */
 	overflow: hidden;
 }
 
@@ -50,7 +49,8 @@ nav {
 	);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 0 30px;
 	z-index: 100;
 }
 .burger-menu {
@@ -63,7 +63,6 @@ nav {
 	justify-content: center;
 	overflow: hidden;
 	margin-right: 30px;
-	/* margin-top: 5px; */
 }
 
 .logo_container h3 {
@@ -101,13 +100,11 @@ nav {
 	height: 4px;
 	background: var(--secondary-color);
 }
-.menu {
-	margin-right: 30px;
-}
+
 .menu .links {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	flex-direction: row;
 	list-style: none;
 	text-decoration: none;
@@ -115,7 +112,7 @@ nav {
 
 .links .link {
 	margin: 0px 20px;
-	color: var(--black-color);
+	color: #fff;
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 15px;
@@ -1117,9 +1114,9 @@ textarea:focus {
 	background: linear-gradient(#01b8b0, #cff9f7);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
 	nav {
-		justify-content: center;
+		justify-content: space-between;
 	}
 	.burger-menu {
 		height: 50px;
@@ -1136,7 +1133,7 @@ textarea:focus {
 	.burger-bar {
 		width: 45px;
 		height: 4px;
-		background-color: var(--black-color);
+		background-color: #fff;
 		border-radius: 10px;
 		margin: 3px 0;
 	}
@@ -1149,10 +1146,19 @@ textarea:focus {
 	.burger-bar:nth-child(3) {
 		width: 15px;
 	}
+	.logo_container {
+		margin-left: 50px;
+	}
 	.menu {
 		width: 50%;
 		height: 100vh;
-		background-color: var(--black-color);
+		/* background-color: var(--black-color); */
+		background: rgb(127, 127, 213);
+		background: linear-gradient(
+			90deg,
+			rgba(127, 127, 213, 1) 16%,
+			rgba(145, 234, 228, 1) 120%
+		);
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1179,7 +1185,8 @@ textarea:focus {
 
 	.links .link {
 		margin: 30px 0;
-		color: var(--primary-color);
+		color: #fff;
+		font-size: 18px;
 	}
 	/* ------------- sliding menu ------------------ */
 	.hidden {
@@ -1196,8 +1203,6 @@ textarea:focus {
 		width: 30px;
 		transform: rotate(45deg) translate(5px, 5px);
 		transition: ease-out 0.5s;
-		animation: colorChange 0.5s ease-out forwards;
-		-webkit-animation: colorChange 0.5s ease-out 0.1s forwards;
 	}
 
 	.burger-bar.clicked:nth-child(2) {
@@ -1209,8 +1214,6 @@ textarea:focus {
 		width: 30px;
 		transform: rotate(135deg) translate(-8px, 10px);
 		transition: ease-out 0.5s;
-		animation: colorChange 0.5s ease-out forwards;
-		-webkit-animation: colorChange 0.5s ease-out 0.1s forwards;
 	}
 
 	/* unclicked */
@@ -1218,18 +1221,9 @@ textarea:focus {
 		transform: rotate(0) translate(0);
 		transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 	}
-	.phone-call {
-		margin-left: 40vw;
-	}
-	@keyframes colorChange {
-		0% {
-			background-color: inherit;
-		}
-		100% {
-			background-color: var(--primary-color);
-		}
-	}
+}
 
+@media screen and (max-width: 900px) {
 	.landing-container {
 		height: auto;
 		text-align: center;
@@ -1424,13 +1418,6 @@ textarea:focus {
 }
 
 @media screen and (max-width: 700px) {
-	nav {
-		justify-content: flex-end;
-		padding-right: 10px;
-	}
-	.phone-call {
-		margin-left: 0;
-	}
 	.about-container .about-landing {
 		flex-direction: column-reverse;
 		justify-content: center;
