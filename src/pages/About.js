@@ -4,6 +4,8 @@ import Typewriter from 'typewriter-effect';
 import Wave from 'react-wavify';
 import AboutUs from '../assets/AboutUs.svg';
 import ReviewSlider from '../components/ReviewSlider';
+import { motion } from 'framer-motion';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 const About = () => {
 	useEffect(() => {
@@ -11,11 +13,15 @@ const About = () => {
 	}, []);
 
 	return (
-		<div className='about-container'>
+		<motion.div className='about-container'>
 			<div className='about-landing'>
 				<div className='about-text'>
-					<h1>Hi! We are</h1>
-					<p>Prime File Advisors</p>
+					<Zoom>
+						<h1>Hi! We are</h1>
+					</Zoom>
+					<Zoom>
+						<p>Prime File Advisors</p>
+					</Zoom>
 					<span>
 						<Typewriter
 							onInit={(typewriter) => {
@@ -35,7 +41,9 @@ const About = () => {
 					</span>
 				</div>
 				<div className='intro-image'>
-					<img src={AboutImage} alt='' />
+					<Fade direction='right'>
+						<img src={AboutImage} alt='' />
+					</Fade>
 				</div>
 			</div>
 			<Wave
@@ -50,16 +58,22 @@ const About = () => {
 			/>
 			<div className='about-info'>
 				<div className='info-image'>
-					<img src={AboutUs} alt='' />
+					<Fade direction='left'>
+						<img src={AboutUs} alt='' />
+					</Fade>
 				</div>
 				<div className='info-text'>
-					<h1>Who we are</h1>
-					<p>
-						We are a group of experienced charted accountants having experience
-						of more than 4 years. We are bringing our experties in this industry
-						to streamline and revolutionarise all the steps involved under one
-						roof
-					</p>
+					<Zoom>
+						<h1>Who we are</h1>
+					</Zoom>
+					<Zoom>
+						<p>
+							We are a group of experienced charted accountants having
+							experience of more than 4 years. We are bringing our experties in
+							this industry to streamline and revolutionarise all the steps
+							involved under one roof
+						</p>
+					</Zoom>
 				</div>
 			</div>
 			<section
@@ -69,9 +83,11 @@ const About = () => {
 			>
 				<div className='container'>
 					<h2 className='h1 mt-0'>We Love to Work</h2>
-					<p className='lead text-uppercase text-muted'>
-						Let us support you in every step.
-					</p>
+					<Zoom>
+						<p className='lead text-uppercase'>
+							Let us support you in every step.
+						</p>
+					</Zoom>
 					<hr className='divider-sm my-3' />
 					<div className='row text-success'>
 						<div className='col-md-4'>
@@ -99,19 +115,27 @@ const About = () => {
 					</div>
 					<div className='row my-5'>
 						<div className='col-lg-3 col-6'>
-							<h6 className='h1 font-weight-bold'>105</h6>
+							<Zoom>
+								<h6 className='h1 font-weight-bold'>105</h6>
+							</Zoom>
 							<p>Clients</p>
 						</div>
 						<div className='col-lg-3 col-6'>
-							<h6 className='h1 font-weight-bold'>120</h6>
+							<Zoom>
+								<h6 className='h1 font-weight-bold'>120</h6>
+							</Zoom>
 							<p>Projects</p>
 						</div>
 						<div className='col-lg-3 col-6'>
-							<h6 className='h1 font-weight-bold'>5000</h6>
+							<Zoom>
+								<h6 className='h1 font-weight-bold'>5000</h6>
+							</Zoom>
 							<p>Hours of Service</p>
 						</div>
 						<div className='col-lg-3 col-6'>
-							<h6 className='h1 font-weight-bold'>20</h6>
+							<Zoom>
+								<h6 className='h1 font-weight-bold'>20</h6>
+							</Zoom>
 							<p>Hard Workers</p>
 						</div>
 					</div>
@@ -131,7 +155,7 @@ const About = () => {
 					<ReviewSlider />
 				</article>
 			</section>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 const Accordion = ({ items }) => {
 	const [activeIndex, setActiveIndex] = useState(-1);
 	const handleClick = (index) => {
@@ -7,7 +8,8 @@ const Accordion = ({ items }) => {
 	return (
 		<>
 			{items.map((item, index) => (
-				<div key={item.title} className='accordion-item'>
+				// <Fade direction='left'>
+				<Fade direction='left' key={item.title} className='accordion-item'>
 					<button
 						onClick={() => handleClick(index)}
 						className='accordion-title'
@@ -17,7 +19,8 @@ const Accordion = ({ items }) => {
 					{index === activeIndex && (
 						<p className='accordion-content'>{item.content}</p>
 					)}
-				</div>
+				</Fade>
+				// </Fade>
 			))}
 		</>
 	);

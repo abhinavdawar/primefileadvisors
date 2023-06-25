@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.jpg';
+import { useLocation } from 'react-router-dom';
+import { Fade } from 'react-awesome-reveal';
 
 const linksArray = [
-	{ name: 'Home', to: '' },
-	{ name: 'About', to: 'about' },
-	{ name: 'Our Services', to: 'services' },
-	{ name: 'FAQ', to: 'faq' },
-	{ name: 'Net Worth Certificate', to: 'net-worth-certificate' },
+	{ name: 'Home', to: '/' },
+	{ name: 'About', to: '/about' },
+	{ name: 'Our Services', to: '/services' },
+	{ name: 'FAQ', to: '/faq' },
+	{ name: 'Net Worth Certificate', to: '/net-worth-certificate' },
 	{
 		name: 'Property Valuation Certificate',
-		to: 'property-valuation-certificate',
+		to: '/property-valuation-certificate',
 	},
-	{ name: 'Contact Us', to: 'contact' },
+	{ name: 'Contact Us', to: '/contact' },
 ];
 
 const Navbar = () => {
+	const { pathname } = useLocation();
 	// to change burger classes
 	const [burger_class, setBurgerClass] = useState('burger-bar unclicked');
 	const [menu_class, setMenuClass] = useState('menu hidden');
@@ -51,25 +54,28 @@ const Navbar = () => {
 							<p>File Advisors</p>
 						</Bounce>
 					</div> */}
-					<img src={Logo} alt='' style={{ height: '60px', width: '60px' }} />
+					<Fade direction='left'>
+						<img src={Logo} alt='' style={{ height: '60px', width: '60px' }} />
+					</Fade>
 				</Link>
 				<div className={menu_class}>
 					<ul className='links'>
 						{linksArray.map((link) => (
 							<Link
-								to={`/${link.to}`}
+								className={pathname === `${link.to}` ? 'active link' : 'link'}
+								to={link.to}
 								style={{ textDecoration: 'none' }}
 								onClick={updateMenu}
 								key={link.name}
 							>
-								<li className='link'>{link.name}</li>
+								<li>{link.name}</li>
 							</Link>
 						))}
 					</ul>
 				</div>
 
 				<a
-					href='tel:+919560252346'
+					href='tel:+918360614667'
 					className='phone-call'
 					style={{ textDecoration: 'none' }}
 				>

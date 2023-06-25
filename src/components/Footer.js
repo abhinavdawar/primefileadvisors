@@ -7,37 +7,48 @@ import {
 	FaLinkedin,
 	FaYoutube,
 } from 'react-icons/fa';
+import { Zoom } from 'react-awesome-reveal';
 
 const Footer = () => {
 	return (
 		<div className='footer-container'>
 			<p className='heading'>Connect with us</p>
 			<div className='social-icons'>
-				<div className='social-link'>
-					<Link>
-						<FaFacebookF className='social-icon' />
-					</Link>
-				</div>
-				<div className='social-link'>
-					<Link>
-						<FaInstagram className='social-icon' />
-					</Link>
-				</div>
-				<div className='social-link'>
-					<Link>
-						<FaTwitter className='social-icon' />
-					</Link>
-				</div>
-				<div className='social-link'>
-					<Link>
-						<FaLinkedin className='social-icon' />
-					</Link>
-				</div>
-				<div className='social-link'>
-					<Link>
-						<FaYoutube className='social-icon' />
-					</Link>
-				</div>
+				<Zoom>
+					<div className='social-link'>
+						<Link>
+							<FaFacebookF className='social-icon' />
+						</Link>
+					</div>
+				</Zoom>
+				<Zoom>
+					<div className='social-link'>
+						<Link>
+							<FaInstagram className='social-icon' />
+						</Link>
+					</div>
+				</Zoom>
+				<Zoom>
+					<div className='social-link'>
+						<Link>
+							<FaTwitter className='social-icon' />
+						</Link>
+					</div>
+				</Zoom>
+				<Zoom>
+					<div className='social-link'>
+						<Link>
+							<FaLinkedin className='social-icon' />
+						</Link>
+					</div>
+				</Zoom>
+				<Zoom>
+					<div className='social-link'>
+						<Link>
+							<FaYoutube className='social-icon' />
+						</Link>
+					</div>
+				</Zoom>
 			</div>
 			<div className='footer-line'>
 				<p>

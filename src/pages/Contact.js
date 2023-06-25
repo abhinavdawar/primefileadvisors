@@ -3,16 +3,19 @@ import { IoMdCall } from 'react-icons/io';
 import { GrMail } from 'react-icons/gr';
 import { TiLocation } from 'react-icons/ti';
 import CertificateForm from '../components/CertificateForm';
-const service_id = 'service_bw9y36m';
-const template_id = 'template_f6ufosr';
-const user_id = 'SYmjrAocqWVoD6DDF';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<div className='contact-container'>
+		<motion.div
+			className='contact-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='contact-header'>
 				<h1>Get In Touch</h1>
 				<p>We are happy to assist you with our experties and services.</p>
@@ -23,26 +26,22 @@ const Contact = () => {
 					<p>You can directly reach us on below contact information.</p>
 					<span className='mobile-info'>
 						<IoMdCall />
-						+91 9999999999
+						+91 8360614667
 					</span>
 					<span className='email-info'>
 						<GrMail />
-						abc@gmail.com
+						primefileadvisors@gmail.com
 					</span>
 					<span className='location-info'>
 						<TiLocation />
-						Gurugram, India
+						Chandigarh, India
 					</span>
 				</div>
 				<div className='contact-form'>
-					<CertificateForm
-						service_id={service_id}
-						template_id={template_id}
-						user_id={user_id}
-					/>
+					<CertificateForm />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
