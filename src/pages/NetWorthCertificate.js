@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImageLanding from '../assets/pngA.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
@@ -9,6 +9,9 @@ const service_id = 'service_bw9y36m';
 const template_id = 'template_f6ufosr';
 const user_id = 'SYmjrAocqWVoD6DDF';
 const NetWorthCertificate = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<motion.div
 			className='networth-container'

@@ -1,164 +1,129 @@
 import React, { useEffect } from 'react';
-import AboutImage from '../assets/aboutImage.png';
-import Typewriter from 'typewriter-effect';
-import Wave from 'react-wavify';
-import AboutUs from '../assets/AboutUs.svg';
-import ReviewSlider from '../components/ReviewSlider';
-import { motion } from 'framer-motion';
+import TaglineImage from '../assets/pngD.png';
+import HomeImage from '../assets/pngE.png';
+import { Link } from 'react-router-dom';
+import { BiCheckCircle } from 'react-icons/bi';
+import { MdPriceCheck, MdOutlineSpeed } from 'react-icons/md';
 import { Zoom, Fade } from 'react-awesome-reveal';
-import { FaHandshake } from 'react-icons/fa';
-import { BsFileEarmarkCheckFill, BsSendCheckFill } from 'react-icons/bs';
+
+import { motion } from 'framer-motion';
 
 const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-
 	return (
-		<motion.div className='about-container'>
-			<div className='about-landing'>
-				<div className='about-text'>
-					<Zoom>
-						<h1>Hi! We are</h1>
-					</Zoom>
-					<Zoom>
-						<p>Prime File Advisors</p>
-					</Zoom>
-					<span>
-						<Typewriter
-							onInit={(typewriter) => {
-								typewriter
-									.typeString(
-										'Streamlining Acquisition of all necessary financial documents'
-									)
-									.pauseFor(100)
-									.deleteAll()
-									.typeString('One stop solution for immigration agencies')
-									.pauseFor(100)
-									.deleteAll()
-									.typeString('Comprehensive Business Support')
-									.start();
-							}}
-						/>
-					</span>
-				</div>
-				<div className='intro-image'>
-					<Fade direction='right'>
-						<img src={AboutImage} alt='' />
-					</Fade>
-				</div>
-			</div>
-			<Wave
-				fill='#ffffff'
-				paused={false}
-				options={{
-					height: 80,
-					amplitude: 40,
-					speed: 0.2,
-					points: 4,
-				}}
-			/>
-			<div className='about-info'>
-				<div className='info-image'>
-					<Fade direction='left'>
-						<img src={AboutUs} alt='' />
-					</Fade>
-				</div>
-				<div className='info-text'>
-					<Zoom>
-						<h1>Who we are</h1>
-					</Zoom>
-					<Zoom>
-						<p>
-							We are a group of experienced charted accountants having
-							experience of more than 4 years. We are bringing our experties in
-							this industry to streamline and revolutionarise all the steps
-							involved under one roof
-						</p>
-					</Zoom>
-				</div>
-			</div>
-			<section
-				id='info'
-				className='py-5 text-white text-center'
-				style={{ color: '#000000 !important' }}
-			>
-				<div className='container'>
-					<h2 className='h1 mt-0'>We Love to Work</h2>
-					<Zoom>
-						<p className='lead text-uppercase'>
-							Let us support you in every step.
-						</p>
-					</Zoom>
-					<hr className='divider-sm my-3' />
-					<div className='work-container'>
-						<div className='work'>
-							<i className=''>
-								<FaHandshake />
-							</i>
-							<p className=''>Comprehensive Business Support</p>
-						</div>
-						<div className='work'>
-							<i className=''>
-								<BsFileEarmarkCheckFill />
-							</i>
-							<p className=''>
-								Streamlining Acquisition of all necessary financial documents
-							</p>
-						</div>
-						<div className='work'>
-							<i className=''>
-								<BsSendCheckFill />
-							</i>
-							<p className=''>One stop solution for immigration agencies</p>
-						</div>
-					</div>
-					<div className='stats-container'>
-						<div className='stats-group'>
-							<div className=' stats'>
-								<Zoom>
-									<h6 className=''>105</h6>
-								</Zoom>
-								<p>Clients</p>
+		<motion.div
+			className='homepage-container text-white'
+			id='landing'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
+			<div className='landing-container'>
+				<div className='content'>
+					<h1 className=''>Prime File Advisors</h1>
+					<h2 className=''>A one-stop solution for immigration agencies.</h2>
+					<h6>Check out what we can do for you</h6>
+					<div className='features-container'>
+						<Zoom>
+							<div className='feature'>
+								<i style={{ fontSize: '25px' }}>
+									<MdPriceCheck />
+								</i>
+								<p className=''>A highly competitive price per file.</p>
 							</div>
-							<div className='stats'>
-								<Zoom>
-									<h6 className=''>120</h6>
-								</Zoom>
-								<p>Projects</p>
-							</div>
-						</div>
-						<div className='stats-group'>
-							<div className='stats'>
-								<Zoom>
-									<h6 className=''>5000</h6>
-								</Zoom>
-								<p>Hours of Service</p>
-							</div>
-							<div className='stats'>
-								<Zoom>
-									<h6 className=''>20</h6>
-								</Zoom>
-								<p>Hard Workers</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id='testimonials'>
-				<div id='testimonials-bg'></div>
-				<article>
-					<header>
-						<h2>Our Satisfied Users</h2>
-						<h5>
-							Rated <span>9.6/10</span>
-							<br /> By our verified users
-						</h5>
-					</header>
+						</Zoom>
 
-					<ReviewSlider />
-				</article>
-			</section>
+						<Zoom>
+							<div className='feature'>
+								<i style={{ fontSize: '25px' }}>
+									<BiCheckCircle />
+								</i>
+								<p className=''>A reliable and cost-effective partner.</p>
+							</div>
+						</Zoom>
+						<Zoom>
+							<div className='feature'>
+								<i style={{ fontSize: '25px' }}>
+									<MdOutlineSpeed />
+								</i>
+								<p className=''>speed and affordability Guaranteed</p>
+							</div>
+						</Zoom>
+					</div>
+					<div className='btn-conatiner'>
+						<Fade direction='up'>
+							<Link to='/income-tax-return' style={{ textDecoration: 'none' }}>
+								<button className=''>Income Tax Return</button>
+							</Link>
+						</Fade>
+						<Fade direction='up'>
+							<Link
+								to='/net-worth-certificate'
+								style={{ textDecoration: 'none' }}
+							>
+								<button className=''>Net Worth Certificate</button>
+							</Link>
+						</Fade>
+						<Fade direction='up'>
+							<Link
+								to='/property-valuation-certificate'
+								style={{ textDecoration: 'none' }}
+							>
+								<button className=''>Property Valuation Certificate</button>
+							</Link>
+						</Fade>
+					</div>
+				</div>
+			</div>
+			<div className='tagline-container'>
+				<div className='tagline-content'>
+					<div className='tagline-text'>
+						<Fade direction='left'>
+							<h1>Your Goal Our Ambition</h1>
+						</Fade>
+						<Fade direction='left' delay='0.2s'>
+							<p>
+								PrimeFile Advisors offers comprehensive business support
+								services, streamlining the acquisition of all necessary
+								financial documents within a remarkably short timeframe of 12
+								hours. We have established partnerships with experienced CAs and
+								architects, enabling us to provide a one-stop solution for
+								immigration agencies. By consolidating these services under one
+								umbrella, we ensure prompt delivery and eliminate the need for
+								agencies to engage multiple professionals.
+							</p>
+						</Fade>
+					</div>
+
+					<div className='tagline-image'>
+						<Fade direction='right'>
+							<img src={TaglineImage} alt='' />
+						</Fade>
+					</div>
+				</div>
+			</div>
+			<div className='homepage-section'>
+				<div className='homepage-section-content'>
+					<div className='homepage-section-text'>
+						<Fade direction='left'>
+							<p>
+								We aim to revolutionize the business support services provided
+								to immigration agencies. Our company is uniquely positioned to
+								address the challenges faced by immigration agencies in
+								acquiring financial documents for visa applications promptly and
+								efficiently.
+							</p>
+						</Fade>
+					</div>
+					<div className='homepage-section-image'>
+						<Fade direction='right'>
+							<img src={HomeImage} alt='' />
+						</Fade>
+					</div>
+				</div>
+			</div>
 		</motion.div>
 	);
 };

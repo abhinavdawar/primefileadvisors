@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImageLanding from '../assets/png9.png';
 // import ImageLanding from '../assets/black_5.png';
 import { BiCheckCircle } from 'react-icons/bi';
@@ -18,6 +18,9 @@ const template_id = '';
 const user_id = '';
 
 const PropertyValuationCertficate = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<motion.div
 			className='property-container'

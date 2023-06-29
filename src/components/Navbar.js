@@ -8,8 +8,8 @@ import { Fade } from 'react-awesome-reveal';
 const linksArray = [
 	{ name: 'Home', to: '/' },
 	{ name: 'About', to: '/about' },
-	{ name: 'Our Services', to: '/services' },
 	{ name: 'FAQ', to: '/faq' },
+	{ name: 'Income Tax Return', to: '/income-tax-return' },
 	{ name: 'Net Worth Certificate', to: '/net-worth-certificate' },
 	{
 		name: 'Property Valuation Certificate',
