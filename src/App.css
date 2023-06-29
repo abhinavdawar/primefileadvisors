@@ -126,31 +126,28 @@ nav {
 	animation: showLinks 0.5s forwards 0.3s;
 	padding: 5px 15px;
 	border-radius: 10px;
-	/* font-weight: 700; */
-}
-.links .link:hover {
-	/* background: rgba(127, 127, 213, 1);
-	background: linear-gradient(
-		90deg,
-		rgba(127, 127, 213, 1) 10%,
-		rgba(145, 234, 228, 1) 90%
-	); */
-	background-color: #172b46;
-	color: #fff !important;
-	transition: 0.1s ease-in-out !important;
-}
+	background: linear-gradient(#0a1930 50%, #fff 0) 0 var(--_d, 0) / 100% 200%
+			no-repeat,
+		linear-gradient(#0a1930 50%, #0a1930 0) 0 var(--_d, 0) / 100% 200% no-repeat;
 
-.active {
-	/* background: rgba(127, 127, 213, 1);
-	background: linear-gradient(
-		90deg,
-		rgba(127, 127, 213, 1) 10%,
-		rgba(145, 234, 228, 1) 90%
-	); */
+	transition: 0.8s;
+}
+.active,
+.links .link:hover {
+	--_d: 100%;
+	color: #0a1930 !important;
+}
+/* .links .link:hover {
 	background-color: #172b46;
 	color: #fff !important;
 	transition: 0.1s ease-in-out !important;
-}
+} */
+
+/* .active {
+	background-color: #172b46;
+	color: #fff !important;
+	transition: 0.1s ease-in-out !important;
+} */
 
 .links Link {
 	text-decoration: none;
@@ -282,17 +279,24 @@ nav {
 	transition: border-radius 1s ease-out;
 	z-index: 1;
 	padding: 20px;
-	/* background: rgb(127, 127, 213);
-	background: linear-gradient(
-		90deg,
-		rgb(115, 135, 246) 16%,
-		rgb(89, 247, 231) 90%
-	); */
 	background-color: #172b46;
 	border-radius: 200% 200% 200% 200%/ 200% 200% 200% 200%;
 	box-shadow: inset -6px -6px 0px rgba(0, 0, 0, 1),
 		inset 6px -6px 0px rgba(89, 89, 89, 0.5);
 	text-align: center;
+	--_g1: conic-gradient(from 90deg at 50% 75%, #172b46 90deg, #fff 0) no-repeat;
+	--_g2: conic-gradient(from 90deg at 50% 75%, #172b46 90deg, #172b46 0)
+		no-repeat;
+	background: var(--_g1) 0 calc(134% - var(--_p, 0%)),
+		var(--_g2) 0 calc(134% - var(--_p, 0%)),
+		var(--_g1) 100% calc(200% - var(--_p, 0%)),
+		var(--_g2) 100% calc(200% - var(--_p, 0%)), #172b46;
+	background-size: 50.2% 400%;
+	transition: 0.8s;
+}
+.feature:hover {
+	--_p: 134%;
+	color: #172b46;
 }
 .feature p {
 	max-width: 90%;
@@ -311,9 +315,19 @@ nav {
 	background-color: #172b46;
 	color: #fff;
 	outline: none;
-	border-radius: 10px;
+	border: none;
+	border-radius: 5px;
 	width: 280px;
 	margin: 0 30px;
+	background: linear-gradient(-45deg, #172b46 40%, #172b46 0 60%, #fff 0)
+			right/300% 100% no-repeat,
+		linear-gradient(-45deg, #172b46 40%, #172b46 0 60%, #ffff 0) right/300% 100%
+			no-repeat;
+	transition: 0.8s;
+}
+.btn-conatiner button:hover {
+	background-position: left;
+	color: #172b46;
 }
 
 .tagline-container {
@@ -614,6 +628,89 @@ textarea:focus {
 	width: 50%;
 	text-align: center;
 }
+.work-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible !important;
+	flex-wrap: nowrap;
+	margin-top: 30px;
+}
+.work-container .work {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 250px;
+	width: 25%;
+	border-radius: 20px;
+	background-color: #fff;
+	color: #000;
+	position: relative;
+	overflow: visible !important;
+
+	margin: 30px 20px 0 20px;
+	padding: 0 20px;
+	background: linear-gradient(90deg, #fff 50%, #0a1930 0),
+		linear-gradient(-90deg, #fff 50%, #0a1930 0),
+		linear-gradient(90deg, #ffff 50%, #fff 0),
+		linear-gradient(-90deg, #ffff 50%, #fff 0);
+	background-repeat: no-repeat;
+	background-size: 200% 51%;
+	background-position: top left, bottom right;
+	transition: 0.8s;
+}
+.work-container .work:hover {
+	background-position: top right, bottom left;
+	color: #fff;
+}
+.work i {
+	margin: 0px 0px 0px 0px;
+	padding: 25px;
+	background-color: #0a1930;
+	font-size: 18px !important;
+	border-radius: 50%;
+	color: #fff;
+	position: absolute;
+	top: -40px;
+	z-index: 2;
+}
+.work p {
+	font-size: 23px;
+}
+.stats-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+.stats-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.stats {
+	height: 100px;
+	width: 150px;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	margin: 0 5%;
+	border-radius: 5px;
+}
+.stats h6 {
+	width: 100%;
+	height: 30px;
+	padding: 5px 0 0 0;
+	border-bottom: 2px solid #000;
+	font-weight: 700;
+}
+.stats p {
+	width: 100%;
+	height: 60px;
+	padding: 10px 20px;
+}
 .info-image img {
 	height: 50%;
 	width: 50%;
@@ -675,19 +772,25 @@ textarea:focus {
 }
 #testimonials article #reviews {
 	display: flex;
-	color: #000;
+	color: #fff;
 	margin: 2rem 1.5rem;
 }
 #testimonials article #reviews .review {
-	/* background-color: #0d77bb; */
-	background: rgb(127, 127, 213);
-	background: linear-gradient(
-		90deg,
-		rgb(115, 135, 246) 16%,
-		rgb(89, 247, 231) 90%
-	);
+	background-color: #0a1930;
+
 	margin: 0 1.125rem;
 	padding: 1.5rem;
+	background: linear-gradient(#0a1930 50%, #fff 0) 0 var(--_d, 0) / 100% 200%
+			no-repeat,
+		linear-gradient(#0a1930 50%, #0a1930 0) 0 var(--_d, 0) / 100% 200% no-repeat;
+
+	transition: 0.8s;
+}
+#testimonials article #reviews .review:hover {
+	--_d: 55%;
+}
+#testimonials article #reviews .review:hover .review-text {
+	color: #0a1930 !important;
 }
 #testimonials article #reviews .review .reviewer-details {
 	display: flex;
@@ -1298,13 +1401,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 900px) {
-	.video-container {
-		height: 120vh;
-	}
 	.landing-container {
 		height: auto;
 		text-align: center;
-		top: 100px;
 	}
 	#landing .content {
 		width: 100%;
@@ -1387,6 +1486,21 @@ textarea:focus {
 		width: 100%;
 	}
 
+	.work-container {
+		flex-direction: column;
+	}
+	.work-container .work {
+		margin: 0;
+		margin-top: 60px;
+		width: 100%;
+		height: 150px;
+	}
+	.stats-container {
+		flex-direction: column;
+	}
+	.stats-group {
+		margin-top: 30px;
+	}
 	.about-text h1 {
 		font-size: 30px;
 		font-weight: 400;
@@ -1455,6 +1569,7 @@ textarea:focus {
 		border-left: 5px solid #0042f6;
 		width: 100%;
 		font-size: 13px;
+		text-align: left;
 	}
 	.networth-left h6,
 	.networth-right h6 {
@@ -1487,6 +1602,7 @@ textarea:focus {
 		justify-content: center;
 		margin-top: 40px;
 		padding: 0 20px;
+		margin-left: 0;
 	}
 	.prop-cont2-left,
 	.prop-cont2-right,
@@ -1496,6 +1612,7 @@ textarea:focus {
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
+		text-align: left;
 	}
 	.prop-cont2-left,
 	.prop-cont3-left {

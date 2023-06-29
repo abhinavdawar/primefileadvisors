@@ -6,6 +6,8 @@ import AboutUs from '../assets/AboutUs.svg';
 import ReviewSlider from '../components/ReviewSlider';
 import { motion } from 'framer-motion';
 import { Zoom, Fade } from 'react-awesome-reveal';
+import { FaHandshake } from 'react-icons/fa';
+import { BsFileEarmarkCheckFill, BsSendCheckFill } from 'react-icons/bs';
 
 const About = () => {
 	useEffect(() => {
@@ -89,54 +91,56 @@ const About = () => {
 						</p>
 					</Zoom>
 					<hr className='divider-sm my-3' />
-					<div className='row text-success'>
-						<div className='col-md-4'>
-							<div className='icon rounded mt-3 py-5 bg-white'>
-								<i className='fas fa-code fa-3x mb-4'></i>
-								<h3 className='h4 mb-2'>Comprehensive Business Support</h3>
-							</div>
+					<div className='work-container'>
+						<div className='work'>
+							<i className=''>
+								<FaHandshake />
+							</i>
+							<p className=''>Comprehensive Business Support</p>
 						</div>
-						<div className='col-md-4'>
-							<div className='icon rounded mt-3 py-5 bg-white'>
-								<i className='fas fa-mobile-alt fa-3x mb-4'></i>
-								<h3 className='h4 mb-2'>
-									Streamlining Acquisition of all necessary financial documents{' '}
-								</h3>
-							</div>
+						<div className='work'>
+							<i className=''>
+								<BsFileEarmarkCheckFill />
+							</i>
+							<p className=''>
+								Streamlining Acquisition of all necessary financial documents
+							</p>
 						</div>
-						<div className='col-md-4'>
-							<div className='icon rounded mt-3 py-5 bg-white'>
-								<i className='fas fa-headset fa-3x mb-4'></i>
-								<h3 className='h4 mb-2'>
-									One stop solution for immigration agencies
-								</h3>
-							</div>
+						<div className='work'>
+							<i className=''>
+								<BsSendCheckFill />
+							</i>
+							<p className=''>One stop solution for immigration agencies</p>
 						</div>
 					</div>
-					<div className='row my-5'>
-						<div className='col-lg-3 col-6'>
-							<Zoom>
-								<h6 className='h1 font-weight-bold'>105</h6>
-							</Zoom>
-							<p>Clients</p>
+					<div className='stats-container'>
+						<div className='stats-group'>
+							<div className=' stats'>
+								<Zoom>
+									<h6 className=''>105</h6>
+								</Zoom>
+								<p>Clients</p>
+							</div>
+							<div className='stats'>
+								<Zoom>
+									<h6 className=''>120</h6>
+								</Zoom>
+								<p>Projects</p>
+							</div>
 						</div>
-						<div className='col-lg-3 col-6'>
-							<Zoom>
-								<h6 className='h1 font-weight-bold'>120</h6>
-							</Zoom>
-							<p>Projects</p>
-						</div>
-						<div className='col-lg-3 col-6'>
-							<Zoom>
-								<h6 className='h1 font-weight-bold'>5000</h6>
-							</Zoom>
-							<p>Hours of Service</p>
-						</div>
-						<div className='col-lg-3 col-6'>
-							<Zoom>
-								<h6 className='h1 font-weight-bold'>20</h6>
-							</Zoom>
-							<p>Hard Workers</p>
+						<div className='stats-group'>
+							<div className='stats'>
+								<Zoom>
+									<h6 className=''>5000</h6>
+								</Zoom>
+								<p>Hours of Service</p>
+							</div>
+							<div className='stats'>
+								<Zoom>
+									<h6 className=''>20</h6>
+								</Zoom>
+								<p>Hard Workers</p>
+							</div>
 						</div>
 					</div>
 				</div>
