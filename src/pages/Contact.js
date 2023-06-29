@@ -26,15 +26,15 @@ const Contact = () => {
 					<p>You can directly reach us on below contact information.</p>
 					<span className='mobile-info'>
 						<IoMdCall />
-						+91 9999999999
+						+91 8360614667
 					</span>
 					<span className='email-info'>
 						<GrMail />
-						abc@gmail.com
+						primefileadvisors@gmail.com
 					</span>
 					<span className='location-info'>
 						<TiLocation />
-						Gurugram, India
+						Chandigarh, India
 					</span>
 				</div>
 				<div className='contact-form'>

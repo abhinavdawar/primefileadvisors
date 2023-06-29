@@ -27,7 +27,7 @@ const Homepage = () => {
 			<div className='landing-container'>
 				<div className='content'>
 					<h1 className=''>
-						Prime<span> File </span>Advisors
+						<span>Prime File Advisors</span>
 					</h1>
 					<h2 className=''>A one-stop solution for immigration agencies.</h2>
 					<h6>Check out what we can do for you</h6>
