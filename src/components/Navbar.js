@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.jpg';
+import Logo from '../assets/logoTrans.png';
 import { useLocation } from 'react-router-dom';
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const linksArray = [
 	{ name: 'Home', to: '/' },
@@ -45,17 +45,8 @@ const Navbar = () => {
 					className='logo_container'
 					style={{ textDecoration: 'none' }}
 				>
-					{/* <Zoom direction='in' delay='20'>
-						<h3>PRIME</h3>
-					</Zoom>
-					<div className='logo_bottom'>
-						<span className='logo_block'></span>
-						<Bounce delay='60'>
-							<p>File Advisors</p>
-						</Bounce>
-					</div> */}
 					<Fade direction='left'>
-						<img src={Logo} alt='' style={{ height: '60px', width: '60px' }} />
+						<img className='logo-image' src={Logo} alt='' />
 					</Fade>
 				</Link>
 				<div className={menu_class}>

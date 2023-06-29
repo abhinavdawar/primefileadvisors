@@ -21,9 +21,9 @@ const Homepage = () => {
 			animate={{ width: '100%' }}
 			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
-			<div className='video-container'>
+			{/* <div className='video-container'>
 				<video src={BackgroundVideo} autoPlay muted loop className='' />
-			</div>
+			</div> */}
 			<div className='landing-container'>
 				<div className='content'>
 					<h1 className=''>
