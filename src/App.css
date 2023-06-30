@@ -388,6 +388,7 @@ nav {
 	background-color: #0a1930;
 	color: #000;
 	position: relative;
+	padding-bottom: 40px;
 }
 .homepage-section-content {
 	display: flex;
@@ -610,6 +611,8 @@ nav {
 	padding: 20px 0;
 	margin-top: 30px;
 	background-color: #0a1930;
+	position: relative;
+	z-index: 20;
 }
 
 form {
@@ -618,6 +621,8 @@ form {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+	position: relative;
+	z-index: 20;
 }
 .contact-form form {
 	width: 100%;
@@ -655,7 +660,7 @@ label {
 input {
 	border: none;
 	border-bottom: 2px solid var(--black-color);
-	background-color: #172b46;
+	background-color: transparent;
 }
 input::placeholder {
 	transition: all 0.3s ease-in-out;
@@ -675,7 +680,7 @@ input:focus::placeholder {
 textarea {
 	resize: none;
 	border: none;
-	background-color: #172b46;
+	background-color: transparent;
 	border-bottom: 2px solid rgb(127, 127, 213);
 }
 textarea:focus {
@@ -698,8 +703,11 @@ textarea:focus {
 	color: #00eeff;
 	border-radius: 5px;
 	background: #0a1930;
+	box-shadow: 2px 5px 5px 0px rgba(121, 121, 121, 0.5);
 }
-
+.contact-form form .submit-button {
+	box-shadow: none;
+}
 .about-container {
 	height: 100%;
 	width: 100%;
@@ -1314,17 +1322,16 @@ textarea:focus {
 .faq-container .faq-landing {
 	height: 100vh;
 	width: 100vw;
-	color: var(--black-color);
-	/* background-color: var(--primary-color); */
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	padding: 40px 0px;
 }
 .faq-landing .faq-text {
 	text-align: left;
 	color: #fff;
 	padding: 20px 20px;
+	margin-left: 30px;
 }
 .faq-text h1 {
 	font-size: 36px;
@@ -1355,6 +1362,7 @@ textarea:focus {
 .faq-text p {
 	margin: 10px 0;
 	letter-spacing: 1px;
+	max-width: 80%;
 }
 .services-container {
 	margin-top: 70px;
@@ -1475,7 +1483,8 @@ textarea:focus {
 	width: 100vw;
 	margin-top: 70px;
 }
-.networth-container {
+.networth-container,
+.property-container {
 	background-color: #0a1930;
 }
 .networth-landing,
@@ -1488,9 +1497,9 @@ textarea:focus {
 	width: 100%;
 	background-position: cover;
 	background-size: center;
+	height: 100vh;
 }
 .networth-landing {
-	height: 100vh;
 	justify-content: center;
 	background-image: url('./assets/backgroundNew.jpg');
 	position: relative;
@@ -1502,11 +1511,12 @@ textarea:focus {
 	z-index: 1;
 	background-color: rgba(5, 5, 5, 0.2);
 }
-.property-landing {
-	background-color: #0a1930;
-}
 
 .property-landing .property-landing-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 50%;
 	height: 100%;
 }
@@ -1577,6 +1587,7 @@ textarea:focus {
 	margin-top: 10px;
 	letter-spacing: 0.5px;
 	color: #fff;
+	font-size: 20px;
 }
 .networth-landing .networth-landing-img,
 .property-landing .property-landing-img {
@@ -1630,7 +1641,6 @@ textarea:focus {
 
 	backdrop-filter: blur(15px);
 	padding: 20px;
-	border-left: 5px solid #0042f6;
 	width: 450px;
 	font-size: 15px;
 	border-width: 5px;
@@ -1661,6 +1671,12 @@ textarea:focus {
 	width: 100vw;
 	text-align: center;
 	padding: 40px;
+	background-color: #fff;
+	background-color: rgb(255, 255, 255, 0.9);
+}
+
+.property-container3 {
+	background-color: rgb(255, 255, 255, 0.9);
 }
 
 .property-container1 p {
@@ -1686,9 +1702,13 @@ textarea:focus {
 	padding: 20px;
 	width: 400px;
 	font-size: 15px;
-	border-left: solid 5px #004cff;
 	border-bottom: solid 5px #004cff;
+	border-right: solid 5px #004cff;
+	background-color: rgba(255, 255, 255, 0.45);
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(15px);
 }
+
 .prop-cont2-left div,
 .prop-cont2-right div,
 .prop-cont3-left div,
@@ -1701,22 +1721,15 @@ textarea:focus {
 .prop-cont3-right div span {
 	margin-left: 4px;
 }
-.prop-cont3-content {
-	background-color: transparent;
-}
+
 .timeline-container {
-	background: rgb(127, 127, 213);
-	background: linear-gradient(
-		90deg,
-		rgba(127, 127, 213, 1) 16%,
-		rgba(145, 234, 228, 1) 90%
-	);
 	width: 100vw;
 }
 .timeline-container .timeline-heading {
 	min-width: 80%;
 	text-align: center;
 	margin: 30px;
+	color: #fff;
 }
 
 .footer-container {
@@ -2282,7 +2295,8 @@ textarea:focus {
 	.faq-landing .faq-text {
 		text-align: center;
 		margin-top: 20px;
-		max-width: 90vw;
+		max-width: 100vw;
+		margin: 20px 0 0 0;
 	}
 	.faq-text h1 {
 		font-size: 35px;
@@ -2302,6 +2316,7 @@ textarea:focus {
 	.faq-text p {
 		margin: 10px 0;
 		letter-spacing: 1px;
+		max-width: 100%;
 	}
 	.services-text {
 		width: 100%;

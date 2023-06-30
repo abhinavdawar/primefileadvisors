@@ -223,6 +223,18 @@ const PropertyValuationCertficate = () => {
 				</VerticalTimeline>
 			</div>
 			<div className='property-form'>
+				<ul class='bg-bubbles'>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 				<CertificateForm
 					service_id={service_id}
 					template_id={template_id}
