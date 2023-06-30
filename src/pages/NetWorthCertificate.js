@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import ImageLanding from '../assets/pngA.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
 import { motion } from 'framer-motion';
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const service_id = 'service_bw9y36m';
 const template_id = 'template_f6ufosr';
