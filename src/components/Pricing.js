@@ -10,6 +10,9 @@ import {
 const Pricing = () => {
 	return (
 		<div className='pricing-container'>
+			<div className='bg'></div>
+			<div className='bg bg1'></div>
+			<div className='bg bg2'></div>
 			<h1 className='pricing-headline'>Our Pricing Options</h1>
 			<p className='pricing-text'>
 				If you have any questions regarding our packages, please refer to the
