@@ -28,9 +28,9 @@ const FAQ = () => {
 					</Zoom>
 				</div>
 				<div className='faq-image'>
-					<Fade direction='down'>
-						<img src={FAQImage} alt='' />
-					</Fade>
+					{/* <Fade direction='right'> */}
+					<img src={FAQImage} alt='' />
+					{/* </Fade> */}
 				</div>
 			</div>
 			<div className='' id='faq'>

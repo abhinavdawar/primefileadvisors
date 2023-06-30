@@ -20,27 +20,27 @@ const NetWorthCertificate = () => {
 			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
 			<div className='networth-landing'>
+				<div className='networth-bg'></div>
 				<div className='networth-landing-text'>
 					<h1>Net Worth Certificate for VISA</h1>
-					<p>
-						Do you required Networth Certificate for VISA Purpose? Legal Adda is
-						Best Consultant for Networth Certificate. We provide Instant
-						Delivery of Net Worth Certificate at your location.
-					</p>
-					<p>
-						Commonly Networth Certificate required for VISA, Embassy/Consulate
-						Interview, Loan, Insurance Purpose. We provide Chartered Accountant
-						Certified Networth Certificate with UDIN.
-					</p>
-					<p>
-						Networth Certificate also known as Wealth Certificate, Wealth
-						Report, Asset and Liability Report, Wealth Statement.
-					</p>
-				</div>
-				<div className='networth-landing-img'>
-					<Zoom direction='up'>
-						<img src={ImageLanding} alt='' />
-					</Zoom>
+					<div className='networth-landing-details'>
+						<p>
+							Do you required Networth Certificate for VISA Purpose? Legal Adda
+							is Best Consultant for Networth Certificate. We provide Instant
+							Delivery of Net Worth Certificate at your location.
+						</p>
+						<p>
+							Commonly Networth Certificate required for VISA, Embassy/Consulate
+							Interview, Loan, Insurance Purpose. We provide Chartered
+							Accountant Certified Networth Certificate with UDIN.
+						</p>
+						<p>
+							Networth Certificate also known as Wealth Certificate, Wealth
+							Report, Asset and Liability Report, Wealth Statement.
+						</p>
+						<div className='circle'></div>
+						<div className='circle-top'></div>
+					</div>
 				</div>
 			</div>
 			<div className='networth-container1'>

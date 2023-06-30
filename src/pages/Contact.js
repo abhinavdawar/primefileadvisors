@@ -16,6 +16,18 @@ const Contact = () => {
 			animate={{ width: '100%' }}
 			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
+			<ul class='bg-bubbles'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 			<div className='contact-header'>
 				<h1>Get In Touch</h1>
 				<p>We are happy to assist you with our experties and services.</p>
