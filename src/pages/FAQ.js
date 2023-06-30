@@ -1,47 +1,10 @@
 import React, { useEffect } from 'react';
 import FAQImage from '../assets/faqImage.svg';
 import Accordion from '../components/Accordion';
+import FAQData from '../components/FAQData';
 import { motion } from 'framer-motion';
 import { Zoom, Fade } from 'react-awesome-reveal';
 
-const items = [
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore1',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore2',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore3',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore4',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore5',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore6',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-];
 const FAQ = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -73,7 +36,7 @@ const FAQ = () => {
 			<div className='' id='faq'>
 				<div className='accordion'>
 					<h1>F.A.Q.</h1>
-					<Accordion items={items} />
+					<Accordion items={FAQData} />
 				</div>
 			</div>
 		</motion.div>

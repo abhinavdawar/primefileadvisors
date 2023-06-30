@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import TaglineImage from '../assets/pngD.png';
-import HomeImage from '../assets/pngE.png';
+import TaglineImage from '../assets/teamImage1.jpg';
+import HomeImage from '../assets/handshake.jpg';
 import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
 import { MdPriceCheck, MdOutlineSpeed } from 'react-icons/md';
@@ -83,6 +83,7 @@ const About = () => {
 						<Fade direction='left'>
 							<h1>Your Goal Our Ambition</h1>
 						</Fade>
+						<div className='under-line1'></div>
 						<Fade direction='left' delay='0.2s'>
 							<p>
 								PrimeFile Advisors offers comprehensive business support
@@ -98,14 +99,15 @@ const About = () => {
 					</div>
 
 					<div className='tagline-image'>
-						<Fade direction='right'>
-							<img src={TaglineImage} alt='' />
-						</Fade>
+						<img src={TaglineImage} alt='' />
 					</div>
 				</div>
 			</div>
 			<div className='homepage-section'>
 				<div className='homepage-section-content'>
+					<div className='homepage-section-image'>
+						<img src={HomeImage} alt='' />
+					</div>
 					<div className='homepage-section-text'>
 						<Fade direction='left'>
 							<p>
@@ -115,11 +117,6 @@ const About = () => {
 								acquiring financial documents for visa applications promptly and
 								efficiently.
 							</p>
-						</Fade>
-					</div>
-					<div className='homepage-section-image'>
-						<Fade direction='right'>
-							<img src={HomeImage} alt='' />
 						</Fade>
 					</div>
 				</div>
