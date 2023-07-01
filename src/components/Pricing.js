@@ -41,7 +41,7 @@ const Pricing = () => {
 					</div>
 
 					<h1>
-						<span>₹</span>1,000
+						<span>₹</span>2,000
 					</h1>
 					<h3>Property Valuation for one property</h3>
 				</div>
@@ -54,7 +54,7 @@ const Pricing = () => {
 					</div>
 
 					<h1>
-						<span>₹</span>1,500
+						<span>₹</span>1,000
 					</h1>
 					<h3>Income Tax Return for one Year</h3>
 				</div>

@@ -66,7 +66,7 @@ const Navbar = () => {
 				</div>
 
 				<a
-					href='tel:+918360614667'
+					href='tel:+919876660275'
 					className='phone-call'
 					style={{ textDecoration: 'none' }}
 				>

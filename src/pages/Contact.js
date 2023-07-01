@@ -38,7 +38,7 @@ const Contact = () => {
 					<p>You can directly reach us on below contact information.</p>
 					<span className='mobile-info'>
 						<IoMdCall />
-						+91 8360614667
+						+91 9876660275
 					</span>
 					<span className='email-info'>
 						<GrMail />

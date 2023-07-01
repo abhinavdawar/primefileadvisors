@@ -3,7 +3,7 @@ import FAQImage from '../assets/faqImage.svg';
 import Accordion from '../components/Accordion';
 import FAQData from '../components/FAQData';
 import { motion } from 'framer-motion';
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 
 const FAQ = () => {
 	useEffect(() => {
@@ -22,9 +22,11 @@ const FAQ = () => {
 					<h1>Get your answer</h1>
 					<Zoom>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-							modi eligendi. Sint ab optio enim?
+							We are here to answer all your Queries related to immigration. We are one stop solution for 
+							all your needs. The most common asked Questions are listed below. But if you still need more 
+							information then send us your Query on Contact Us page.
 						</p>
+						<p>We will be Happy to serve you better</p>
 					</Zoom>
 				</div>
 				<div className='faq-image'>
