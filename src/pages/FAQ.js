@@ -1,47 +1,10 @@
 import React, { useEffect } from 'react';
 import FAQImage from '../assets/faqImage.svg';
 import Accordion from '../components/Accordion';
+import FAQData from '../components/FAQData';
 import { motion } from 'framer-motion';
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 
-const items = [
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore1',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore2',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore3',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore4',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore5',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-	{
-		title:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore6',
-		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro et labore voluptates praesentium asperiores quod expedita molestias facilis, amet impedit!',
-	},
-];
 const FAQ = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -59,21 +22,23 @@ const FAQ = () => {
 					<h1>Get your answer</h1>
 					<Zoom>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-							modi eligendi. Sint ab optio enim?
+							We are here to answer all your Queries related to immigration. We are one stop solution for 
+							all your needs. The most common asked Questions are listed below. But if you still need more 
+							information then send us your Query on Contact Us page.
 						</p>
+						<p>We will be Happy to serve you better</p>
 					</Zoom>
 				</div>
 				<div className='faq-image'>
-					<Fade direction='down'>
-						<img src={FAQImage} alt='' />
-					</Fade>
+					{/* <Fade direction='right'> */}
+					<img src={FAQImage} alt='' />
+					{/* </Fade> */}
 				</div>
 			</div>
 			<div className='' id='faq'>
 				<div className='accordion'>
 					<h1>F.A.Q.</h1>
-					<Accordion items={items} />
+					<Accordion items={FAQData} />
 				</div>
 			</div>
 		</motion.div>

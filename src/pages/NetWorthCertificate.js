@@ -1,14 +1,16 @@
-import React from 'react';
-import ImageLanding from '../assets/pngA.png';
+import React, { useEffect } from 'react';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
 import { motion } from 'framer-motion';
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const service_id = 'service_bw9y36m';
 const template_id = 'template_f6ufosr';
 const user_id = 'SYmjrAocqWVoD6DDF';
 const NetWorthCertificate = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<motion.div
 			className='networth-container'
@@ -17,27 +19,27 @@ const NetWorthCertificate = () => {
 			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
 			<div className='networth-landing'>
+				<div className='networth-bg'></div>
 				<div className='networth-landing-text'>
 					<h1>Net Worth Certificate for VISA</h1>
-					<p>
-						Do you required Networth Certificate for VISA Purpose? Legal Adda is
-						Best Consultant for Networth Certificate. We provide Instant
-						Delivery of Net Worth Certificate at your location.
-					</p>
-					<p>
-						Commonly Networth Certificate required for VISA, Embassy/Consulate
-						Interview, Loan, Insurance Purpose. We provide Chartered Accountant
-						Certified Networth Certificate with UDIN.
-					</p>
-					<p>
-						Networth Certificate also known as Wealth Certificate, Wealth
-						Report, Asset and Liability Report, Wealth Statement.
-					</p>
-				</div>
-				<div className='networth-landing-img'>
-					<Zoom direction='up'>
-						<img src={ImageLanding} alt='' />
-					</Zoom>
+					<div className='networth-landing-details'>
+						<p>
+							Do you required Networth Certificate for VISA Purpose? Legal Adda
+							is Best Consultant for Networth Certificate. We provide Instant
+							Delivery of Net Worth Certificate at your location.
+						</p>
+						<p>
+							Commonly Networth Certificate required for VISA, Embassy/Consulate
+							Interview, Loan, Insurance Purpose. We provide Chartered
+							Accountant Certified Networth Certificate with UDIN.
+						</p>
+						<p>
+							Networth Certificate also known as Wealth Certificate, Wealth
+							Report, Asset and Liability Report, Wealth Statement.
+						</p>
+						<div className='circle'></div>
+						<div className='circle-top'></div>
+					</div>
 				</div>
 			</div>
 			<div className='networth-container1'>
@@ -152,6 +154,18 @@ const NetWorthCertificate = () => {
 				</div>
 			</div>
 			<div className='networth-form'>
+				<ul class='bg-bubbles'>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 				<CertificateForm
 					service_id={service_id}
 					template_id={template_id}

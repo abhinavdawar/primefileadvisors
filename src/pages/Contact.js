@@ -16,6 +16,18 @@ const Contact = () => {
 			animate={{ width: '100%' }}
 			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
+			<ul class='bg-bubbles'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 			<div className='contact-header'>
 				<h1>Get In Touch</h1>
 				<p>We are happy to assist you with our experties and services.</p>
@@ -26,7 +38,7 @@ const Contact = () => {
 					<p>You can directly reach us on below contact information.</p>
 					<span className='mobile-info'>
 						<IoMdCall />
-						+91 8360614667
+						+91 9876660275
 					</span>
 					<span className='email-info'>
 						<GrMail />

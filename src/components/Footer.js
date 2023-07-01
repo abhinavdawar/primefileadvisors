@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-	FaFacebookF,
 	FaInstagram,
-	FaTwitter,
-	FaLinkedin,
 	FaYoutube,
 } from 'react-icons/fa';
 import { Zoom } from 'react-awesome-reveal';
@@ -16,35 +13,14 @@ const Footer = () => {
 			<div className='social-icons'>
 				<Zoom>
 					<div className='social-link'>
-						<Link>
-							<FaFacebookF className='social-icon' />
-						</Link>
-					</div>
-				</Zoom>
-				<Zoom>
-					<div className='social-link'>
-						<Link>
+						<Link to='https://instagram.com/_primefile_advisors_pvt_ltd_?igshid=MzRlODBiNWFlZA=='>
 							<FaInstagram className='social-icon' />
 						</Link>
 					</div>
 				</Zoom>
 				<Zoom>
 					<div className='social-link'>
-						<Link>
-							<FaTwitter className='social-icon' />
-						</Link>
-					</div>
-				</Zoom>
-				<Zoom>
-					<div className='social-link'>
-						<Link>
-							<FaLinkedin className='social-icon' />
-						</Link>
-					</div>
-				</Zoom>
-				<Zoom>
-					<div className='social-link'>
-						<Link>
+						<Link to='https://www.youtube.com/channel/UCYHZREHV2EEbZZ50Sbnm3KA'>
 							<FaYoutube className='social-icon' />
 						</Link>
 					</div>

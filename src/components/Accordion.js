@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiPlus, FiMinus } from 'react-icons/fi';
 import { Fade } from 'react-awesome-reveal';
 const Accordion = ({ items }) => {
 	const [activeIndex, setActiveIndex] = useState(-1);
@@ -8,19 +9,23 @@ const Accordion = ({ items }) => {
 	return (
 		<>
 			{items.map((item, index) => (
-				// <Fade direction='left'>
-				<Fade direction='left' key={item.title} className='accordion-item'>
-					<button
-						onClick={() => handleClick(index)}
-						className='accordion-title'
-					>
-						{item.title}
-					</button>
+				<div direction='left' key={item.title} className='accordion-item'>
+					<div className='accordion-title'>
+						<button onClick={() => handleClick(index)}>{item.title}</button>
+						{index === activeIndex ? (
+							<i className='accordion-icon'>
+								<FiMinus />
+							</i>
+						) : (
+							<i className='accordion-icon'>
+								<FiPlus />
+							</i>
+						)}
+					</div>
 					{index === activeIndex && (
 						<p className='accordion-content'>{item.content}</p>
 					)}
-				</Fade>
-				// </Fade>
+				</div>
 			))}
 		</>
 	);

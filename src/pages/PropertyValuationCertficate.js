@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImageLanding from '../assets/png9.png';
+// import ImageLanding from '../assets/black_5.png';
 import { BiCheckCircle } from 'react-icons/bi';
 import { BsFileEarmarkCheckFill } from 'react-icons/bs';
 import { FaHandshake } from 'react-icons/fa';
@@ -17,6 +18,9 @@ const template_id = '';
 const user_id = '';
 
 const PropertyValuationCertficate = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<motion.div
 			className='property-container'
@@ -219,6 +223,18 @@ const PropertyValuationCertficate = () => {
 				</VerticalTimeline>
 			</div>
 			<div className='property-form'>
+				<ul class='bg-bubbles'>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 				<CertificateForm
 					service_id={service_id}
 					template_id={template_id}
