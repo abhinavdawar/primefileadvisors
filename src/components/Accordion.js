@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import { Fade } from 'react-awesome-reveal';
 const Accordion = ({ items }) => {
 	const [activeIndex, setActiveIndex] = useState(-1);
 	const handleClick = (index) => {

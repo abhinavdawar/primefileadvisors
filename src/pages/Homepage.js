@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import AboutImage from '../assets/aboutImage.png';
 import Typewriter from 'typewriter-effect';
-import Wave from 'react-wavify';
 import AboutUs from '../assets/teamImage.jpg';
 import ReviewSlider from '../components/ReviewSlider';
 import Pricing from '../components/Pricing';
