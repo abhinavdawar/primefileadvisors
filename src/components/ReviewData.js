@@ -42,6 +42,22 @@ const ReviewData = [
 			'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea     commodo consequat.',
 		image: icon2,
 	},
+	{
+		id: '6',
+		name: 'Greg Andrson',
+		form: 'Avid Forest Travel User',
+		reviewText:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea     commodo consequat.',
+		image: icon3,
+	},
+	{
+		id: '7',
+		name: 'Greg Andrson',
+		form: 'Avid Forest Travel User',
+		reviewText:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea     commodo consequat.',
+		image: icon1,
+	},
 ];
 
 export default ReviewData;

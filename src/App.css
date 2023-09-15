@@ -35,7 +35,7 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	/* overflow: hidden; */
 	line-height: 1.3;
 }
 
@@ -223,6 +223,7 @@ nav {
 /* ---------------- hompage starts ----------------*/
 .homepage-container {
 	margin-top: 70px;
+	overflow: hidden;
 }
 .dimmed {
 	background-color: rgba(255, 255, 255, 0.8);
@@ -549,6 +550,7 @@ nav {
 	background-position: cover;
 	margin-top: 70px;
 	position: relative;
+	overflow: hidden;
 }
 .contact-container .contact-header {
 	max-width: 60vw;
@@ -570,7 +572,7 @@ nav {
 	background-color: #172b46;
 	padding: 10px;
 	width: 70vw;
-	height: 400px;
+	height: 480px;
 	z-index: 2;
 	border-radius: 20px;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -579,23 +581,17 @@ nav {
 }
 .contact-form {
 	width: 60%;
-	height: 380px;
+	height: 450px;
 }
 .form-container .contact-info {
 	width: 30%;
-	height: 380px;
+	height: 450px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 30px;
-	/* background: rgb(127, 127, 213);
-	background: linear-gradient(
-		180deg,
-		rgba(127, 127, 213, 1) 16%,
-		rgba(145, 234, 228, 1) 90%
-	); */
 	background-color: #0a1930;
 	border-radius: 20px;
 	color: var(--white-color);
@@ -614,6 +610,7 @@ nav {
 	background-color: #0a1930;
 	position: relative;
 	z-index: 20;
+	overflow: hidden;
 }
 
 form {
@@ -624,6 +621,7 @@ form {
 	justify-content: center;
 	position: relative;
 	z-index: 20;
+	overflow: hidden;
 }
 .contact-form form {
 	width: 100%;
@@ -662,6 +660,7 @@ input {
 	border: none;
 	border-bottom: 2px solid var(--black-color);
 	background-color: transparent;
+	color: #fff;
 }
 input::placeholder {
 	transition: all 0.3s ease-in-out;
@@ -670,8 +669,9 @@ input::placeholder {
 }
 input:focus {
 	outline: none;
-	border-bottom: 2px solid #0a1930;
+	border-bottom: 2px solid #fff;
 	transition: all 0.3s ease-in-out;
+	color: #fff;
 }
 input:focus::placeholder {
 	font-size: 10px;
@@ -686,6 +686,7 @@ textarea {
 }
 textarea:focus {
 	outline: none;
+	color: #fff;
 }
 .textarea-input {
 	width: 100%;
@@ -717,6 +718,7 @@ textarea:focus {
 	background-position: cover; */
 	background-color: #0a1930;
 	margin-top: 70px;
+	overflow: hidden;
 }
 .about-container .about-landing {
 	height: 100vh;
@@ -1174,7 +1176,7 @@ textarea:focus {
 	position: relative;
 }
 .info-image img {
-	height: 500px;
+	height: 100%;
 	width: 100%;
 }
 .info-text {
@@ -1201,7 +1203,7 @@ textarea:focus {
 	background-color: rgba(227, 227, 227, 0.08);
 	margin: 30px 0;
 	position: relative;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 #testimonials::before,
 #testimonials::after {
@@ -1313,12 +1315,9 @@ textarea:focus {
 .faq-container {
 	height: 100%;
 	width: 100%;
-	/* background-image: url('./assets/back6.png');
-	background-attachment: fixed;
-	background-size: center;
-	background-position: cover; */
 	background-color: #0a1930;
 	margin-top: 70px;
+	overflow: hidden;
 }
 .faq-container .faq-landing {
 	height: 100vh;
@@ -1448,8 +1447,11 @@ textarea:focus {
 	border: none;
 	background-color: transparent;
 }
-.accordion-title {
+.accordion-head {
 	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #0a1930;
 	padding: 15px;
 	border: none;
@@ -1457,16 +1459,8 @@ textarea:focus {
 	position: relative;
 	text-align: center;
 }
-.accordion-title button {
-	background-color: transparent;
-	outline: none;
-	border: none;
-	color: #00eeff;
-	margin-left: 5px;
-}
-.accordion-title .accordion-icon {
-	position: absolute;
-	right: 20px;
+.accordion-title {
+	width: 100%;
 }
 .accordion-content {
 	width: 80%;
@@ -1483,9 +1477,7 @@ textarea:focus {
 .property-container {
 	width: 100vw;
 	margin-top: 70px;
-}
-.networth-container,
-.property-container {
+	overflow: hidden;
 	background-color: #0a1930;
 }
 .networth-landing,
@@ -1558,6 +1550,7 @@ textarea:focus {
 	backdrop-filter: blur(15px);
 	padding: 30px;
 	text-align: center;
+	overflow: hidden;
 }
 .circle,
 .circle-top {
@@ -1576,10 +1569,6 @@ textarea:focus {
 	top: -30px;
 	left: -15px;
 }
-.networth-landing-text p {
-	max-width: 90%;
-	font-size: 20px;
-}
 
 .property-landing-text h1 {
 	color: #00eeff;
@@ -1589,6 +1578,10 @@ textarea:focus {
 	margin-top: 10px;
 	letter-spacing: 0.5px;
 	color: #fff;
+	font-size: 20px;
+}
+.networth-landing-text p {
+	max-width: 90%;
 	font-size: 20px;
 }
 .networth-landing .networth-landing-img,
@@ -1621,7 +1614,7 @@ textarea:focus {
 .networth-container2 p {
 	margin-top: 10px;
 	letter-spacing: 1px;
-	max-width: 70%;
+	width: 70%;
 }
 .networth-container3 .networth-content {
 	display: flex;
@@ -1777,6 +1770,7 @@ textarea:focus {
 	width: 100%;
 	height: 100%;
 	background-color: #0a1930;
+	overflow: hidden;
 }
 .itr-landing {
 	width: 100vw;
@@ -1829,7 +1823,7 @@ textarea:focus {
 }
 .itr-container1 {
 	padding: 60px;
-	background-color: #fff;
+	background-color: rgb(255, 255, 255);
 }
 .itr-features {
 	display: flex;
@@ -1921,6 +1915,29 @@ textarea:focus {
 	font-size: 30px;
 }
 
+/* slider */
+.swiper-button-next,
+.swiper-button-prev {
+	padding: 20px;
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(15px);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 16px !important;
+	color: #00eeff;
+	font-weight: 700;
+}
+.swiper-pagination-bullet {
+	background-color: rgba(255, 255, 255, 0.8) !important;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	background-color: #00eeff !important;
+}
+
 ::-webkit-scrollbar {
 	width: 8px;
 }
@@ -1932,7 +1949,7 @@ textarea:focus {
 	background: linear-gradient(#01b8b0, #cff9f7);
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1180px) {
 	nav {
 		justify-content: space-between;
 	}
@@ -2128,7 +2145,7 @@ textarea:focus {
 	}
 	.contact-form,
 	.property-form {
-		width: 90%;
+		width: 100%;
 		margin: 30px 0;
 	}
 	.contact-details {
@@ -2180,9 +2197,6 @@ textarea:focus {
 	.about-info p {
 		max-width: 90%;
 	}
-	#testimonials article #reviews {
-		flex-direction: column;
-	}
 	#testimonials article #reviews .review {
 		margin: 20px 0;
 	}
@@ -2190,7 +2204,7 @@ textarea:focus {
 	#testimonials::after {
 		width: 100%;
 	}
-	.accordion-title,
+	.accordion-head,
 	.accordion-content {
 		width: 90%;
 	}
@@ -2204,10 +2218,18 @@ textarea:focus {
 		width: 100%;
 		height: 100%;
 	}
+	.networth-landing-details {
+		padding: 20px 0px;
+	}
+	.networth-landing-text h1,
+	.property-landing-text h1 {
+		font-size: 20px;
+	}
 	.networth-landing-text p,
 	.property-landing-text p {
 		margin-top: 10px;
 		letter-spacing: 1px;
+		font-size: 16px;
 	}
 	.networth-landing .networth-landing-img,
 	.property-landing .property-landing-img {
@@ -2219,14 +2241,24 @@ textarea:focus {
 		height: 80%;
 		width: 100%;
 	}
+	.networth-container1,
+	.networth-container2 {
+		padding: 30px 10px;
+	}
+	.networth-container1 p,
+	.networth-container2 p {
+		width: 90vw;
+	}
 	.networth-container3 .networth-content {
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 	.networth-left,
 	.networth-right {
 		padding: 20px;
 		border-left: 5px solid #0042f6;
-		width: 100%;
+		width: 70vw;
 		font-size: 13px;
 		text-align: left;
 	}
@@ -2249,7 +2281,7 @@ textarea:focus {
 	}
 	.property-container2,
 	.property-container3 {
-		padding: 20px;
+		padding: 20px 0;
 	}
 
 	.prop-cont2-content,
@@ -2257,7 +2289,7 @@ textarea:focus {
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
 		margin-top: 40px;
 		padding: 0 20px;
@@ -2268,7 +2300,7 @@ textarea:focus {
 	.prop-cont3-left,
 	.prop-cont3-right {
 		padding: 10px;
-		width: 100%;
+		width: 70vw;
 		margin-left: 0;
 		margin-right: 0;
 		text-align: left;
@@ -2342,13 +2374,18 @@ textarea:focus {
 	.about-info .info-image,
 	.about-info .info-text {
 		width: 100%;
+		height: 100%;
 	}
 	.about-info .info-text {
 		margin-top: 30px;
+		padding: 20px;
 	}
 	.info-text h1 {
 		font-size: 35px;
 		letter-spacing: 2px;
+	}
+	.info-text p {
+		text-align: center;
 	}
 	.about-info p {
 		max-width: 100%;
@@ -2378,7 +2415,7 @@ textarea:focus {
 		margin: 20px 0 0 0;
 	}
 	.faq-text h1 {
-		font-size: 35px;
+		font-size: 30px;
 		letter-spacing: 2px;
 	}
 
@@ -2396,6 +2433,7 @@ textarea:focus {
 		margin: 10px 0;
 		letter-spacing: 1px;
 		max-width: 100%;
+		font-size: 16px;
 	}
 	.services-text {
 		width: 100%;
@@ -2411,5 +2449,14 @@ textarea:focus {
 	}
 	.footer-container .heading {
 		font-size: 30px;
+	}
+
+	.prop-cont2-left,
+	.prop-cont2-right,
+	.prop-cont3-left,
+	.prop-cont3-right,
+	.networth-left,
+	.networth-right {
+		width: 90vw;
 	}
 }

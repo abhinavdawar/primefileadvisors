@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import AboutImage from '../assets/aboutImage.png';
 import Typewriter from 'typewriter-effect';
-import Wave from 'react-wavify';
 import AboutUs from '../assets/teamImage.jpg';
 import ReviewSlider from '../components/ReviewSlider';
 import Pricing from '../components/Pricing';
+import WorkCard from '../components/WorkCard';
+import StatsCard from '../components/StatsCard';
 import { motion } from 'framer-motion';
 import { Zoom, Fade } from 'react-awesome-reveal';
 import { FaHandshake } from 'react-icons/fa';
@@ -51,16 +52,6 @@ const Homepage = () => {
 					</Fade>
 				</div>
 			</div>
-			{/* <Wave
-				fill='#ffffff'
-				paused={false}
-				options={{
-					height: 80,
-					amplitude: 40,
-					speed: 0.2,
-					points: 4,
-				}}
-			/> */}
 			<div className='about-info'>
 				<div className='info-image'>
 					<Fade direction='left'>
@@ -104,61 +95,33 @@ const Homepage = () => {
 					</Zoom>
 					<hr className='divider-sm my-3' />
 					<div className='work-container'>
-						<div className='work'>
-							<i className=''>
-								<FaHandshake />
-							</i>
-							<p className=''>Comprehensive Business Support</p>
-						</div>
-						<div className='work'>
-							<i className=''>
-								<BsFileEarmarkCheckFill />
-							</i>
-							<p className=''>
-								Streamlining Acquisition of all necessary financial documents
-							</p>
-						</div>
-						<div className='work'>
-							<i className=''>
-								<BsSendCheckFill />
-							</i>
-							<p className=''>One stop solution for immigration agencies</p>
-						</div>
+						<WorkCard
+							workTitle='Comprehensive Business Support'
+							CardIcon={<FaHandshake />}
+						/>
+						<WorkCard
+							workTitle='Streamlining Acquisition of all necessary financial documents'
+							CardIcon={<BsFileEarmarkCheckFill />}
+						/>
+						<WorkCard
+							workTitle='One stop solution for immigration agencies'
+							CardIcon={<BsSendCheckFill />}
+						/>
 					</div>
 					<div className='stats-container'>
 						<div
 							className='stats-group'
 							style={{ position: 'relative', zIndex: '1' }}
 						>
-							<div className=' stats'>
-								<Zoom>
-									<h6 className=''>105</h6>
-								</Zoom>
-								<p>Clients</p>
-							</div>
-							<div className='stats'>
-								<Zoom>
-									<h6 className=''>120</h6>
-								</Zoom>
-								<p>Projects</p>
-							</div>
+							<StatsCard Number='105' StatTitle='Clients' />
+							<StatsCard Number='120' StatTitle='Projects' />
 						</div>
 						<div
 							className='stats-group'
 							style={{ position: 'relative', zIndex: '1' }}
 						>
-							<div className='stats'>
-								<Zoom>
-									<h6 className=''>5000</h6>
-								</Zoom>
-								<p>Hours of Service</p>
-							</div>
-							<div className='stats'>
-								<Zoom>
-									<h6 className=''>20</h6>
-								</Zoom>
-								<p>Hard Workers</p>
-							</div>
+							<StatsCard Number='5000' StatTitle='Hours of Service' />
+							<StatsCard Number='20' StatTitle='Hard Workers' />
 						</div>
 					</div>
 				</div>

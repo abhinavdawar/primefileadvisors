@@ -22,17 +22,16 @@ const FAQ = () => {
 					<h1>Get your answer</h1>
 					<Zoom>
 						<p>
-							We are here to answer all your Queries related to immigration. We are one stop solution for 
-							all your needs. The most common asked Questions are listed below. But if you still need more 
-							information then send us your Query on Contact Us page.
+							We are here to answer all your Queries related to immigration. We
+							are one stop solution for all your needs. The most common asked
+							Questions are listed below. But if you still need more information
+							then send us your Query on Contact Us page.
 						</p>
 						<p>We will be Happy to serve you better</p>
 					</Zoom>
 				</div>
 				<div className='faq-image'>
-					{/* <Fade direction='right'> */}
 					<img src={FAQImage} alt='' />
-					{/* </Fade> */}
 				</div>
 			</div>
 			<div className='' id='faq'>

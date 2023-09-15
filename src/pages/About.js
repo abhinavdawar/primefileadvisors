@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import TaglineImage from '../assets/teamImage1.jpg';
 import HomeImage from '../assets/handshake.jpg';
-import { Link } from 'react-router-dom';
+import FeatureCard from '../components/FeatureCard';
+import CustomButton from '../components/CustomButton';
 import { BiCheckCircle } from 'react-icons/bi';
 import { MdPriceCheck, MdOutlineSpeed } from 'react-icons/md';
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 import { motion } from 'framer-motion';
 
@@ -26,54 +27,32 @@ const About = () => {
 					<h2 className=''>A one-stop solution for immigration agencies.</h2>
 					<h6>Check out what we can do for you</h6>
 					<div className='features-container'>
-						<Zoom>
-							<div className='feature'>
-								<i style={{ fontSize: '25px' }}>
-									<MdPriceCheck />
-								</i>
-								<p className=''>A highly competitive price per file.</p>
-							</div>
-						</Zoom>
-
-						<Zoom>
-							<div className='feature'>
-								<i style={{ fontSize: '25px' }}>
-									<BiCheckCircle />
-								</i>
-								<p className=''>A reliable and cost-effective partner.</p>
-							</div>
-						</Zoom>
-						<Zoom>
-							<div className='feature'>
-								<i style={{ fontSize: '25px' }}>
-									<MdOutlineSpeed />
-								</i>
-								<p className=''>speed and affordability Guaranteed</p>
-							</div>
-						</Zoom>
+						<FeatureCard
+							feature='A highly competitive price per file.'
+							cardIcon={<MdPriceCheck />}
+						/>
+						<FeatureCard
+							feature='A reliable and cost-effective partner.'
+							cardIcon={<BiCheckCircle />}
+						/>
+						<FeatureCard
+							feature='speed and affordability Guaranteed.'
+							cardIcon={<MdOutlineSpeed />}
+						/>
 					</div>
 					<div className='btn-conatiner'>
-						<Fade direction='up'>
-							<Link to='/income-tax-return' style={{ textDecoration: 'none' }}>
-								<button className=''>Income Tax Return</button>
-							</Link>
-						</Fade>
-						<Fade direction='up'>
-							<Link
-								to='/net-worth-certificate'
-								style={{ textDecoration: 'none' }}
-							>
-								<button className=''>Net Worth Certificate</button>
-							</Link>
-						</Fade>
-						<Fade direction='up'>
-							<Link
-								to='/property-valuation-certificate'
-								style={{ textDecoration: 'none' }}
-							>
-								<button className=''>Property Valuation Certificate</button>
-							</Link>
-						</Fade>
+						<CustomButton
+							route='/income-tax-return'
+							buttonName='Income Tax Return'
+						/>
+						<CustomButton
+							route='/net-worth-certificate'
+							buttonName='Net Worth Certificate'
+						/>
+						<CustomButton
+							route='/property-valuation-certificate'
+							buttonName='Property Valuation Certificate'
+						/>
 					</div>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PriceCard from './PriceCard';
 import { Link } from 'react-router-dom';
 import { BiCheckCircle } from 'react-icons/bi';
 import {
@@ -19,45 +20,24 @@ const Pricing = () => {
 				F.A.Q or <Link to='/contact'>contact us</Link>
 			</p>
 			<div className='prices'>
-				<div className='price'>
-					<div className='price-head'>
-						<i>
-							<FaCcVisa />
-						</i>
-						<h2>Net Worth Certification</h2>
-					</div>
-
-					<h1>
-						<span>₹</span>1,500
-					</h1>
-					<h3>Net Worth for Visa Application</h3>
-				</div>
-				<div className='price'>
-					<div className='price-head'>
-						<i>
-							<FaGlobeAmericas />
-						</i>
-						<h2>Property Valuation Certification</h2>
-					</div>
-
-					<h1>
-						<span>₹</span>2,000
-					</h1>
-					<h3>Property Valuation for one property</h3>
-				</div>
-				<div className='price'>
-					<div className='price-head'>
-						<i>
-							<FaCalendarCheck />
-						</i>
-						<h2>Income Tax Return</h2>
-					</div>
-
-					<h1>
-						<span>₹</span>1,000
-					</h1>
-					<h3>Income Tax Return for one Year</h3>
-				</div>
+				<PriceCard
+					cardTitle='Net Worth Certification'
+					price='1,500'
+					cardDetails='Net Worth for Visa Application'
+					cardIcon={<FaCcVisa />}
+				/>
+				<PriceCard
+					cardTitle='Property Valuation Certification'
+					price='1,500'
+					cardDetails='Net Worth for Visa Application'
+					cardIcon={<FaGlobeAmericas />}
+				/>
+				<PriceCard
+					cardTitle='Income Tax Return'
+					price='1,000'
+					cardDetails='Income Tax Return for one Year'
+					cardIcon={<FaCalendarCheck />}
+				/>
 			</div>
 			<div className='package'>
 				<div className='package-head'>

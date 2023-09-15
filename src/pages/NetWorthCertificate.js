@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { BiCheckCircle } from 'react-icons/bi';
 import CertificateForm from '../components/CertificateForm';
+import { NetworthDataA, NetworthDataB } from '../components/ServicesData';
+import BubbleBackground from '../components/BubbleBackground';
 import { motion } from 'framer-motion';
 import { Fade } from 'react-awesome-reveal';
 
@@ -24,9 +26,9 @@ const NetWorthCertificate = () => {
 					<h1>Net Worth Certificate for VISA</h1>
 					<div className='networth-landing-details'>
 						<p>
-							Do you required Networth Certificate for VISA Purpose? Legal Adda
-							is Best Consultant for Networth Certificate. We provide Instant
-							Delivery of Net Worth Certificate at your location.
+							Do you required Networth Certificate for VISA Purpose? Prime File
+							Advisors is Best Consultant for Networth Certificate. We provide
+							Instant Delivery of Net Worth Certificate at your location.
 						</p>
 						<p>
 							Commonly Networth Certificate required for VISA, Embassy/Consulate
@@ -70,102 +72,33 @@ const NetWorthCertificate = () => {
 					<Fade direction='left'>
 						<div className='networth-left'>
 							<h6>Value of Immovable Property</h6>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Bunglow / Plot</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Appartment / Flats for Residence</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Agriculture Land/ other Land</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Office/ Commercial Spaces etc</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Attached Furniture etc.</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Other Immovable Property/Assets</span>
-							</div>
+							{NetworthDataA.map((asset) => (
+								<div key={asset.name}>
+									<i>
+										<BiCheckCircle />
+									</i>
+									<span>{asset.name}</span>
+								</div>
+							))}
 						</div>
 					</Fade>
 					<Fade direction='right'>
 						<div className='networth-right'>
 							<h6>Value of Movable Assets</h6>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Bank Balance / FD's / Mutual Fund / Shares etc</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Vehicle (Car, Bike, Bus, Plane, etc)</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Gold Ornaments, Diamonds, Metal Etc</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Book Value of Sundry Debtors, Stock, Assets etc.</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>
-									Realization Value of Life Insurance, Investments etc
-								</span>
-							</div>
-							<div className=''>
-								<i>
-									<BiCheckCircle />
-								</i>
-								<span>Other Monetory Assets</span>
-							</div>
+							{NetworthDataB.map((asset) => (
+								<div key={asset.name}>
+									<i>
+										<BiCheckCircle />
+									</i>
+									<span>{asset.name}</span>
+								</div>
+							))}
 						</div>
 					</Fade>
 				</div>
 			</div>
 			<div className='networth-form'>
-				<ul class='bg-bubbles'>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<BubbleBackground />
 				<CertificateForm
 					service_id={service_id}
 					template_id={template_id}
