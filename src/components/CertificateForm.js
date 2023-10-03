@@ -6,6 +6,7 @@ const CertificateForm = () => {
 		<form
 			action='https://formsubmit.co/primefileadvisors@gmail.com'
 			method='POST'
+			encType='multipart/form-data'
 		>
 			<div className='input-container'>
 				<Fade direction='right'>
@@ -38,6 +39,12 @@ const CertificateForm = () => {
 					fixed='true'
 					placeholder='Write your message here'
 				></textarea>
+			</div>
+			<div className='input-container textarea-input'>
+				<Fade direction='right'>
+					<label>Attach File</label>
+				</Fade>
+				<input type="file" name="attachment" accept="image/png, image/jpeg, application/pdf, application/doc, application/docx" />
 			</div>
 			<input
 				type='submit'
