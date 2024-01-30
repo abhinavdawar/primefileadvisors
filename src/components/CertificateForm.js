@@ -2,6 +2,9 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 
 const CertificateForm = () => {
+	const handleFile = (e) => {
+		console.log(e.target.files);
+	};
 	return (
 		<form
 			action='https://formsubmit.co/primefileadvisors@gmail.com'
@@ -44,7 +47,13 @@ const CertificateForm = () => {
 				<Fade direction='right'>
 					<label>Attach File</label>
 				</Fade>
-				<input type="file" name="attachment" accept="image/png, image/jpeg, application/pdf, application/doc, application/docx" />
+				<input
+					type='file'
+					name='attachment'
+					accept='image/png, image/jpeg, application/pdf, application/doc, application/docx'
+					onChange={handleFile}
+					multiple
+				/>
 			</div>
 			<input
 				type='submit'

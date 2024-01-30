@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
+import { FaClock, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logoTrans.png';
 import { useLocation } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
+import ContactButton from './ContactButton';
 
 const linksArray = [
 	{ name: 'Home', to: '/' },
@@ -38,17 +40,28 @@ const Navbar = () => {
 	};
 
 	return (
-		<div>
-			<nav>
-				<Link
-					to='/'
-					className='logo_container'
-					style={{ textDecoration: 'none' }}
-				>
-					<Fade direction='left'>
-						<img className='logo-image' src={Logo} alt='' />
-					</Fade>
+		<div className='navbar-container'>
+			<div className='navbar-line'>
+				<p>
+					<span className='navbar-line-icon'>
+						<FaClock />
+					</span>{' '}
+					Available (24 &#215; 7)
+				</p>
+			</div>
+			<div className='navbar-contact-links'>
+				<Link to='/' className='logo-container'>
+					<h1>PRIME FILE ADVISORS</h1>
+					<div className='logo-image-container'>
+						<img className='logo-image' src={Logo} alt='Prime File Advisors' />
+					</div>
 				</Link>
+				<div className='navbar-buttons-container'>
+					<ContactButton Name='+91 9876660279' Icon={<FiPhoneCall />} />
+					<ContactButton Name='+91 9876660279' Icon={<FaWhatsapp />} />
+				</div>
+			</div>
+			<nav>
 				<div className={menu_class}>
 					<ul className='links'>
 						{linksArray.map((link) => (
@@ -64,24 +77,12 @@ const Navbar = () => {
 						))}
 					</ul>
 				</div>
-
-				<a
-					href='tel:+919876660275'
-					className='phone-call'
-					style={{ textDecoration: 'none' }}
-				>
-					<i className='call_icon' title='Call now'>
-						<FiPhoneCall />
-					</i>
-
-					<span className='call_text'>Call Now</span>
-				</a>
+				<div className='burger-menu' onClick={updateMenu}>
+					<div className={burger_class}></div>
+					<div className={burger_class}></div>
+					<div className={burger_class}></div>
+				</div>
 			</nav>
-			<div className='burger-menu' onClick={updateMenu}>
-				<div className={burger_class}></div>
-				<div className={burger_class}></div>
-				<div className={burger_class}></div>
-			</div>
 		</div>
 	);
 };
