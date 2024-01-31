@@ -4,7 +4,6 @@ import { FaClock, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logoTrans.png';
 import { useLocation } from 'react-router-dom';
-import { Fade } from 'react-awesome-reveal';
 import ContactButton from './ContactButton';
 
 const linksArray = [
