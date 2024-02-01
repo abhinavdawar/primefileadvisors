@@ -1,5 +1,5 @@
 import React from 'react';
-import Homepage from '../pages/Homepage';
+import HomepageNew from '../pages/HomepageNew';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import FAQ from '../pages/FAQ';
@@ -15,7 +15,7 @@ const AnimatedRoutes = () => {
 	return (
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>
-				<Route exact path='/' element={<Homepage />}></Route>
+				<Route exact path='/' element={<HomepageNew />}></Route>
 				<Route exact path='/about' element={<About />}></Route>
 				<Route exact path='/contact' element={<Contact />}></Route>
 				<Route exact path='/faq' element={<FAQ />}></Route>

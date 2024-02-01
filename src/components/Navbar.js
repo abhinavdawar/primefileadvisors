@@ -56,8 +56,16 @@ const Navbar = () => {
 					</div>
 				</Link>
 				<div className='navbar-buttons-container'>
-					<ContactButton Name='+91 9876660279' Icon={<FiPhoneCall />} />
-					<ContactButton Name='+91 9876660279' Icon={<FaWhatsapp />} />
+					<ContactButton
+						name='+91 9876660279'
+						icon={<FiPhoneCall />}
+						url='tel:+919876660279'
+					/>
+					<ContactButton
+						name='+91 9876660279'
+						icon={<FaWhatsapp />}
+						url='https://wa.me/919876660279'
+					/>
 				</div>
 			</div>
 			<nav>

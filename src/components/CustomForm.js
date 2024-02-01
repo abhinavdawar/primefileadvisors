@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CustomForm = () => {
+const CustomForm = ({ Horizontal }) => {
 	return (
 		<form
-			className='custom-form'
+			className={`custom-form ${Horizontal && 'horizontal-form'} `}
 			action='https://formsubmit.co/primefileadvisors@gmail.com'
 			method='POST'
 			encType='multipart/form-data'

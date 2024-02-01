@@ -15,7 +15,7 @@ const About = () => {
 	}, []);
 	return (
 		<motion.div
-			className='homepage-container text-white'
+			className='about-container text-white'
 			id='landing'
 			initial={{ width: '0' }}
 			animate={{ width: '100%' }}
@@ -82,12 +82,12 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<div className='homepage-section'>
-				<div className='homepage-section-content'>
-					<div className='homepage-section-image'>
+			<div className='about-section'>
+				<div className='about-section-content'>
+					<div className='about-section-image'>
 						<img src={HomeImage} alt='' />
 					</div>
-					<div className='homepage-section-text'>
+					<div className='about-section-text'>
 						<Fade direction='left'>
 							<p>
 								We aim to revolutionize the business support services provided
