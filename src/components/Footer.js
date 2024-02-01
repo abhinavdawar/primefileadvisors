@@ -1,44 +1,111 @@
 import React from 'react';
+import CustomForm from './CustomForm';
 import { Link } from 'react-router-dom';
-import { FaYoutube, FaInstagram } from 'react-icons/fa';
-
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
+import { TbSquareRoundedArrowRightFilled } from 'react-icons/tb';
+import CustomLink, { customerSupportArr } from './CustomLink';
 const Footer = () => {
+	const servicesLinkArr = [
+		{
+			name: 'Property Valuation Certificate',
+			url: '/property-valuation-certificate',
+		},
+		{ name: 'CA Valuation', url: '/net-worth-certificate' },
+		{ name: 'Income Tax Return', url: '/income-tax-return' },
+	];
+	const otherLinkArr = [
+		{ name: 'Contact Us', url: '/contact' },
+		{ name: 'Home', url: '/' },
+	];
 	return (
-		<Footer className='footer-container'>
+		<div className='footer-container'>
 			<div className='footer-top'>
 				<div className='footer-top-head'>
-					<h1>PRIME FILE ADVISORS</h1>
+					<h3>PRIME FILE ADVISORS</h3>
 					<p>
 						ITR {'>'} Property Valuation {'>'} CA Valuation
 					</p>
 				</div>
 				<div className='footer-top-links'>
-					<h4>Let's chat!</h4>
+					<h4>Follow us on Social Media</h4>
+
 					<div className='footer-top-link'>
-						<Link>
-							<FaYoutube />
+						<Link
+							className='footer-social-link'
+							to='https://www.youtube.com/channel/UCYHZREHV2EEbZZ50Sbnm3KA'
+						>
+							<i>
+								<FaYoutube />
+							</i>
 						</Link>
-						<Link>
-							<FaInstagram />
+						<Link
+							className='footer-social-link'
+							to='https://instagram.com/_primefile_advisors_pvt_ltd_?igshid=MzRlODBiNWFlZA=='
+						>
+							<i>
+								<FaInstagram />
+							</i>
 						</Link>
 					</div>
 				</div>
 			</div>
-			<div className='footer-content-container'>
-				<div className='footer-content-head'>
-					<img src='' alt='' />
-					<h4>PRIME FILE ADVISORS</h4>
+			<div className='footer-content'>
+				<div className='footer-details-container'>
+					<div className='footer-heading'>
+						<h6>CUSTOMER SUPPORT (24 &#215; 7)</h6>
+					</div>
+					<div className='footer-details'>
+						{customerSupportArr.map((item, index) => (
+							<CustomLink
+								key={index}
+								title={item.title}
+								text={item.text}
+								url={item.url}
+								icon={item.icon}
+								color={item.color}
+							/>
+						))}
+					</div>
 				</div>
-				<div className='footer-content'>
-					<div className='footer-details'></div>
-					<div className='footer-form'></div>
-					<div className='footer-services'></div>
+				<div className='footer-form'>
+					<div className='footer-heading'>
+						<h6>REQUEST CALL BACK</h6>
+					</div>
+					<CustomForm />
+				</div>
+				<div className='footer-services'>
+					<div className='footer-heading'>
+						<h6>OUR SERVICES</h6>
+					</div>
+					<div className='footer-services-links'>
+						{servicesLinkArr.map((item, index) => (
+							<Link key={index} to={item.url} className='footer-service-link'>
+								<i>
+									<TbSquareRoundedArrowRightFilled />
+								</i>
+								{item.name}
+							</Link>
+						))}
+					</div>
+					<div className='footer-heading important-links'>
+						<h6>IMPORTANT LINKS</h6>
+					</div>
+					<div className='footer-services-links'>
+						{otherLinkArr.map((item, index) => (
+							<Link key={index} to={item.url} className='footer-service-link'>
+								<i>
+									<TbSquareRoundedArrowRightFilled />
+								</i>
+								{item.name}
+							</Link>
+						))}
+					</div>
 				</div>
 			</div>
 			<div className='footer-bottom'>
 				<p>© Copyrights 2024 - All Rights Reserved by Prime File Advisors™</p>
 			</div>
-		</Footer>
+		</div>
 	);
 };
 
