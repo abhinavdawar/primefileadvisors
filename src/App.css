@@ -189,6 +189,108 @@ nav {
 	margin: 20px 0 30px 0;
 	padding: 0px 5vw;
 }
+.homelanding-services-container {
+	padding: 30px 0 0 0;
+	width: 100vw;
+	text-align: center;
+}
+.homelanding-services-container h2 {
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 20px 0 30px 0;
+	padding: 0px 5vw;
+}
+.homelanding-services {
+	padding: 30px 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.homelanding-service {
+	width: 250px;
+	height: 180px;
+	padding: 30px;
+	font-size: 24px;
+	text-decoration: none;
+	border: 2px solid #000;
+	background-color: #19a382;
+	border-radius: 10px;
+	color: #fff;
+	margin: 0 30px;
+	transition: all 0.5s ease-in-out;
+}
+.homelanding-service i {
+	font-size: 30px;
+}
+.homelanding-service h4 {
+	margin: 15px 0 0 0;
+	letter-spacing: 1px;
+}
+.homelanding-service:nth-child(3) h4 {
+	padding: 0 50px;
+}
+.homelanding-service:hover {
+	background-color: #fff;
+	color: #19a382;
+}
+.team-container {
+	width: 100vw;
+	padding: 40px 20px;
+	display: block;
+	text-align: center;
+}
+.team-container h1 {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.team-details {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.team-details h3 {
+	width: 200px;
+	height: 150px;
+	padding: 20px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin: 40px 50px;
+	letter-spacing: 0.5px;
+}
+.team-details h3:nth-child(3) {
+	padding-top: 30px;
+}
+.homepage-features-container {
+	width: 100vw;
+	padding: 40px 20px;
+	display: block;
+	text-align: center;
+}
+.homepage-features-container h1 {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.homepage-features {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0;
+}
+.homepage-features-details {
+	text-align: left;
+	padding: 40px;
+}
+.homepage-features-details h5 {
+	margin: 20px 0;
+	letter-spacing: 0.5px;
+}
+.homepage-features-details h5 i {
+	font-size: 24px;
+	margin: 0 5px;
+}
 /* ---------------- About page starts ----------------*/
 .about-container {
 	overflow: hidden;
@@ -1810,6 +1912,183 @@ textarea:focus {
 .custom-link:hover .custom-link-decor {
 	transform: translate(0);
 }
+
+/*---------------------------Company Card------------------------------*/
+
+.company-card {
+	height: fit-content;
+	width: fit-content;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.company-card-top {
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+	padding: 20px 00px 60px 0px;
+	background-color: #fff;
+}
+.comany-card-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.comany-card-name img {
+	height: 30px;
+	width: 30px;
+}
+.comany-card-name h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+.company-card-top h5 {
+	position: absolute;
+	font-size: 15px;
+	bottom: 0;
+	right: 0;
+	padding: 5px 10px;
+	background-color: #a2c7b6;
+	color: #000;
+	font-weight: 600;
+	border-radius: 10px 0 0 0;
+}
+.company-card-top p {
+	font-size: 15px;
+}
+
+.comany-card-details {
+	display: flex;
+	flex-direction: column;
+	background-color: #19a382;
+	border-radius: 20px 0px 0px 0px;
+	padding: 20px 0 35px 0;
+	position: relative;
+}
+.comany-card-details button {
+	background-color: transparent;
+	border: none;
+	display: flex;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 15px;
+}
+.comany-card-details button i {
+	margin-right: 3px;
+}
+.comany-card-details span {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	padding: 3px;
+	font-size: 12px;
+}
+.comany-card-details span i {
+	color: green;
+	margin-right: 3px;
+	font-size: 10px;
+}
+
+/*---------------------------Google Reviews----------------------*/
+.google-reviews-container {
+	height: fit-content;
+	width: 100vw;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.google-reviews-container h2 {
+	font-weight: 600;
+	letter-spacing: 1;
+}
+.google-reviews {
+	width: 70vw;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin: 30px 0;
+}
+.google-reviews-top p {
+	letter-spacing: 1px;
+	margin: 0 0px 0 10px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.google-reviews-company-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.google-reviews-company-name img {
+	width: 50px;
+	height: 50px;
+}
+.google-reviews-company-name h2 {
+	font-weight: 600;
+}
+.google-reviews-company-rating {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 10px;
+}
+.google-reviews-company-rating h3 {
+	margin: 10px 5px 0 0;
+	color: #e39417;
+}
+.google-reviews-company-rating span {
+	margin: 15px 0 0 10px;
+}
+.google-reviews-details {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0 0 0;
+}
+.google-review {
+	display: flex;
+}
+.google-review-image {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-image: url(./assets/face-2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.google-review-info {
+	margin: 0 0 0 10px;
+}
+.google-review-info h5 {
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.8);
+}
+.google-review-info p {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 14px;
+	margin: 5px 0 0 2px;
+}
+.star-container i {
+	margin: 0 2px;
+	font-size: 26px;
+	color: #e39417;
+}
+.star-small i {
+	font-size: 22px;
+	margin: 0 4px 0 0;
+}
+/*---------------------------Footer------------------------------*/
 .footer-container {
 	width: 100vw;
 	height: fit-content;
@@ -2125,6 +2404,26 @@ textarea:focus {
 		grid-template-columns: 1fr 1fr;
 		align-self: center;
 	}
+	.google-reviews {
+		width: 100%;
+	}
+
+	.homepage-features {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 0;
+	}
+
+	.homepage-features-details {
+		text-align: left;
+		padding: 40px 20px;
+	}
+	.homepage-features-details h5 i {
+		font-size: 24px;
+		margin: 0 5px 0 0;
+	}
 }
 @media screen and (max-width: 900px) {
 	.footer-top {
@@ -2154,11 +2453,61 @@ textarea:focus {
 		width: 330px;
 		margin: 10px;
 	}
+	.google-reviews-container {
+		padding: 20px;
+	}
+	.google-reviews {
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+	}
+	.google-reviews-company-name img {
+		width: 40px;
+		height: 40px;
+	}
+	.google-reviews-company-name h2 {
+		font-size: 27px;
+	}
+	.google-reviews-company-rating span {
+		font-size: 14px;
+	}
+	.google-reviews-details {
+		padding: 20px;
+		align-items: center;
+	}
+	.google-review {
+		margin: 10px 0;
+	}
+	.star-container i {
+		font-size: 24px;
+	}
+	.star-small i {
+		font-size: 22px;
+	}
 }
 @media screen and (max-width: 800px) {
 	.footer-content {
 		grid-column-gap: 0;
 		grid-template-columns: 1fr;
+	}
+	.homelanding-services {
+		flex-direction: column;
+	}
+	.homelanding-service {
+		width: 90vw;
+		height: 150px;
+		margin: 0px 0 20px 0px;
+	}
+	.homelanding-service:nth-child(3) h4 {
+		padding: 0 0px;
+	}
+	.team-details {
+		flex-direction: column;
+	}
+	.team-details h3 {
+		width: 80vw;
+		height: 100px;
+		margin: 40px 0px 0 0;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -2190,6 +2539,9 @@ textarea:focus {
 	}
 	.footer-heading {
 		padding: 10px 50px;
+	}
+	.homepage-features-details {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 900px) {
