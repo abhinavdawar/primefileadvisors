@@ -10,13 +10,14 @@ const linksArray = [
 	{ name: 'Home', to: '/' },
 	{ name: 'About', to: '/about' },
 	{ name: 'FAQ', to: '/faq' },
-	{ name: 'Income Tax Return', to: '/income-tax-return' },
+	{ name: 'ITR Filling', to: '/income-tax-return' },
 	{ name: 'Net Worth Certificate', to: '/net-worth-certificate' },
 	{
 		name: 'Property Valuation Certificate',
 		to: '/property-valuation-certificate',
 	},
-	{ name: 'Contact Us', to: '/contact' },
+	{ name: 'Sample/Format', to: '/sample-format' },
+	{ name: 'Contact', to: '/contact' },
 ];
 
 const Navbar = () => {

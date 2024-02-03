@@ -11,14 +11,14 @@ const CompanyCard = () => {
 	return (
 		<div className='company-card'>
 			<div className='company-card-top'>
-				<div className='comany-card-name'>
+				<div className='company-card-name'>
 					<img src={Logo} alt='' />
 					<h2>Prime File Advisors</h2>
 				</div>
 				<h5>Registered</h5>
 				<p>House|Flat|Building|City</p>
 			</div>
-			<div className='comany-card-details'>
+			<div className='company-card-details'>
 				<button>
 					<i>
 						<BsFillTelephoneFill />

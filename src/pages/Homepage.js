@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeLanding from '../components/HomeLanding';
 import CompanyCard from '../components/CompanyCard';
 import GoogleReviews from '../components/GoogleReviews';
 import { TbSquareRoundedArrowRightFilled } from 'react-icons/tb';
+import { motion } from 'framer-motion';
 const Homepage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const featuresArr1 = [
 		'Available 24 × 7',
 		'Serving Across India',
@@ -20,7 +24,7 @@ const Homepage = () => {
 	];
 
 	return (
-		<div className='homepage-container'>
+		<motion.div className='homepage-container'>
 			<div className='homepage-landing'>
 				<HomeLanding />
 			</div>
@@ -59,7 +63,7 @@ const Homepage = () => {
 				</div>
 			</div>
 			<GoogleReviews />
-		</div>
+		</motion.div>
 	);
 };
 

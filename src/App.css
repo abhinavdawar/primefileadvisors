@@ -279,15 +279,18 @@ nav {
 	justify-content: center;
 	padding: 20px 0;
 }
-.homepage-features-details {
+.homepage-features-details,
+.itrpage-requirement {
 	text-align: left;
 	padding: 40px;
 }
-.homepage-features-details h5 {
+.homepage-features-details h5,
+.itrpage-requirement h5 {
 	margin: 20px 0;
 	letter-spacing: 0.5px;
 }
-.homepage-features-details h5 i {
+.homepage-features-details h5 i,
+.itrpage-requirement h5 i {
 	font-size: 24px;
 	margin: 0 5px;
 	color: #19a382;
@@ -298,7 +301,8 @@ nav {
 .itrpage-container {
 	padding-bottom: 100px;
 }
-.itrpage-landing-container {
+.itrpage-landing-container,
+.itrpage-features-container {
 	width: 100vw;
 	height: fit-content;
 	text-align: center;
@@ -308,7 +312,8 @@ nav {
 }
 
 .itrpage-landing-container h1,
-.itrpage-landing-container h2 {
+.itrpage-landing-container h2,
+.itrpage-features-container h2 {
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin: 20px 0;
@@ -335,7 +340,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 80px 5vw 20px 5vw;
+	padding: 40px 5vw 20px 5vw;
 }
 .itrpage-feature {
 	position: relative;
@@ -369,8 +374,10 @@ nav {
 .itrpage-feature:nth-child(3) h4 {
 	padding: 0 80px;
 }
+
 .itrpage-details-container,
-.itrpage-steps-container {
+.itrpage-steps-container,
+.itrpage-requirement-container {
 	width: 100vw;
 	height: fit-content;
 	text-align: center;
@@ -379,7 +386,8 @@ nav {
 	color: #000;
 }
 .itrpage-details-container h1,
-.itrpage-steps-container h1 {
+.itrpage-steps-container h1,
+.itrpage-requirement-container h1 {
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin: 20px 0;
@@ -392,12 +400,175 @@ nav {
 	font-weight: 500;
 	letter-spacing: 0.5px;
 }
+.itrpage-requirements {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .itrpage-steps-container {
-	padding: 40px 20px 20px;
+	padding: 40px 0 20px;
 	background-color: #f5f8f7;
 }
 .itrpage-steps-container h1 {
 	margin: 0;
+}
+
+/* ---------------- Sample page starts ----------------*/
+.samplepage-container {
+	padding-bottom: 100px;
+}
+.samplepage-landing-container {
+	width: 100vw;
+	height: fit-content;
+	text-align: center;
+	background-color: #a2c7b6;
+	padding: 40px 0;
+	color: #000;
+}
+
+.samplepage-landing-container h1,
+.samplepage-landing-container h2 {
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 20px 0;
+	padding: 0px 5vw;
+}
+.samplepage-landing-container p {
+	font-size: 20px;
+	padding: 10px 10vw;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+.samplepage-landing-container h2 {
+	margin-top: 40px;
+}
+.samplepage-landing-form {
+	width: 100vw;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.samplepage-details-container,
+.samplepage-reports-container,
+.samplepage-certificate-container {
+	width: 100vw;
+	height: fit-content;
+	text-align: center;
+	padding: 40px 10vw;
+	color: #000;
+}
+.samplepage-details-container h2,
+.samplepage-reports-container h2,
+.samplepage-certificate-container h2 {
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 20px 0;
+	padding: 0px 5vw;
+}
+.samplepage-details-container p,
+.samplepage-detail {
+	font-size: 20px;
+	width: 100%;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	text-align: left;
+	padding: 10px 0;
+}
+.samplepage-details-container ul {
+	padding: 0 0 0 30px;
+}
+.sample-page-reports {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.samplepage-report-container p {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.samplepage-report {
+	height: 95vh;
+	width: 450px;
+	background-image: url(./assets/SampleReport1.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin: 10px 30px;
+}
+.report1 {
+	background-image: url(./assets/SampleReport1.jpg);
+}
+.report2 {
+	background-image: url(./assets/SampleReport2.jpg);
+}
+.samplepage-certificate-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.samplepage-certificate {
+	width: 70vw;
+	height: fit-content;
+	padding: 30px 20px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	letter-spacing: 0.3px;
+}
+.samplepage-certificate-top {
+	width: 100%;
+	font-size: 22px;
+	padding: 0 0 50px 0;
+}
+.samplepage-certificate-top h6:nth-child(4) {
+	padding-top: 15px;
+}
+.samplepage-certificate-top h6:nth-child(5) {
+	padding-top: 30px;
+}
+.samplepage-certificate-name-details {
+	width: 100%;
+	text-align: left;
+	padding-bottom: 30px;
+	font-size: 16px;
+}
+.samplepage-certificate-details-container {
+	width: 100%;
+	text-align: left;
+	padding-bottom: 30px;
+	font-size: 20px;
+}
+.samplepage-certificate-details-container ul {
+	padding: 20px 0 20px 10px;
+	list-style: none;
+	font-size: 16px;
+}
+.samplepage-certificate-details:nth-child(3) h6 {
+	font-weight: 600;
+}
+.samplepage-certificate-details:nth-child(4) ul li:nth-child(4) {
+	font-weight: 600;
+}
+.samplepage-certificate-bottom {
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+}
+.samplepage-certificate-bottom h5 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.8;
+}
+.samplepage-certificate-bottom p {
+	line-height: 1.8;
 }
 /* ---------------- About page starts ----------------*/
 .about-container {
@@ -482,12 +653,6 @@ nav {
 }
 .btn-conatiner button {
 	padding: 15px 20px;
-	/* background: rgb(127, 127, 213);
-	background: linear-gradient(
-		90deg,
-		rgb(115, 135, 246) 16%,
-		rgb(89, 247, 231) 90%
-	); */
 	background-color: #172b46;
 	color: #fff;
 	outline: none;
@@ -647,7 +812,6 @@ nav {
 	height: 60px;
 	-webkit-animation-duration: 22s;
 	animation-duration: 22s;
-	/* background-color: #172b46; */
 }
 .bg-bubbles li:nth-child(5) {
 	left: 70%;
@@ -658,7 +822,6 @@ nav {
 	height: 120px;
 	-webkit-animation-delay: 3s;
 	animation-delay: 3s;
-	/* background-color: #172b46; */
 }
 .bg-bubbles li:nth-child(7) {
 	left: 32%;
@@ -684,7 +847,6 @@ nav {
 	animation-delay: 2s;
 	-webkit-animation-duration: 40s;
 	animation-duration: 40s;
-	/* background-color: rgba(255, 255, 255, 0.3); */
 }
 .bg-bubbles li:nth-child(10) {
 	left: 90%;
@@ -2039,16 +2201,16 @@ textarea:focus {
 	padding: 20px 00px 60px 0px;
 	background-color: #fff;
 }
-.comany-card-name {
+.company-card-name {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.comany-card-name img {
+.company-card-name img {
 	height: 30px;
 	width: 30px;
 }
-.comany-card-name h2 {
+.company-card-name h2 {
 	font-size: 20px;
 	font-weight: 600;
 }
@@ -2067,7 +2229,7 @@ textarea:focus {
 	font-size: 15px;
 }
 
-.comany-card-details {
+.company-card-details {
 	display: flex;
 	flex-direction: column;
 	background-color: #19a382;
@@ -2075,7 +2237,7 @@ textarea:focus {
 	padding: 20px 0 35px 0;
 	position: relative;
 }
-.comany-card-details button {
+.company-card-details button {
 	background-color: transparent;
 	border: none;
 	display: flex;
@@ -2083,10 +2245,10 @@ textarea:focus {
 	color: #fff;
 	font-size: 15px;
 }
-.comany-card-details button i {
+.company-card-details button i {
 	margin-right: 3px;
 }
-.comany-card-details span {
+.company-card-details span {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
@@ -2096,7 +2258,7 @@ textarea:focus {
 	padding: 3px;
 	font-size: 12px;
 }
-.comany-card-details span i {
+.company-card-details span i {
 	color: green;
 	margin-right: 3px;
 	font-size: 10px;
@@ -2608,7 +2770,8 @@ textarea:focus {
 		width: 100%;
 	}
 
-	.homepage-features {
+	.homepage-features,
+	.itrpage-requirements {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -2624,6 +2787,9 @@ textarea:focus {
 		font-size: 24px;
 		margin: 0 5px 0 0;
 	}
+	.itrpage-features-container {
+		padding: 0 0;
+	}
 	.itrpage-features {
 		flex-direction: column;
 		padding: 40px 2vw 20px 2vw;
@@ -2633,6 +2799,12 @@ textarea:focus {
 	}
 	.itrpage-feature:nth-child(2) h4 {
 		padding: 0 90px;
+	}
+	.sample-page-reports {
+		flex-direction: column;
+	}
+	.samplepage-report {
+		margin: 30px 20px 10px 20px;
 	}
 }
 @media screen and (max-width: 900px) {
@@ -2719,6 +2891,12 @@ textarea:focus {
 		height: 100px;
 		margin: 40px 0px 0 0;
 	}
+	.samplepage-details-container {
+		padding: 40px 30px;
+	}
+	.samplepage-certificate {
+		width: 95vw;
+	}
 }
 @media screen and (max-width: 500px) {
 	.logo-container h1 {
@@ -2755,6 +2933,10 @@ textarea:focus {
 	}
 	.timeline-item-content {
 		margin: 8em 1em 1em 7em;
+	}
+	.samplepage-report {
+		height: 80vh;
+		width: 90vw;
 	}
 }
 @media screen and (max-width: 900px) {

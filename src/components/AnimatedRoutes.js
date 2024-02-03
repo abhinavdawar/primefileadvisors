@@ -6,6 +6,7 @@ import FAQ from '../pages/FAQ';
 import NetWorthCertificate from '../pages/NetWorthCertificate';
 import PropertyValuationCertficate from '../pages/PropertyValuationCertficate';
 import ITRPage from '../pages/ITRPage';
+import SampleFormat from '../pages/SampleFormat';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { AnimatePresence } from 'framer-motion';
@@ -30,6 +31,7 @@ const AnimatedRoutes = () => {
 					path='/property-valuation-certificate'
 					element={<PropertyValuationCertficate />}
 				></Route>
+				<Route exact path='/sample-format' element={<SampleFormat />}></Route>
 			</Routes>
 		</AnimatePresence>
 	);

@@ -29,14 +29,17 @@ const ITRLanding = () => {
 			<div className='itrpage-landing-form'>
 				<CustomForm Horizontal />
 			</div>
-			<div className='itrpage-features'>
-				{FeaturesArr.map((item, index) => (
-					<ITRFeatureCard
-						key={index}
-						featureText={item.name}
-						icon={item.icon}
-					/>
-				))}
+			<div className='itrpage-features-container'>
+				<h2>Prime File Advisor's Specialization in ITR Filling</h2>
+				<div className='itrpage-features'>
+					{FeaturesArr.map((item, index) => (
+						<ITRFeatureCard
+							key={index}
+							featureText={item.name}
+							icon={item.icon}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);

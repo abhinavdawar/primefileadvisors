@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ITRLanding from '../components/ITRLanding';
+import { ITRDocDataA, ITRDocDataB } from '../components/ServicesData';
+import CompanyCard from '../components/CompanyCard';
 import ITRTimeline from '../components/ITRTimeline';
+import { TbSquareRoundedArrowRightFilled } from 'react-icons/tb';
+import { motion } from 'framer-motion';
 const ITRPage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
-		<div className='itrpage-container'>
+		<motion.div className='itrpage-container'>
 			<ITRLanding />
 			<div className='itrpage-details-container'>
 				<h1>ITR (Income Tax Return) Filing Consultant</h1>
@@ -29,11 +36,37 @@ const ITRPage = () => {
 					quality of the prepared return.
 				</p>
 			</div>
+			<div className='itrpage-requirement-container'>
+				<h1>What are the Documents required for Income Tax Return?</h1>
+				<div className='itrpage-requirements'>
+					<div className='itrpage-requirement'>
+						{ITRDocDataA.map((doc, index) => (
+							<h5 key={index}>
+								<i>
+									<TbSquareRoundedArrowRightFilled />
+								</i>
+								{doc}
+							</h5>
+						))}
+					</div>
+					<CompanyCard />
+					<div className='itrpage-requirement'>
+						{ITRDocDataB.map((doc, index) => (
+							<h5 key={index}>
+								<i>
+									<TbSquareRoundedArrowRightFilled />
+								</i>
+								{doc}
+							</h5>
+						))}
+					</div>
+				</div>
+			</div>
 			<div className='itrpage-steps-container'>
 				<h1>Income Tax Return Filing Process : Get it Done in 30 Min.</h1>
+				<ITRTimeline />
 			</div>
-			<ITRTimeline />
-		</div>
+		</motion.div>
 	);
 };
 
