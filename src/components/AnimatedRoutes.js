@@ -4,7 +4,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import FAQ from '../pages/FAQ';
 import NetWorthCertificate from '../pages/NetWorthCertificate';
-import PropertyValuationCertficate from '../pages/PropertyValuationCertficate';
+import PropertyValuation from '../pages/PropertyValuation';
 import ITRPage from '../pages/ITRPage';
 import SampleFormat from '../pages/SampleFormat';
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -28,8 +28,8 @@ const AnimatedRoutes = () => {
 				></Route>
 				<Route
 					exact
-					path='/property-valuation-certificate'
-					element={<PropertyValuationCertficate />}
+					path='/property-valuation'
+					element={<PropertyValuation />}
 				></Route>
 				<Route exact path='/sample-format' element={<SampleFormat />}></Route>
 			</Routes>

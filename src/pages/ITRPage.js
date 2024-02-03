@@ -12,7 +12,7 @@ const ITRPage = () => {
 	return (
 		<motion.div className='itrpage-container'>
 			<ITRLanding />
-			<div className='itrpage-details-container'>
+			<div className='itrpage-details-container '>
 				<h1>ITR (Income Tax Return) Filing Consultant</h1>
 				<p>
 					Are you looking for someone to help you with filing your Income Tax

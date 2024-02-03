@@ -13,8 +13,8 @@ const linksArray = [
 	{ name: 'ITR Filling', to: '/income-tax-return' },
 	{ name: 'Net Worth Certificate', to: '/net-worth-certificate' },
 	{
-		name: 'Property Valuation Certificate',
-		to: '/property-valuation-certificate',
+		name: 'Property Valuation',
+		to: '/property-valuation',
 	},
 	{ name: 'Sample/Format', to: '/sample-format' },
 	{ name: 'Contact', to: '/contact' },

@@ -8,7 +8,7 @@ const Footer = () => {
 	const servicesLinkArr = [
 		{
 			name: 'Property Valuation Certificate',
-			url: '/property-valuation-certificate',
+			url: '/property-valuation',
 		},
 		{ name: 'CA Valuation', url: '/net-worth-certificate' },
 		{ name: 'Income Tax Return', url: '/income-tax-return' },

@@ -7,6 +7,7 @@ const CustomForm = ({ Horizontal }) => {
 			action='https://formsubmit.co/primefileadvisors@gmail.com'
 			method='POST'
 			encType='multipart/form-data'
+			autoComplete='off'
 		>
 			<div className='custom-form-input-container'>
 				<label htmlFor='Name'>Name</label>
@@ -14,16 +15,18 @@ const CustomForm = ({ Horizontal }) => {
 					className='custom-form-input'
 					type='text'
 					name='Name'
+					id='Name'
 					placeholder='Your Name'
 					required
 				/>
 			</div>
 			<div className='custom-form-input-container'>
-				<label htmlFor='Name'>Email</label>
+				<label htmlFor='Email'>Email</label>
 				<input
 					className='custom-form-input'
 					type='email'
 					name='Email'
+					id='Email'
 					placeholder='Your Email'
 					required
 				/>
@@ -34,6 +37,7 @@ const CustomForm = ({ Horizontal }) => {
 					className='custom-form-input'
 					type='text'
 					name='MobileNo'
+					id='MobileNo'
 					placeholder='Your Mobile No'
 				/>
 			</div>
