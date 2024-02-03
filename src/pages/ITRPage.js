@@ -1,0 +1,40 @@
+import React from 'react';
+import ITRLanding from '../components/ITRLanding';
+import ITRTimeline from '../components/ITRTimeline';
+const ITRPage = () => {
+	return (
+		<div className='itrpage-container'>
+			<ITRLanding />
+			<div className='itrpage-details-container'>
+				<h1>ITR (Income Tax Return) Filing Consultant</h1>
+				<p>
+					Are you looking for someone to help you with filing your Income Tax
+					Return in India? Prime File Advisors is your go-to online service
+					provider for Income Tax Return.
+				</p>
+				<p>
+					If you earn money in India and it's above a certain limit (Currently
+					INR 250,000), it's mandatory to file your Income Tax Return. Prime
+					File Advisors offers the best online consultancy services for Income
+					Tax Return filing. Our team of experienced chartered accountants is
+					here to help you prepare and file your tax return. We provide
+					round-the-clock online support for any questions you may have about
+					filing your income tax return, and we can even offer in-person
+					services at your home, site, or office in Chandigarh or Mohali.
+				</p>
+				<p>
+					Our team doesn't just file your tax return; they also guide you
+					through the process and provide advice on how to save on taxes.
+					Additionally, our highly experienced chartered accountants ensure the
+					quality of the prepared return.
+				</p>
+			</div>
+			<div className='itrpage-steps-container'>
+				<h1>Income Tax Return Filing Process : Get it Done in 30 Min.</h1>
+			</div>
+			<ITRTimeline />
+		</div>
+	);
+};
+
+export default ITRPage;
