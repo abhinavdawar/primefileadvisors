@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import CustomForm from '../components/CustomForm';
-import Image from '../assets/money.png';
 import { TbSquareRoundedArrowRightFilled } from 'react-icons/tb';
 import {
 	CAValuationReqArrA,

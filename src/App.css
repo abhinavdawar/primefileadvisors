@@ -169,7 +169,7 @@ nav {
 	padding: 0px 5vw;
 }
 .landing-container p {
-	font-size: 23px;
+	font-size: 20px;
 	padding: 20px 10vw;
 	padding-bottom: 50px;
 	text-align: center;
@@ -877,7 +877,6 @@ nav {
 		height: 80px;
 		left: 50%;
 		margin-left: -40px;
-		/* margin-top: 15px; */
 		-webkit-transform: translateZ(0);
 		-webkit-backface-visibility: hidden;
 	}
@@ -944,24 +943,6 @@ nav {
 .contactpage-details h2 {
 	padding: 0 2vw;
 }
-
-.networth-form,
-.property-form,
-.itr-form {
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 40px 0;
-	margin-top: 30px;
-	background-color: #0a1930;
-	position: relative;
-	z-index: 20;
-	overflow: hidden;
-}
-
 .faq-accordian-container {
 	padding: 4vw 0;
 	background-color: #fff;
@@ -1074,27 +1055,6 @@ nav {
 	font-size: 18px;
 }
 
-.networth-container,
-.property-container {
-	width: 100vw;
-	margin-top: 70px;
-	overflow: hidden;
-	background-color: #0a1930;
-}
-.networth-landing,
-.property-landing {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-	padding: 20px;
-	width: 100%;
-	background-position: cover;
-	background-size: center;
-	height: 100vh;
-}
-
-.networth-bg,
 .itr-bg {
 	width: 100%;
 	height: 100%;
@@ -1103,223 +1063,6 @@ nav {
 	background-color: rgba(5, 5, 5, 0.2);
 }
 
-.property-landing .property-landing-text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	height: 100%;
-}
-.networth-landing-text {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	position: relative;
-	z-index: 3;
-	width: 55%;
-}
-.networth-landing-text h1 {
-	width: 100%;
-	border: 1px solid rgba(255, 255, 255, 0.25);
-	border-radius: 20px;
-	background-color: rgba(255, 255, 255, 0.45);
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-
-	backdrop-filter: blur(15px);
-	padding: 10px 30px;
-	margin-bottom: 30px;
-	color: #000;
-}
-.networth-landing-details {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 100%;
-	border: 1px solid rgba(10, 25, 48, 0.25);
-	border-radius: 20px;
-	background-color: rgba(10, 25, 48, 0.45);
-	box-shadow: 0 0 10px 1px rgba(10, 25, 48, 0.25);
-
-	backdrop-filter: blur(15px);
-	padding: 30px;
-	text-align: center;
-	overflow: hidden;
-}
-.circle,
-.circle-top {
-	position: absolute;
-	bottom: -30px;
-	right: -15px;
-	height: 100px;
-	width: 100px;
-	border: 1px solid rgba(255, 255, 255, 0.25);
-	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.25);
-}
-.circle-top {
-	bottom: none;
-	right: none;
-	top: -30px;
-	left: -15px;
-}
-
-.networth-landing-text p,
-.property-landing-text p {
-	margin-top: 10px;
-	letter-spacing: 0.5px;
-	color: #fff;
-	font-size: 20px;
-}
-.networth-landing-text p {
-	max-width: 90%;
-	font-size: 20px;
-}
-.networth-landing .networth-landing-img,
-.property-landing .property-landing-img {
-	width: 45%;
-}
-.networth-landing-img img,
-.property-landing-img img {
-	height: 100%;
-	width: 100%;
-}
-.networth-container1,
-.networth-container2,
-.networth-container3 {
-	width: 100vw;
-	text-align: center;
-	padding: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background-color: #0a1930;
-	color: #fff;
-}
-.networth-container3 {
-	background-color: rgb(255, 255, 255, 0.9);
-	color: #000;
-}
-.networth-container1 p,
-.networth-container2 p {
-	margin-top: 10px;
-	letter-spacing: 1px;
-	width: 70%;
-}
-.networth-container3 .networth-content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	width: 100%;
-	color: #000;
-}
-.networth-left,
-.networth-right {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-color: #f4f4f4;
-	background-color: rgba(255, 255, 255, 0.45);
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-
-	backdrop-filter: blur(15px);
-	padding: 20px;
-	width: 450px;
-	font-size: 15px;
-	border-width: 5px;
-	border-style: solid;
-	border-image: linear-gradient(to bottom, rgb(40, 229, 242), #0a1930) 1 100%;
-}
-.networth-left h6,
-.networth-right h6 {
-	font-size: 20px;
-	margin-bottom: 5px;
-	color: rgb(31, 179, 190);
-	font-weight: 400;
-}
-.networth-left div,
-.networth-right div {
-	margin-bottom: 5px;
-}
-.networth-left div span,
-.networth-right div span {
-	margin-left: 4px;
-}
-.networth-left {
-	margin-right: 20px;
-}
-.property-container1,
-.property-container2,
-.property-container3 {
-	width: 100vw;
-	text-align: center;
-	padding: 40px;
-	background-color: #fff;
-	background-color: rgb(255, 255, 255, 0.9);
-}
-
-.property-container3 {
-	background-color: rgb(255, 255, 255, 0.9);
-}
-
-.property-container1 p {
-	margin-top: 10px;
-	letter-spacing: 1px;
-}
-.prop-cont2-content,
-.prop-cont3-content {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	margin-top: 40px;
-}
-.prop-cont2-left,
-.prop-cont2-right,
-.prop-cont3-left,
-.prop-cont3-right {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 20px;
-	width: 400px;
-	font-size: 15px;
-	border-bottom: solid 5px #004cff;
-	border-right: solid 5px #004cff;
-	background-color: rgba(255, 255, 255, 0.45);
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(15px);
-}
-
-.prop-cont2-left div,
-.prop-cont2-right div,
-.prop-cont3-left div,
-.prop-cont3-right div {
-	margin-bottom: 5px;
-}
-.prop-cont2-left div span,
-.prop-cont2-right div span,
-.prop-cont3-left div span,
-.prop-cont3-right div span {
-	margin-left: 4px;
-}
-
-.timeline-container {
-	width: 100vw;
-}
-.timeline-container .timeline-heading {
-	min-width: 80%;
-	text-align: center;
-	margin: 30px;
-	color: #fff;
-}
 /*-----------------------CUstom Form -----------------------*/
 .custom-form {
 	height: fit-content;
@@ -2142,6 +1885,22 @@ nav {
 	.itrpage-details-container p {
 		padding: 10px 20px;
 	}
+	.landing-container,
+	.samplepage-landing-container {
+		padding: 40px 0px;
+	}
+	.landing-container h1,
+	.landing-container h2,
+	.samplepage-landing-container h1,
+	.samplepage-landing-container h2 {
+		margin: 20px 0;
+		padding: 0;
+	}
+	.landing-container p,
+	.samplepage-landing-container p {
+		padding: 20px;
+	}
+
 	.propertypage-certificate-container {
 		padding: 40px 0;
 	}
@@ -2164,6 +1923,44 @@ nav {
 	}
 }
 @media screen and (max-width: 900px) {
+	.faq-container {
+		padding: 0 0 100px 0;
+	}
+	.faq-container .faq-landing {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.faq-landing .faq-text {
+		text-align: center;
+		margin-top: 20px;
+		max-width: 100vw;
+		margin: 20px 0 0 0;
+	}
+	.faq-text h1 {
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+
+	.faq-info .faq-image,
+	.faq-info .faq-text {
+		width: 100%;
+		text-align: center;
+	}
+	.faq-image img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.faq-text p {
+		margin: 10px 0;
+		letter-spacing: 1px;
+		max-width: 100%;
+		font-size: 16px;
+	}
+	.accordion-head,
+	.accordion-content {
+		width: 90%;
+	}
 	.footer-top {
 		flex-direction: column;
 		justify-content: center;
@@ -2269,6 +2066,14 @@ nav {
 		grid-column-gap: 0;
 		grid-template-columns: 1fr;
 	}
+	.homelanding-container h1,
+	.homelanding-container h2 {
+		margin: 0;
+		padding: 20px 20px 30px 20px;
+	}
+	.homelanding-container p {
+		padding: 10px 20px 50px;
+	}
 	.homelanding-services {
 		flex-direction: column;
 	}
@@ -2289,7 +2094,10 @@ nav {
 		margin: 40px 0px 0 0;
 	}
 	.samplepage-details-container {
-		padding: 40px 30px;
+		padding: 40px 20px;
+	}
+	.samplepage-details-container h2 {
+		padding: 0;
 	}
 	.samplepage-certificate {
 		width: 95vw;
@@ -2334,120 +2142,5 @@ nav {
 	.samplepage-report {
 		height: 70vh;
 		width: 90vw;
-	}
-}
-@media screen and (max-width: 900px) {
-	.faq-container {
-		padding: 0 0 100px 0;
-	}
-	.faq-container .faq-landing {
-		flex-direction: column-reverse;
-		justify-content: center;
-	}
-	.faq-landing .faq-text {
-		text-align: center;
-		margin-top: 20px;
-		max-width: 100vw;
-		margin: 20px 0 0 0;
-	}
-	.faq-text h1 {
-		font-size: 30px;
-		letter-spacing: 2px;
-	}
-
-	.faq-info .faq-image,
-	.faq-info .faq-text {
-		width: 100%;
-		text-align: center;
-	}
-	.faq-image img {
-		height: 100%;
-		width: 100%;
-	}
-
-	.faq-text p {
-		margin: 10px 0;
-		letter-spacing: 1px;
-		max-width: 100%;
-		font-size: 16px;
-	}
-	.accordion-head,
-	.accordion-content {
-		width: 90%;
-	}
-
-	.networth-landing,
-	.property-landing {
-		flex-direction: column-reverse;
-	}
-	.networth-landing .networth-landing-text,
-	.property-landing .property-landing-text {
-		width: 100%;
-		height: 100%;
-	}
-	.networth-landing-details {
-		padding: 20px 0px;
-	}
-	.networth-landing-text h1,
-	.property-landing-text h1 {
-		font-size: 20px;
-	}
-	.networth-landing-text p,
-	.property-landing-text p {
-		margin-top: 10px;
-		letter-spacing: 1px;
-		font-size: 16px;
-	}
-	.networth-landing .networth-landing-img,
-	.property-landing .property-landing-img {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.networth-landing-img img,
-	.property-landing-img img {
-		height: 80%;
-		width: 100%;
-	}
-	.networth-container1,
-	.networth-container2 {
-		padding: 30px 10px;
-	}
-	.networth-container1 p,
-	.networth-container2 p {
-		width: 90vw;
-	}
-	.networth-container3 .networth-content {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.networth-left,
-	.networth-right {
-		padding: 20px;
-		border-left: 5px solid #0042f6;
-		width: 70vw;
-		font-size: 13px;
-		text-align: left;
-	}
-	.networth-left h6,
-	.networth-right h6 {
-		font-size: 18px;
-		margin-bottom: 5px;
-	}
-	.networth-left div,
-	.networth-right div {
-		margin-bottom: 5px;
-	}
-	.networth-left div span,
-	.networth-right div span {
-		margin-left: 2px;
-	}
-	.networth-left {
-		margin-right: 0px;
-		margin-bottom: 10px;
-	}
-	.property-container2,
-	.property-container3 {
-		padding: 20px 0;
 	}
 }
