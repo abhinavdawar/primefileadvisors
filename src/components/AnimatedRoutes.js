@@ -2,7 +2,7 @@ import React from 'react';
 import Homepage from '../pages/Homepage';
 import ContactPage from '../pages/ContactPage';
 import FAQ from '../pages/FAQ';
-import NetWorthCertificate from '../pages/NetWorthCertificate';
+import CAValuation from '../pages/CAValuation';
 import PropertyValuation from '../pages/PropertyValuation';
 import ITRPage from '../pages/ITRPage';
 import SampleFormat from '../pages/SampleFormat';
@@ -21,8 +21,8 @@ const AnimatedRoutes = () => {
 				<Route exact path='/income-tax-return' element={<ITRPage />}></Route>
 				<Route
 					exact
-					path='/net-worth-certificate'
-					element={<NetWorthCertificate />}
+					path='/ca-valuation'
+					element={<CAValuation />}
 				></Route>
 				<Route
 					exact

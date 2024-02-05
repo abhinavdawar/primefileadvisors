@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CustomLink, { contactLinkArr } from '../components/CustomLink';
 import CustomForm from '../components/CustomForm';
+import PropertyTimeline from '../components/PropertyTimeline';
+import { motion } from 'framer-motion';
 
 const ContactPage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
-		<div className='contactpage-container itrpage-container'>
+		<motion.div
+			className='contactpage-container itrpage-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='contactpage-landing-container itrpage-landing-container'>
 				<h2>Contact us for Property Valuation</h2>
 				<p>
@@ -33,7 +44,8 @@ const ContactPage = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+			<PropertyTimeline />
+		</motion.div>
 	);
 };
 

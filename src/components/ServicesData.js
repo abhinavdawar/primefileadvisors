@@ -177,6 +177,32 @@ export const certificateDataArr = [
 		],
 	},
 ];
+export const PropertyDocumentsDataArr = [
+	{
+		title: 'Index Copy:',
+		text: ' This document includes information about the area, address, and owner of the property. Generally issued by the registrar upon completion of the sale agreement transfer.',
+	},
+	{
+		title: 'Land Record:',
+		text: ' For agricultural land, either the Record of Rights (7-12 Survey) or Land Patta Record is required.',
+	},
+	{
+		title: 'Title Deed:',
+		text: " A crucial document proving ownership, containing essential information such as the owner's name, property description, and any encumbrances.",
+	},
+	{
+		title: 'Sale Deed:',
+		text: ' This legal document records the transfer of property ownership and includes details like the purchase price, transaction date, and parties involved.',
+	},
+	{
+		title: 'Occupancy Certificate:',
+		text: " Necessary for newly constructed or renovated properties, certifying the property's safety and compliance with local building codes.",
+	},
+	{
+		title: 'Any Other Proof:',
+		text: ' Additional documents justifying ownership, possession, and property area.',
+	},
+];
 export const PropertySummaryDataArr = [
 	{
 		title: 'Agriculture Land/ Farms:',
@@ -195,4 +221,35 @@ export const PropertySummaryDataArr = [
 			'Office/ Commercial Building/ Shop/ Showroom/ Corporate House/ Factory/ Go down/ Warehouse:',
 		text: 'Documents like Registrar Index Copy, Property Tax Acknowledgement, Electricity Bill, Sale Agreement, Title Deed, Allotment Letter, or Building Usage Permission Letter may be needed for commercial and industrial premises.',
 	},
+];
+
+export const CAValuationReqArrA = [
+	'Student VISA Applicant for Canada, USA, Australia etc',
+	'Person/Family applying for Visitor VISA',
+	'F1 Visa Applicants',
+];
+export const CAValuationReqArrB = [
+	'Immigration Application for Permanent Residents',
+	'Tourist VISA',
+	'Business VISA / Work Permits',
+];
+export const CAValuationReportArrA = [
+	'All Liquid Assets like Savings, Fixed Deposits, Funds etc',
+	'Holding of Shares, Investment in Mutual Fund etc',
+	'Provident Fund, Insurance, GIC Deposit etc',
+];
+export const CAValuationReportArrB = [
+	'Gold and Other Assets',
+	'Immovable Property like Home, Office etc',
+	'All assets having worthiness in rupee term',
+];
+export const CAValuationCertiArrA = [
+	'Must be From Practicing CA',
+	'License Number Should be Stated FRN and MRN',
+	'Letterhead of CA required',
+];
+export const CAValuationCertiArrB = [
+	'UDIN for Certificate must be generated at the time of sign',
+	'Signature and Stamp of CA',
+	'Purpose of Valuation Certificate',
 ];

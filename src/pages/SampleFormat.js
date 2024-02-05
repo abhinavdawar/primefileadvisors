@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CustomForm from '../components/CustomForm';
 import { SamplePageData } from '../components/ServicesData';
 import SampleCertificate from '../components/SampleCertificate';
+import PropertyTimeline from '../components/PropertyTimeline';
+import { motion } from 'framer-motion';
 
 const SampleFormat = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
-		<div className='samplepage-container'>
+		<motion.div
+			className='samplepage-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='samplepage-landing-container'>
 				<h1>Property Valuation Report Format</h1>
 				<p>
@@ -59,7 +70,8 @@ const SampleFormat = () => {
 				</div>
 			</div>
 			<SampleCertificate />
-		</div>
+			<PropertyTimeline />
+		</motion.div>
 	);
 };
 

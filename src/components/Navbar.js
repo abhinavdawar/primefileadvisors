@@ -9,7 +9,7 @@ import ContactButton from './ContactButton';
 const linksArray = [
 	{ name: 'Home', to: '/' },
 	{ name: 'ITR Filling', to: '/income-tax-return' },
-	{ name: 'Net Worth Certificate', to: '/net-worth-certificate' },
+	{ name: 'CA Valuation', to: '/ca-valuation' },
 	{
 		name: 'Property Valuation',
 		to: '/property-valuation',

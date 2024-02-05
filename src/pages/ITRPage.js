@@ -3,6 +3,7 @@ import ITRLanding from '../components/ITRLanding';
 import { ITRDocDataA, ITRDocDataB } from '../components/ServicesData';
 import CompanyCard from '../components/CompanyCard';
 import ITRTimeline from '../components/ITRTimeline';
+import GoogleReviews from '../components/GoogleReviews';
 import { TbSquareRoundedArrowRightFilled } from 'react-icons/tb';
 import { motion } from 'framer-motion';
 const ITRPage = () => {
@@ -10,7 +11,12 @@ const ITRPage = () => {
 		window.scrollTo(0, 0);
 	}, []);
 	return (
-		<motion.div className='itrpage-container'>
+		<motion.div
+			className='itrpage-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<ITRLanding />
 			<div className='itrpage-details-container '>
 				<h1>ITR (Income Tax Return) Filing Consultant</h1>
@@ -66,6 +72,7 @@ const ITRPage = () => {
 				<h1>Income Tax Return Filing Process : Get it Done in 30 Min.</h1>
 				<ITRTimeline />
 			</div>
+			<GoogleReviews />
 		</motion.div>
 	);
 };

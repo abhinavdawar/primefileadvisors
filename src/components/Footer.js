@@ -10,11 +10,12 @@ const Footer = () => {
 			name: 'Property Valuation Certificate',
 			url: '/property-valuation',
 		},
-		{ name: 'CA Valuation', url: '/net-worth-certificate' },
+		{ name: 'CA Valuation Certificate', url: '/ca-valuation' },
 		{ name: 'Income Tax Return', url: '/income-tax-return' },
 	];
 	const otherLinkArr = [
 		{ name: 'Contact Us', url: '/contact' },
+		{ name: 'Sample/Format', url: '/sample-format' },
 		{ name: 'Home', url: '/' },
 	];
 	return (

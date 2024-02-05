@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactButton from '../components/ContactButton';
 import CustomForm from '../components/CustomForm';
 import CompanyCard from '../components/CompanyCard';
-import { PropertySummaryDataArr } from '../components/ServicesData';
+import PropertyTimeline from '../components/PropertyTimeline';
+import GoogleReviews from '../components/GoogleReviews';
+import {
+	PropertySummaryDataArr,
+	PropertyDocumentsDataArr,
+} from '../components/ServicesData';
 import { FaWhatsapp } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const PropertyValuation = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
-		<div className='propertypage-container'>
+		<motion.div
+			className='propertypage-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='propertypage-landing-container itrpage-landing-container'>
 				<h1>Property Valuation for VISA</h1>
 				<p>
@@ -60,6 +74,26 @@ const PropertyValuation = () => {
 				</p>
 			</div>
 			<div className='propertypage-summary-container div-container'>
+				<h2>Property Valuation Document Requirements</h2>
+				<p className='propertypage-summary-end'>
+					When it comes to property valuation, there are several important
+					documents that are required to determine the accurate value and
+					Ownership of the property. These documents provide crucial information
+					that helps in assessing the latest market value of the property, and
+					they include:
+				</p>
+				<div className='propertypage-summary-details'>
+					{PropertyDocumentsDataArr.map((item, index) => (
+						<div key={index} className='propertypage-summary-detail'>
+							<span className='propertypage-summary-detail-title'>
+								{item.title}
+							</span>{' '}
+							<span>{item.text}</span>
+						</div>
+					))}
+				</div>
+			</div>
+			<div className='propertypage-summary-container div-container'>
 				<h2>
 					The checklist of documents required for Property Valuation varies
 					based on the type of property
@@ -79,45 +113,9 @@ const PropertyValuation = () => {
 					the Property Valuation process for your convenience.
 				</p>
 			</div>
-			{/* <section id='cd-timeline' class='cd-container'>
-				<div class='cd-timeline-block'>
-					<div class='cd-timeline-img cd-picture'></div>
-					<div class='cd-timeline-content'>
-						<h2>Title of section 2</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-							optio, dolorum provident rerum aut hic quasi placeat iure tempora
-							laudantium ipsa ad debitis unde?
-						</p>
-						<span class='cd-date'>Step 1</span>
-					</div>
-				</div>
-				<div class='cd-timeline-block'>
-					<div class='cd-timeline-img cd-picture'></div>
-					<div class='cd-timeline-content'>
-						<h2>Title of section 2</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-							optio, dolorum provident rerum aut hic quasi placeat iure tempora
-							laudantium ipsa ad debitis unde?
-						</p>
-						<span class='cd-date'>Step 2</span>
-					</div>
-				</div>
-				<div class='cd-timeline-block'>
-					<div class='cd-timeline-img cd-picture'></div>
-					<div class='cd-timeline-content'>
-						<h2>Title of section 2</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
-							optio, dolorum provident rerum aut hic quasi placeat iure tempora
-							laudantium ipsa ad debitis unde?
-						</p>
-						<span class='cd-date'>Step 3</span>
-					</div>
-				</div>
-			</section> */}
-		</div>
+			<PropertyTimeline />
+			<GoogleReviews />
+		</motion.div>
 	);
 };
 

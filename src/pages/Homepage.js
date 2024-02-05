@@ -24,7 +24,12 @@ const Homepage = () => {
 	];
 
 	return (
-		<motion.div className='homepage-container'>
+		<motion.div
+			className='homepage-container'
+			initial={{ width: '0' }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+		>
 			<div className='homepage-landing'>
 				<HomeLanding />
 			</div>
