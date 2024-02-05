@@ -8,8 +8,6 @@ import ContactButton from './ContactButton';
 
 const linksArray = [
 	{ name: 'Home', to: '/' },
-	{ name: 'About', to: '/about' },
-	{ name: 'FAQ', to: '/faq' },
 	{ name: 'ITR Filling', to: '/income-tax-return' },
 	{ name: 'Net Worth Certificate', to: '/net-worth-certificate' },
 	{
@@ -17,6 +15,7 @@ const linksArray = [
 		to: '/property-valuation',
 	},
 	{ name: 'Sample/Format', to: '/sample-format' },
+	{ name: 'FAQ', to: '/faq' },
 	{ name: 'Contact', to: '/contact' },
 ];
 

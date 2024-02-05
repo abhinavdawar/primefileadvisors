@@ -34,6 +34,30 @@ export const customerSupportArr = [
 	},
 ];
 
+export const contactLinkArr = [
+	{
+		title: 'Call us',
+		text: '+91 9876660279',
+		icon: <BsFillTelephoneFill />,
+		url: 'tel:+919876660279',
+		color: 'blue',
+	},
+	{
+		title: 'Whatsapp',
+		text: '+91 9876660279',
+		icon: <RiWhatsappFill />,
+		url: 'https://wa.me/919876660279',
+		color: '#25d366',
+	},
+	{
+		title: 'Mail',
+		text: 'primefileadvisors@gmail.com',
+		icon: <GrMail />,
+		url: 'mailto:primefileadvisors@gmail.com?subject=Subject&body=Body%20goes%20here',
+		color: 'red',
+	},
+];
+
 const CustomLink = ({ url, color, icon, title, text }) => {
 	const handleClick = () => {
 		window.open(`${url}`);

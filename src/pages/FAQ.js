@@ -34,7 +34,7 @@ const FAQ = () => {
 					<img src={FAQImage} alt='' />
 				</div>
 			</div>
-			<div className='' id='faq'>
+			<div className='faq-accordian-container' id='faq'>
 				<div className='accordion'>
 					<h1>F.A.Q.</h1>
 					<Accordion items={FAQData} />

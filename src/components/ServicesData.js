@@ -177,3 +177,22 @@ export const certificateDataArr = [
 		],
 	},
 ];
+export const PropertySummaryDataArr = [
+	{
+		title: 'Agriculture Land/ Farms:',
+		text: 'Documents may include 8-A Khata Record, 7-12 Survey Record, Land Patta Records, or a Purchase Agreement.',
+	},
+	{
+		title: 'Urban Land/ Plots/ Space:',
+		text: 'Documents like Index Copy, Property Tax Receipt, and Sale Agreement are needed.',
+	},
+	{
+		title: 'House/ Home/ Tenement/ Row house/ Flat/ Apartment/ Bungalow:',
+		text: 'Documents such as Sale Agreement, Gift Deed/Will/Power of Attorney, or an Allotment letter from the builder may be required.',
+	},
+	{
+		title:
+			'Office/ Commercial Building/ Shop/ Showroom/ Corporate House/ Factory/ Go down/ Warehouse:',
+		text: 'Documents like Registrar Index Copy, Property Tax Acknowledgement, Electricity Bill, Sale Agreement, Title Deed, Allotment Letter, or Building Usage Permission Letter may be needed for commercial and industrial premises.',
+	},
+];

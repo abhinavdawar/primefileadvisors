@@ -1,9 +1,14 @@
 import React from 'react';
 
-const CustomForm = ({ Horizontal }) => {
+const CustomForm = ({ Horizontal, ContactForm }) => {
+	const handleFile = (e) => {
+		console.log(e.target.files);
+	};
 	return (
 		<form
-			className={`custom-form ${Horizontal && 'horizontal-form'} `}
+			className={`custom-form ${Horizontal && 'horizontal-form'} ${
+				ContactForm && 'horizontal-contact-form'
+			}`}
 			action='https://formsubmit.co/primefileadvisors@gmail.com'
 			method='POST'
 			encType='multipart/form-data'
@@ -41,6 +46,32 @@ const CustomForm = ({ Horizontal }) => {
 					placeholder='Your Mobile No'
 				/>
 			</div>
+			{ContactForm && (
+				<>
+					<div className='custom-form-input-container'>
+						<label htmlFor='Message'>Message</label>
+						<input
+							className='custom-form-input'
+							type='text'
+							name='Message'
+							id='Message'
+							placeholder='Your Message'
+						/>
+					</div>
+					<div className='custom-form-input-container'>
+						<label htmlFor='Attachment'>Attach File</label>
+						<input
+							className='custom-form-input'
+							type='file'
+							name='Attachment'
+							id='Attachment'
+							accept='image/png, image/jpeg, application/pdf, application/doc, application/docx'
+							onChange={handleFile}
+							multiple
+						/>
+					</div>
+				</>
+			)}
 			<input className='custom-form-submit' type='submit' value='Submit' />
 		</form>
 	);
