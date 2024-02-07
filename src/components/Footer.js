@@ -14,7 +14,7 @@ const Footer = () => {
 		{ name: 'Income Tax Return', url: '/income-tax-return' },
 	];
 	const otherLinkArr = [
-		{ name: 'Contact Us', url: '/contact' },
+		{ name: 'Contact Us', url: '/contact-us' },
 		{ name: 'Sample/Format', url: '/sample-format' },
 		{ name: 'Home', url: '/' },
 	];

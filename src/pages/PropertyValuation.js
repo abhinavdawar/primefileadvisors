@@ -98,9 +98,9 @@ const PropertyValuation = () => {
 					The checklist of documents required for Property Valuation varies
 					based on the type of property
 				</h2>
-				<div className='propertypage-summary-details'>
+				<div className='propertypage-summary-details1'>
 					{PropertySummaryDataArr.map((item, index) => (
-						<div key={index} className='propertypage-summary-detail'>
+						<div key={index} className='propertypage-summary-detail1'>
 							<span className='propertypage-summary-detail-title'>
 								{item.title}
 							</span>{' '}

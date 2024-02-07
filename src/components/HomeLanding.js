@@ -26,20 +26,17 @@ const HomeLanding = () => {
 			<div className='homelanding-services-container'>
 				<h2>Prime File Advisor’s Trending Services </h2>
 				<div className='homelanding-services'>
-					<Link
-						to='/property-valuation-certificate'
-						className='homelanding-service'
-					>
+					<Link to='/property-valuation' className='homelanding-service'>
 						<i>
 							<FaGlobeAmericas />
 						</i>
 						<h4>Property Valuation</h4>
 					</Link>
-					<Link to='/net-worth-certificate' className='homelanding-service'>
+					<Link to='/ca-valuation' className='homelanding-service'>
 						<i>
 							<FaCcVisa />
 						</i>
-						<h4>Net-Worth Valuation</h4>
+						<h4>CA Valuation</h4>
 					</Link>
 					<Link to='/income-tax-return' className='homelanding-service'>
 						<i>

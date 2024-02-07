@@ -16,20 +16,17 @@ const AnimatedRoutes = () => {
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>
 				<Route exact path='/' element={<Homepage />}></Route>
-				<Route exact path='/contact' element={<ContactPage />}></Route>
+				<Route exact path='/contact-us' element={<ContactPage />}></Route>
 				<Route exact path='/faq' element={<FAQ />}></Route>
 				<Route exact path='/income-tax-return' element={<ITRPage />}></Route>
-				<Route
-					exact
-					path='/ca-valuation'
-					element={<CAValuation />}
-				></Route>
+				<Route exact path='/ca-valuation' element={<CAValuation />}></Route>
 				<Route
 					exact
 					path='/property-valuation'
 					element={<PropertyValuation />}
 				></Route>
 				<Route exact path='/sample-format' element={<SampleFormat />}></Route>
+				<Route path='*' element={<Homepage />} />
 			</Routes>
 		</AnimatePresence>
 	);

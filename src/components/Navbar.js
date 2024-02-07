@@ -16,7 +16,7 @@ const linksArray = [
 	},
 	{ name: 'Sample/Format', to: '/sample-format' },
 	{ name: 'FAQ', to: '/faq' },
-	{ name: 'Contact', to: '/contact' },
+	{ name: 'Contact us', to: '/contact-us' },
 ];
 
 const Navbar = () => {
