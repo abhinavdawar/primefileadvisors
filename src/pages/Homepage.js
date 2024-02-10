@@ -2,26 +2,19 @@ import React, { useEffect } from 'react';
 import HomeLanding from '../components/HomeLanding';
 import CompanyCard from '../components/CompanyCard';
 import GoogleReviews from '../components/GoogleReviews';
+import Card1 from '../components/Card1';
 import { TbSquareRoundedArrowRightFilled } from 'react-icons/tb';
+import {
+	featuresArr1,
+	featuresArr2,
+	TeamArr,
+} from '../components/ServicesData';
 import { motion } from 'framer-motion';
+
 const Homepage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	const featuresArr1 = [
-		'Available 24 × 7',
-		'Serving Across India',
-		'Five Star Google Ratings',
-		'All Compliance at One Place',
-		'Best Consultants',
-	];
-	const featuresArr2 = [
-		'No Advance Payment',
-		'Expertise of CA',
-		'Timely Completion',
-		'Assured Work',
-		'Fast and Quality Work',
-	];
 
 	return (
 		<motion.div
@@ -36,9 +29,15 @@ const Homepage = () => {
 			<div className='team-container'>
 				<h1>Prime File Advisors Team Consists</h1>
 				<div className='team-details'>
-					<h3>Chartered Accountants (CA)</h3>
-					<h3>Company Secretary (CS)</h3>
-					<h3>Property Evaluators</h3>
+					{TeamArr.map((item, index) => (
+						<Card1
+							key={index}
+							Text={item.text}
+							color1={item.color1}
+							color2={item.color2}
+							icon={item.icon}
+						/>
+					))}
 				</div>
 			</div>
 			<div className='homepage-features-container'>

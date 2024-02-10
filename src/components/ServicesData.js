@@ -1,3 +1,41 @@
+import { FaUserSecret, FaMoneyBillAlt } from 'react-icons/fa';
+import { MdAccountBalanceWallet } from 'react-icons/md';
+
+export const featuresArr1 = [
+	'Available 24 × 7',
+	'Serving Across India',
+	'Five Star Google Ratings',
+	'All Compliance at One Place',
+	'Best Consultants',
+];
+export const featuresArr2 = [
+	'No Advance Payment',
+	'Expertise of CA',
+	'Timely Completion',
+	'Assured Work',
+	'Fast and Quality Work',
+];
+export const TeamArr = [
+	{
+		text: 'Chartered Accountants (CA)',
+		color1: '#d65d6a',
+		color2: '#f0939c',
+		icon: <MdAccountBalanceWallet />,
+	},
+	{
+		text: 'Company Secretary (CS)',
+		color1: '#39a7b0',
+		color2: '#a4e2e9',
+		icon: <FaUserSecret />,
+	},
+	{
+		text: 'Property Evaluators',
+		color1: '#f1a25e',
+		color2: '#fdc596',
+		icon: <FaMoneyBillAlt />,
+	},
+];
+
 export const ITRDocDataA = [
 	'Adhar Card of Applicant',
 	'PAN Card of Applicant',

@@ -297,8 +297,8 @@ nav {
 	margin: 40px 50px;
 	letter-spacing: 0.5px;
 }
-.team-details h3:nth-child(3) {
-	padding-top: 30px;
+.team-card {
+	margin: 40px;
 }
 .homepage-features-container {
 	width: 100vw;
@@ -1664,6 +1664,82 @@ nav {
 	color: var(--color);
 }
 
+/*---------------------------Team Card---------------------------*/
+
+.card {
+	width: 200px;
+	height: 170px;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	display: grid;
+	cursor: pointer;
+	grid-template-rows: 50px 1fr;
+}
+
+.card:hover .img-section {
+	-webkit-transform: translateY(1em);
+	-ms-transform: translateY(1em);
+	transform: translateY(1em);
+}
+
+.card-desc {
+	border-radius: 10px;
+	padding: 15px;
+	position: relative;
+	top: -10px;
+	display: grid;
+	gap: 10px;
+	background: var(--color1);
+	height: 152px;
+}
+
+.card-time {
+	font-size: 1.7em;
+	font-weight: 500;
+}
+
+.img-section {
+	-webkit-transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: var(--color2);
+}
+
+.card-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.card-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 4px;
+	margin-inline: auto;
+}
+
+.card i {
+	float: right;
+	font-size: 50px;
+	transform: rotate(45deg);
+	margin-top: -10px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.card .dot {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: var(--color2);
+}
+
 /*---------------------------Footer------------------------------*/
 .footer-container {
 	width: 100vw;
@@ -2158,10 +2234,6 @@ nav {
 	.star-small i {
 		font-size: 22px;
 	}
-	.capage-requirement-container {
-	}
-	.capage-requirement-container h2 {
-	}
 	.capage-requirements {
 		flex-direction: column;
 		padding: 20px 0;
@@ -2240,6 +2312,16 @@ nav {
 	.samplepage-certificate {
 		width: 95vw;
 	}
+	/* #hori-timeline {
+		flex-direction: column;
+	}
+	.hori-timeline-block {
+		margin: 0;
+		margin-bottom: 100px;
+	}
+	.hori-timeline-content {
+		max-width: 90vw;
+	} */
 	.timeline-screen-view {
 		display: none;
 	}
