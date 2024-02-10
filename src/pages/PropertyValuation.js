@@ -10,6 +10,7 @@ import {
 } from '../components/ServicesData';
 import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import HorizontalTimeline from '../components/HorizontalTimeline';
 
 const PropertyValuation = () => {
 	useEffect(() => {
@@ -113,7 +114,12 @@ const PropertyValuation = () => {
 					the Property Valuation process for your convenience.
 				</p>
 			</div>
-			<PropertyTimeline />
+			<div className='timeline-mobile-view'>
+				<PropertyTimeline />
+			</div>
+			<div className='timeline-screen-view'>
+				<HorizontalTimeline />
+			</div>
 			<GoogleReviews />
 		</motion.div>
 	);

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import CustomLink, { contactLinkArr } from '../components/CustomLink';
 import CustomForm from '../components/CustomForm';
 import PropertyTimeline from '../components/PropertyTimeline';
+import HorizontalTimeline from '../components/HorizontalTimeline';
 import { motion } from 'framer-motion';
 
 const ContactPage = () => {
@@ -44,7 +45,12 @@ const ContactPage = () => {
 					</div>
 				</div>
 			</div>
-			<PropertyTimeline />
+			<div className='timeline-mobile-view'>
+				<PropertyTimeline />
+			</div>
+			<div className='timeline-screen-view'>
+				<HorizontalTimeline />
+			</div>
 		</motion.div>
 	);
 };

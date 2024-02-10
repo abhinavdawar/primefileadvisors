@@ -940,6 +940,130 @@ nav {
 		text-align: right;
 	}
 }
+
+/*----------------Horizontal Timeline-------------------*/
+
+.hori-container {
+	width: 100%;
+	margin: 0 auto;
+	background: #a2c7b6;
+	padding: 50px 10%;
+	border-radius: 2px;
+}
+#hori-timeline {
+	position: relative;
+	padding: 2em 0;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#hori-timeline::before {
+	/* content: '';
+	position: absolute;
+	top: 60px;
+	width: 95%;
+	height: 4px;
+	background: #000;
+	margin-left: -2px; */
+}
+
+.hori-timeline-block {
+	position: relative;
+	margin: 4em 0;
+}
+.hori-timeline-block {
+	top: -30px;
+}
+.hori-timeline-img {
+	background-color: var(--color);
+	top: 8px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px #000, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+		0 3px 0 4px rgba(0, 0, 0, 0.05);
+	width: 60px;
+	height: 60px;
+	left: 50%;
+	margin-left: 40%;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+
+.hori-timeline-img i {
+	font-size: 30px;
+	position: relative;
+	color: #000;
+	top: 7px;
+	left: 15px;
+	z-index: 2;
+}
+.hori-timeline-content {
+	position: relative;
+	background: var(--color);
+	border-radius: 2px;
+	color: #fff;
+	padding: 20px;
+	max-width: 30vw;
+	margin-top: 40px;
+	margin: 50px 20px 0 20px;
+	border: 4px solid #000;
+	height: fit-content;
+}
+.hori-timeline-content h2 {
+	color: rgba(255, 255, 255, 1);
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.hori-timeline-content p {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 13px;
+	font-size: 0.9rem;
+}
+.hori-date,
+.hori-date1 {
+	display: inline-block;
+	color: #fff;
+	position: absolute;
+	width: 95px;
+	left: -95px;
+	top: 10px;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #000;
+	font-weight: 600;
+	z-index: 1;
+	padding: 5px 18px;
+	background-color: var(--color);
+	border-radius: 0px 10px 10px 0;
+	border: 4px solid black;
+}
+.hori-date1 {
+	border-radius: 10px 0px 0px 10px;
+	left: 60px;
+}
+.hori-timeline-content p {
+	margin: 1em 0;
+	line-height: 1.6;
+}
+.hori-timeline-content::before {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 10px solid transparent;
+	top: -20px;
+	left: 44%;
+	transform: rotate(-90deg);
+	border-color: transparent;
+	border-left-color: #000;
+}
+.timeline-screen-view {
+	display: block;
+}
+.timeline-mobile-view {
+	display: none;
+}
 /* ---------------- Contact page starts ----------------*/
 .contactpage-landing-container {
 	background-color: #fff !important;
@@ -2115,6 +2239,12 @@ nav {
 	}
 	.samplepage-certificate {
 		width: 95vw;
+	}
+	.timeline-screen-view {
+		display: none;
+	}
+	.timeline-mobile-view {
+		display: block;
 	}
 }
 @media screen and (max-width: 500px) {

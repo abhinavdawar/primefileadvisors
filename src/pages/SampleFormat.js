@@ -3,6 +3,7 @@ import CustomForm from '../components/CustomForm';
 import { SamplePageData } from '../components/ServicesData';
 import SampleCertificate from '../components/SampleCertificate';
 import PropertyTimeline from '../components/PropertyTimeline';
+import HorizontalTimeline from '../components/HorizontalTimeline';
 import { motion } from 'framer-motion';
 
 const SampleFormat = () => {
@@ -70,7 +71,12 @@ const SampleFormat = () => {
 				</div>
 			</div>
 			<SampleCertificate />
-			<PropertyTimeline />
+			<div className='timeline-mobile-view'>
+				<PropertyTimeline />
+			</div>
+			<div className='timeline-screen-view'>
+				<HorizontalTimeline />
+			</div>
 		</motion.div>
 	);
 };
