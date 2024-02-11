@@ -1494,18 +1494,29 @@ nav {
 }
 .google-reviews {
 	width: 70vw;
-	padding: 30px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	background-color: #fff;
+	background-color: #19a382;
 	border: 2px solid #000;
 	border-radius: 10px;
 	margin: 30px 0;
 }
+
+.google-reviews-top {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid #000;
+	background-color: #fff;
+}
 .google-reviews-top p {
 	letter-spacing: 1px;
-	margin: 0 0px 0 10px;
+	margin: -8px 0 0 50px;
 	color: rgba(0, 0, 0, 0.7);
 }
 .google-reviews-company-name {
@@ -1523,7 +1534,7 @@ nav {
 .google-reviews-company-rating {
 	display: flex;
 	align-items: center;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 30px;
 }
 .google-reviews-company-rating h3 {
 	margin: 10px 5px 0 0;
@@ -1537,32 +1548,62 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 20px 0 0 0;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-top: 15px;
+	border: 2px solid #000;
 }
-.google-review {
-	display: flex;
+.google-card {
+	width: 190px;
+	height: 214px;
+	background: var(--color1);
+	border-radius: 15px;
+	box-shadow: 1px 5px 60px 0px var(--color2);
+	margin: 20px 10px 0 10px;
+	text-align: center;
 }
-.google-review-image {
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	background-image: url(./assets/face-2.jpg);
-	background-position: center;
-	background-size: cover;
+
+.google-card .google-card-border-top {
+	width: 60%;
+	height: 3%;
+	background: var(--color2);
+	margin: auto;
+	border-radius: 0px 0px 15px 15px;
 }
-.google-review-info {
-	margin: 0 0 0 10px;
-}
-.google-review-info h5 {
-	font-size: 18px;
+
+.google-card span {
 	font-weight: 600;
-	color: rgba(0, 0, 0, 0.8);
+	color: #ff;
+	text-align: center;
+	display: block;
+	padding-top: 10px;
+	font-size: 18px;
 }
-.google-review-info p {
-	color: rgba(0, 0, 0, 0.7);
-	font-size: 14px;
-	margin: 5px 0 0 2px;
+
+.google-card .google-time {
+	font-weight: 400;
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding-top: 8px;
+	font-size: 12px;
 }
+
+.google-card .google-img {
+	width: 80px;
+	height: 80px;
+	background: #919090;
+	border-radius: 15px;
+	margin: auto;
+	margin-top: 25px;
+	overflow: hidden;
+}
+.google-card .google-img img {
+	height: 100%;
+	width: 100%;
+}
+
 .star-container i {
 	margin: 0 2px;
 	font-size: 26px;
@@ -1571,6 +1612,7 @@ nav {
 .star-small i {
 	font-size: 22px;
 	margin: 0 4px 0 0;
+	color: #fff;
 }
 /*---------------------------Timeline component------------------------------*/
 .timeline-container {
@@ -2058,7 +2100,6 @@ nav {
 	.google-reviews {
 		width: 100%;
 	}
-
 	.homepage-features,
 	.itrpage-requirements {
 		display: flex;
@@ -2209,7 +2250,12 @@ nav {
 	.google-reviews {
 		align-items: center;
 		justify-content: center;
-		padding: 20px;
+		padding: 10px;
+	}
+	.google-reviews-top {
+		flex-direction: column;
+		align-items: center;
+		padding: 15px 5px;
 	}
 	.google-reviews-company-name img {
 		width: 40px;
@@ -2218,15 +2264,18 @@ nav {
 	.google-reviews-company-name h2 {
 		font-size: 27px;
 	}
+
+	.google-reviews-company-rating {
+		margin: 0;
+	}
 	.google-reviews-company-rating span {
 		font-size: 14px;
 	}
 	.google-reviews-details {
-		padding: 20px;
+		margin-top: 10px;
+		padding: 15px 20px;
 		align-items: center;
-	}
-	.google-review {
-		margin: 10px 0;
+		justify-content: center;
 	}
 	.star-container i {
 		font-size: 24px;

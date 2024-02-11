@@ -1,23 +1,36 @@
 import React from 'react';
 import Logo from '../assets/logoTrans.png';
 import { FaStar } from 'react-icons/fa';
-
+import GoogleReviewCard from './GoogleReviewCard';
+import face1 from '../assets/face-2.jpg';
 const ReviewArr = [
 	{
 		name: 'Rishabh Tanwar',
+		image: face1,
 		time: '1 month ago',
+		color1: '#d65d6a',
+		color2: '#f0939c',
 	},
 	{
 		name: 'Rishabh Tanwar',
+		image: face1,
 		time: '1 month ago',
+		color1: '#39a7b0',
+		color2: '#a4e2e9',
 	},
 	{
 		name: 'Rishabh Tanwar',
+		image: face1,
 		time: '1 month ago',
+		color1: '#f1a25e',
+		color2: '#fdc596',
 	},
 	{
 		name: 'Rishabh Tanwar',
+		image: face1,
 		time: '1 month ago',
+		color1: '#19a382',
+		color2: '#a2c7b6',
 	},
 ];
 
@@ -49,11 +62,13 @@ const GoogleReviews = () => {
 			<h2>Google Reviews</h2>
 			<div className='google-reviews'>
 				<div className='google-reviews-top'>
-					<div className='google-reviews-company-name'>
-						<img src={Logo} alt='' />
-						<h2>Prime File Advisors</h2>
+					<div className='google-reviews-top-left'>
+						<div className='google-reviews-company-name'>
+							<img src={Logo} alt='' />
+							<h2>Prime File Advisors</h2>
+						</div>
+						<p>House|Flat|Building|City</p>
 					</div>
-					<p>House|Flat|Building|City</p>
 					<div className='google-reviews-company-rating'>
 						<h3>5.0</h3>
 						<Star />
@@ -62,14 +77,14 @@ const GoogleReviews = () => {
 				</div>
 				<div className='google-reviews-details'>
 					{ReviewArr.map((item, index) => (
-						<div key={index} className='google-review'>
-							<div className='google-review-image'></div>
-							<div className='google-review-info'>
-								<h5>{item.name}</h5>
-								<Star small />
-								<p>{item.time}</p>
-							</div>
-						</div>
+						<GoogleReviewCard
+							key={index}
+							name={item.name}
+							image={item.image}
+							time={item.time}
+							color1={item.color1}
+							color2={item.color2}
+						/>
 					))}
 				</div>
 			</div>
