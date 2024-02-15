@@ -1,5 +1,5 @@
 import React from 'react';
-import VerticalTimeline from './VerticalTimeline';
+import ITRTimelineCard from './ITRTimelineCard';
 import { HiDocumentCheck, HiDocumentMagnifyingGlass } from 'react-icons/hi2';
 import { FaEye } from 'react-icons/fa';
 import { TbReceiptTax } from 'react-icons/tb';
@@ -48,7 +48,7 @@ const ITRTimeline = () => {
 	return (
 		<div className='timeline-container'>
 			{ITRTimelineDataArr.map((item, index) => (
-				<VerticalTimeline
+				<ITRTimelineCard
 					key={index}
 					number={item.number}
 					text={item.text}

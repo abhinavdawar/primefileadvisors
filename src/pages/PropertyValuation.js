@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import ContactButton from '../components/ContactButton';
 import CustomForm from '../components/CustomForm';
 import CompanyCard from '../components/CompanyCard';
-import PropertyTimeline from '../components/PropertyTimeline';
 import GoogleReviews from '../components/GoogleReviews';
 import {
 	PropertySummaryDataArr,
@@ -43,7 +42,9 @@ const PropertyValuation = () => {
 				</div>
 			</div>
 			<div className='propertypage-certificate-container'>
-				<h2>Property Valuation Certificate for VISA</h2>
+				<h2 className='propertypage-certificate-container-heading'>
+					Property Valuation Certificate for VISA
+				</h2>
 				<div className='propertypage-certificate-details'>
 					<CompanyCard />
 					<div className='propertypage-certificate-text'>
@@ -114,12 +115,7 @@ const PropertyValuation = () => {
 					the Property Valuation process for your convenience.
 				</p>
 			</div>
-			<div className='timeline-mobile-view'>
-				<PropertyTimeline />
-			</div>
-			<div className='timeline-screen-view'>
-				<HorizontalTimeline />
-			</div>
+			<HorizontalTimeline />
 			<GoogleReviews />
 		</motion.div>
 	);

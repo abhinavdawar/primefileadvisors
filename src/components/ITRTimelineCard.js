@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VerticalTimeline = ({ number, color, text, icon }) => {
+const ITRTimelineCard = ({ number, color, text, icon }) => {
 	return (
 		<div className='timeline-item' style={{ '--color': `${color}` }}>
 			<div className='timeline-item-numberWrap'>
@@ -17,4 +17,4 @@ const VerticalTimeline = ({ number, color, text, icon }) => {
 	);
 };
 
-export default VerticalTimeline;
+export default ITRTimelineCard;

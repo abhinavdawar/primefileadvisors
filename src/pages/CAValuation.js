@@ -10,7 +10,6 @@ import {
 	CAValuationCertiArrB,
 } from '../components/ServicesData';
 import { motion } from 'framer-motion';
-import PropertyTimeline from '../components/PropertyTimeline';
 import HorizontalTimeline from '../components/HorizontalTimeline';
 import CompanyCard from '../components/CompanyCard';
 
@@ -163,12 +162,7 @@ const CAValuation = () => {
 					</div>
 				</div>
 			</div>
-			<div className='timeline-mobile-view'>
-				<PropertyTimeline />
-			</div>
-			<div className='timeline-screen-view'>
-				<HorizontalTimeline />
-			</div>
+			<HorizontalTimeline />
 		</motion.div>
 	);
 };

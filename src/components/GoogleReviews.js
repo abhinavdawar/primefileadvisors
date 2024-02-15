@@ -2,64 +2,41 @@ import React from 'react';
 import Logo from '../assets/logoTrans.png';
 import { FaStar } from 'react-icons/fa';
 import GoogleReviewCard from './GoogleReviewCard';
-import face1 from '../assets/face-2.jpg';
 const ReviewArr = [
 	{
-		name: 'Rishabh Tanwar',
-		image: face1,
-		time: '1 month ago',
+		name: 'Jatin',
+		time: 'PrimeFile Advisors exceeded my expectations with their impeccable service in handling my immigration documents. They guided me through the entire process with professionalism and efficiency.',
 		color1: '#d65d6a',
 		color2: '#f0939c',
+		rating: 5.0,
 	},
 	{
-		name: 'Rishabh Tanwar',
-		image: face1,
-		time: '1 month ago',
+		name: 'Aashish',
+		time: 'I highly recommend their services to anyone in need of assistance with immigration paperwork. I am incredibly grateful for the exceptional service provided by PrimeFile Advisors.',
 		color1: '#39a7b0',
 		color2: '#a4e2e9',
+		rating: 4.65,
 	},
 	{
-		name: 'Rishabh Tanwar',
-		image: face1,
-		time: '1 month ago',
+		name: 'Bhupendra Singh',
+		time: 'Choosing PrimeFile Advisors for assistance with my immigration documents was the best decision I could have made. Their knowledgeable team streamlined the entire process, saving me time and stress.',
 		color1: '#f1a25e',
 		color2: '#fdc596',
+		rating: 5.0,
 	},
 	{
-		name: 'Rishabh Tanwar',
-		image: face1,
-		time: '1 month ago',
+		name: 'Paramjeet Kaur',
+		time: 'Their dedication to client satisfaction truly sets them apart. I wholeheartedly endorse PrimeFile Advisors for anyone seeking top-notch service in navigating immigration paperwork.',
 		color1: '#19a382',
 		color2: '#a2c7b6',
+		rating: 4.6,
 	},
 ];
-
-export const Star = ({ small }) => {
-	return (
-		<div className={`star-container ${small && 'star-small'}`}>
-			<i>
-				<FaStar />
-			</i>
-			<i>
-				<FaStar />
-			</i>
-			<i>
-				<FaStar />
-			</i>
-			<i>
-				<FaStar />
-			</i>
-			<i>
-				<FaStar />
-			</i>
-		</div>
-	);
-};
 
 const GoogleReviews = () => {
 	return (
 		<div className='google-reviews-container'>
-			<h2>Google Reviews</h2>
+			<h2>Customer Reviews</h2>
 			<div className='google-reviews'>
 				<div className='google-reviews-top'>
 					<div className='google-reviews-top-left'>
@@ -70,8 +47,11 @@ const GoogleReviews = () => {
 						<p>House|Flat|Building|City</p>
 					</div>
 					<div className='google-reviews-company-rating'>
-						<h3>5.0</h3>
-						<Star />
+						<h3>4.8</h3>
+						<div
+							className='stars company-stars'
+							style={{ '--rating': 4.65, '--color1': '#fff' }}
+						></div>
 						<span>200 reviews</span>
 					</div>
 				</div>
@@ -80,10 +60,10 @@ const GoogleReviews = () => {
 						<GoogleReviewCard
 							key={index}
 							name={item.name}
-							image={item.image}
 							time={item.time}
 							color1={item.color1}
 							color2={item.color2}
+							rating={item.rating}
 						/>
 					))}
 				</div>

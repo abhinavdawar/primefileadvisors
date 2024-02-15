@@ -14,8 +14,6 @@ const linksArray = [
 		name: 'Property Valuation',
 		to: '/property-valuation',
 	},
-	{ name: 'Sample/Format', to: '/sample-format' },
-	{ name: 'FAQ', to: '/faq' },
 	{ name: 'Contact us', to: '/contact-us' },
 ];
 

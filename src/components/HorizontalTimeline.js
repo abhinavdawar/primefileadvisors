@@ -10,8 +10,8 @@ const HorizontalTimeline = () => {
 				Property Valuation Report from Chartered Engineer (Recognized Engineer)
 				in 60 Mins.
 			</h3>
-			<section id='hori-timeline' className='hori-container'>
-				<div className='hozi-timeline-block' style={{ '--color': '#d65d6a' }}>
+			<section className='hori-container'>
+				<div className='hori-timeline-block' style={{ '--color': '#d65d6a' }}>
 					<div
 						className='hori-timeline-img hori-picture'
 						style={{ '--color': '#d65d6a' }}
@@ -30,7 +30,7 @@ const HorizontalTimeline = () => {
 						</p>
 					</div>
 				</div>
-				<div className='hozi-timeline-block' style={{ '--color': '#39a7b0' }}>
+				<div className='hori-timeline-block' style={{ '--color': '#39a7b0' }}>
 					<div
 						className='hori-timeline-img hori-picture'
 						style={{ '--color': '#39a7b0' }}
@@ -51,7 +51,7 @@ const HorizontalTimeline = () => {
 						</p>
 					</div>
 				</div>
-				<div className='hozi-timeline-block' style={{ '--color': '#f1a25e' }}>
+				<div className='hori-timeline-block' style={{ '--color': '#f1a25e' }}>
 					<div
 						className='hori-timeline-img hori-picture'
 						style={{ '--color': '#f1a25e' }}

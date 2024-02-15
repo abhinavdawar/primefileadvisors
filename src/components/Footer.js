@@ -15,7 +15,6 @@ const Footer = () => {
 	];
 	const otherLinkArr = [
 		{ name: 'Contact Us', url: '/contact-us' },
-		{ name: 'Sample/Format', url: '/sample-format' },
 		{ name: 'Home', url: '/' },
 	];
 	return (
