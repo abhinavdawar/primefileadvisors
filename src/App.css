@@ -1142,7 +1142,7 @@ nav {
 	font-size: 13em;
 	font-weight: 900;
 	width: 0.9em;
-	text-a.timeline-itemgn: center;
+	text-align:center;
 }
 .timeline-item-number {
 	color: var(--color);
