@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../assets/logoTrans.png';
-import { FaStar } from 'react-icons/fa';
 import GoogleReviewCard from './GoogleReviewCard';
 const ReviewArr = [
 	{
