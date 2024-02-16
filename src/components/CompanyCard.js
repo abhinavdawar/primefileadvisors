@@ -16,7 +16,7 @@ const CompanyCard = () => {
 					<h2>Prime File Advisors</h2>
 				</div>
 				<h5>Registered</h5>
-				<p>House|Flat|Building|City</p>
+				<p>SCO10, Sector58, Mohali</p>
 			</div>
 			<div className='company-card-details'>
 				<button>

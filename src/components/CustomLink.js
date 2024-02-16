@@ -27,7 +27,7 @@ export const customerSupportArr = [
 	},
 	{
 		title: 'Locate us',
-		text: 'Chandighar, India',
+		text: 'Chandigarh, India',
 		icon: <FaMapMarkerAlt />,
 		url: 'https://maps.app.goo.gl/Kh9nxbjTmS4aMcE66',
 		color: 'black',
