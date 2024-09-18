@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logoTrans.png';
+import Logo from '../assets/primefileadvisors.png';
 import { BsFillTelephoneFill, BsCircleFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
 import { TbWorldWww } from 'react-icons/tb';
