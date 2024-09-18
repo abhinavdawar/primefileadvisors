@@ -621,6 +621,8 @@ nav {
 	height: 60px;
 	left: 50%;
 	margin-left: 40%;
+	transform: translateZ(0);
+	backface-visibility: hidden;
 	-webkit-transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
 }
@@ -1106,6 +1108,8 @@ nav {
 		#fc0 var(--percent),
 		var(--color1) var(--percent)
 	);
+	background-clip: text;
+	text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1479,6 +1483,56 @@ nav {
 }
 .important-links {
 	margin-top: 20px;
+}
+.contact-popup {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+.contact-popup.open {
+	display: flex;
+}
+.contact-popup.close {
+	display: none;
+}
+.contact-popup-details {
+	background-color: #fff;
+	padding: 20px;
+	position: relative;
+	border-radius: 10px;
+}
+.close-button {
+	font-size: 35px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	border-radius: 50%;
+	color: #19a382;
+	z-index: 20;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+.contact-popup .custom-form {
+	padding: 0;
+}
+.contact-popup .custom-form-input-container {
+	margin-bottom: 0px;
+}
+.contact-popup .custom-form-input {
+	width: 350px;
+}
+.contact-popup .custom-form-submit {
+	width: 350px;
+	margin-top: 20px;
+	top: 0;
 }
 ::-webkit-scrollbar {
 	width: 8px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logoTrans.png';
+import Logo from '../assets/primefileadvisors.png';
 import GoogleReviewCard from './GoogleReviewCard';
 const ReviewArr = [
 	{

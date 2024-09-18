@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { FaClock, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logoTrans.png';
+import Logo from '../assets/primefileadvisors.png';
 import { useLocation } from 'react-router-dom';
 import ContactButton from './ContactButton';
 
