@@ -26,7 +26,13 @@ const ContactPopup = ({ popup }) => {
 						<IoCloseCircleSharp />
 					</i>
 				</button>
-				<CustomForm ContactForm />
+
+				<div className='footer-form'>
+					<div className='footer-heading'>
+						<h6>REQUEST CALL BACK</h6>
+					</div>
+					<CustomForm />
+				</div>
 			</div>
 		</section>
 	);
