@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ContactButton from '../components/ContactButton';
 import CustomForm from '../components/CustomForm';
@@ -8,8 +8,11 @@ import {
 	FaCalendarCheck,
 	FaCcVisa,
 } from 'react-icons/fa';
+import { MdMiscellaneousServices } from 'react-icons/md';
+import ServicesPopup from './ServicesPopup';
 
 const HomeLanding = () => {
+	const [popup, setPopup] = useState(false);
 	return (
 		<div className='homelanding-container'>
 			<h1>Welcome to, Prime File Advisors</h1>
@@ -44,8 +47,18 @@ const HomeLanding = () => {
 						</i>
 						<h4>ITR Filling</h4>
 					</Link>
+					<button
+						onClick={() => setPopup(true)}
+						className='homelanding-service'
+					>
+						<i>
+							<MdMiscellaneousServices />
+						</i>
+						<h4>Other Services</h4>
+					</button>
 				</div>
 			</div>
+			<ServicesPopup popup={popup} setPopup={setPopup} />
 			<div className='homelanding-form'>
 				<h2>Consult With Prime File Advisor Expert</h2>
 				<CustomForm Horizontal />
